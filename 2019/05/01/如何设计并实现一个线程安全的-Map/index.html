@@ -96,17 +96,18 @@
 
 
 
-  <meta name="description" content="MacBook 突然没有声音的原因有时候 Mac 从睡眠状态恢复之后没有声音，这是 Mac OS X 系统的一个 Bug。这是因为 Mac OS X 的核心音频守护进程「coreaudiod」出了问题，虽然简单的重启电脑就能解决，但是如果此时开启了很多程序后者有其他情况不想重启电脑的话，可以按照下面的方法解决此问题。 解决方案 1 在 Mac 中打开活动监视器（在 Finder 的「应用程序」中搜">
+  <meta name="description" content="[转]如何设计并实现一个线程安全的 Map如何设计并实现一个线程安全的 Map ？(上篇) 如何设计并实现一个线程安全的 Map ？(下篇)">
+<meta name="keywords" content="Java">
 <meta property="og:type" content="article">
-<meta property="og:title" content="MacBook Pro 突然没有声音">
-<meta property="og:url" content="http://www.zyx.fun/2018/10/10/MacBook-Pro-突然没有声音/index.html">
+<meta property="og:title" content="如何设计并实现一个线程安全的 Map">
+<meta property="og:url" content="http://www.zyx.fun/2019/05/01/如何设计并实现一个线程安全的-Map/index.html">
 <meta property="og:site_name" content="Johnnie&#39;s Blog">
-<meta property="og:description" content="MacBook 突然没有声音的原因有时候 Mac 从睡眠状态恢复之后没有声音，这是 Mac OS X 系统的一个 Bug。这是因为 Mac OS X 的核心音频守护进程「coreaudiod」出了问题，虽然简单的重启电脑就能解决，但是如果此时开启了很多程序后者有其他情况不想重启电脑的话，可以按照下面的方法解决此问题。 解决方案 1 在 Mac 中打开活动监视器（在 Finder 的「应用程序」中搜">
+<meta property="og:description" content="[转]如何设计并实现一个线程安全的 Map如何设计并实现一个线程安全的 Map ？(上篇) 如何设计并实现一个线程安全的 Map ？(下篇)">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-10-11T03:45:08.000Z">
+<meta property="og:updated_time" content="2019-05-01T20:50:08.459Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="MacBook Pro 突然没有声音">
-<meta name="twitter:description" content="MacBook 突然没有声音的原因有时候 Mac 从睡眠状态恢复之后没有声音，这是 Mac OS X 系统的一个 Bug。这是因为 Mac OS X 的核心音频守护进程「coreaudiod」出了问题，虽然简单的重启电脑就能解决，但是如果此时开启了很多程序后者有其他情况不想重启电脑的话，可以按照下面的方法解决此问题。 解决方案 1 在 Mac 中打开活动监视器（在 Finder 的「应用程序」中搜">
+<meta name="twitter:title" content="如何设计并实现一个线程安全的 Map">
+<meta name="twitter:description" content="[转]如何设计并实现一个线程安全的 Map如何设计并实现一个线程安全的 Map ？(上篇) 如何设计并实现一个线程安全的 Map ？(下篇)">
 
 
 
@@ -114,7 +115,7 @@
 
   
   
-  <link rel="canonical" href="http://www.zyx.fun/2018/10/10/MacBook-Pro-突然没有声音/"/>
+  <link rel="canonical" href="http://www.zyx.fun/2019/05/01/如何设计并实现一个线程安全的-Map/"/>
 
 
 
@@ -124,7 +125,7 @@
   };
 </script>
 
-  <title>MacBook Pro 突然没有声音 | Johnnie's Blog</title>
+  <title>如何设计并实现一个线程安全的 Map | Johnnie's Blog</title>
   
 
 
@@ -317,7 +318,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://www.zyx.fun/2018/10/10/MacBook-Pro-突然没有声音/"/>
+    <link itemprop="mainEntityOfPage" href="http://www.zyx.fun/2019/05/01/如何设计并实现一个线程安全的-Map/"/>
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Johnnie"/>
@@ -334,7 +335,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">MacBook Pro 突然没有声音
+          <h1 class="post-title" itemprop="name headline">如何设计并实现一个线程安全的 Map
 
               
             
@@ -360,7 +361,7 @@
                 
               
 
-              <time title="Created: 2018-10-10 20:40:30 / Modified: 20:45:08" itemprop="dateCreated datePublished" datetime="2018-10-10T20:40:30-07:00">2018-10-10</time>
+              <time title="Created: 2019-05-01 13:39:30 / Modified: 13:50:08" itemprop="dateCreated datePublished" datetime="2019-05-01T13:39:30-07:00">2019-05-01</time>
             
 
             
@@ -399,15 +400,8 @@
       
 
       
-        <h1 id="MacBook-突然没有声音的原因"><a href="#MacBook-突然没有声音的原因" class="headerlink" title="MacBook 突然没有声音的原因"></a>MacBook 突然没有声音的原因</h1><p>有时候 Mac 从睡眠状态恢复之后没有声音，这是 Mac OS X 系统的一个 Bug。<br>这是因为 Mac OS X 的核心音频守护进程「coreaudiod」出了问题，<br>虽然简单的重启电脑就能解决，但是如果此时开启了很多程序后者有其他情况不想重启电脑的话，<br>可以按照下面的方法解决此问题。</p>
-<h1 id="解决方案-1"><a href="#解决方案-1" class="headerlink" title="解决方案 1"></a>解决方案 1</h1><ul>
-<li>在 Mac 中打开活动监视器（在 Finder 的「应用程序」中搜索「活动监视器」可以找到</li>
-<li>在「活动监视器」窗口右上角的搜索框里输入「audio」，此时可以搜索到「coreaudiod」进程。</li>
-<li>选中「coreaudiod」进程，点击「活动监视器」窗口左上角的「退出进程」按钮，在弹出的对话框中点击「退出」。</li>
-<li>「coreaudiod」进程退出后会自动重启，这时声音就恢复了。</li>
-</ul>
-<h1 id="解决方案-2"><a href="#解决方案-2" class="headerlink" title="解决方案 2"></a>解决方案 2</h1><p>在终端输入sudo killall coreaudiod命令并输入密码即可</p>
-<h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1><p>转自<br><a href="https://www.zhihu.com/question/23498580" target="_blank" rel="noopener">https://www.zhihu.com/question/23498580</a></p>
+        <h1 id="转-如何设计并实现一个线程安全的-Map"><a href="#转-如何设计并实现一个线程安全的-Map" class="headerlink" title="[转]如何设计并实现一个线程安全的 Map"></a>[转]如何设计并实现一个线程安全的 Map</h1><p><a href="https://www.jianshu.com/p/cd41ca8741f4" target="_blank" rel="noopener">如何设计并实现一个线程安全的 Map ？(上篇)</a></p>
+<p><a href="https://www.jianshu.com/p/43e66dab535b" target="_blank" rel="noopener">如何设计并实现一个线程安全的 Map ？(下篇)</a></p>
 
       
     </div>
@@ -429,6 +423,12 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/Java/" rel="tag"># Java</a>
+          
+        </div>
+      
 
       
       
@@ -438,8 +438,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/08/25/Intellij-source-release-1-8-requires-target-release-1-8/" rel="next" title="Intellij:source release 1.8 requires target release 1.8">
-                <i class="fa fa-chevron-left"></i> Intellij:source release 1.8 requires target release 1.8
+              <a href="/2019/05/01/What-are-Bloom-filters/" rel="next" title="What are Bloom filters">
+                <i class="fa fa-chevron-left"></i> What are Bloom filters
               </a>
             
           </div>
@@ -447,10 +447,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/04/28/Adding-Salt-to-Hashing-A-Better-Way-to-Store-Passwords/" rel="prev" title="Adding Salt to Hashing: A Better Way to Store Passwords">
-                Adding Salt to Hashing: A Better Way to Store Passwords <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -582,7 +578,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#MacBook-突然没有声音的原因"><span class="nav-number">1.</span> <span class="nav-text">MacBook 突然没有声音的原因</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#解决方案-1"><span class="nav-number">2.</span> <span class="nav-text">解决方案 1</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#解决方案-2"><span class="nav-number">3.</span> <span class="nav-text">解决方案 2</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#引用"><span class="nav-number">4.</span> <span class="nav-text">引用</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#转-如何设计并实现一个线程安全的-Map"><span class="nav-number">1.</span> <span class="nav-text">[转]如何设计并实现一个线程安全的 Map</span></a></li></ol></div>
             
 
           </div>
