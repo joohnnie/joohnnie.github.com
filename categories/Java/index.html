@@ -98,7 +98,7 @@
 
   <meta property="og:type" content="website">
 <meta property="og:title" content="Coffee time">
-<meta property="og:url" content="http://www.zyx.fun/tags/Distributed-System/index.html">
+<meta property="og:url" content="http://www.zyx.fun/categories/Java/index.html">
 <meta property="og:site_name" content="Coffee time">
 <meta property="og:locale" content="中文">
 <meta name="twitter:card" content="summary">
@@ -110,7 +110,7 @@
 
   
   
-  <link rel="canonical" href="http://www.zyx.fun/tags/Distributed-System/"/>
+  <link rel="canonical" href="http://www.zyx.fun/categories/Java/"/>
 
 
 
@@ -120,7 +120,7 @@
   };
 </script>
 
-  <title>Tag: Distributed System | Coffee time</title>
+  <title>Category: Java | Coffee time</title>
   
 
 
@@ -234,7 +234,7 @@
         
         
           
-          <li class="menu-item menu-item-tags menu-item-active">
+          <li class="menu-item menu-item-tags">
 
     
     
@@ -251,7 +251,7 @@
         
         
           
-          <li class="menu-item menu-item-categories">
+          <li class="menu-item menu-item-categories menu-item-active">
 
     
     
@@ -336,11 +336,11 @@
   
   
   
-  <div class="post-block tag">
+  <div class="post-block category">
 
     <div id="posts" class="posts-collapse">
       <div class="collection-title">
-        <h1>Distributed System<small>Tag</small>
+        <h1>Java<small>Category</small>
         </h1>
       </div>
 
@@ -352,9 +352,9 @@
 
       <h2 class="post-title">
         
-          <a class="post-title-link" href="/[object Object]/distributed-unique-id-sequence-number-generator/" itemprop="url">
+          <a class="post-title-link" href="/[object Object]/如何设计并实现一个线程安全的-Map/" itemprop="url">
             
-              <span itemprop="name">Generating unique IDs in a distributed environment at high scale</span>
+              <span itemprop="name">如何设计并实现一个线程安全的 Map</span>
             
           </a>
         
@@ -362,9 +362,9 @@
 
       <div class="post-meta">
         <time class="post-time" itemprop="dateCreated"
-              datetime="2019-04-29T20:51:49-07:00"
-              content="2019-04-29">
-          04-29
+              datetime="2019-05-01T13:39:30-07:00"
+              content="2019-05-01">
+          05-01
         </time>
       </div>
 
@@ -380,9 +380,9 @@
 
       <h2 class="post-title">
         
-          <a class="post-title-link" href="/[object Object]/Consistent-Hashing-Simplified/" itemprop="url">
+          <a class="post-title-link" href="/[object Object]/Adding-Salt-to-Hashing-A-Better-Way-to-Store-Passwords/" itemprop="url">
             
-              <span itemprop="name">Consistent Hashing Simplified</span>
+              <span itemprop="name">Adding Salt to Hashing: A Better Way to Store Passwords</span>
             
           </a>
         
@@ -390,9 +390,37 @@
 
       <div class="post-meta">
         <time class="post-time" itemprop="dateCreated"
-              datetime="2019-04-28T16:30:02-07:00"
+              datetime="2019-04-28T15:16:29-07:00"
               content="2019-04-28">
           04-28
+        </time>
+      </div>
+
+    </header>
+  </article>
+
+
+      
+        
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      <h2 class="post-title">
+        
+          <a class="post-title-link" href="/[object Object]/Intellij-source-release-1-8-requires-target-release-1-8/" itemprop="url">
+            
+              <span itemprop="name">Intellij:source release 1.8 requires target release 1.8</span>
+            
+          </a>
+        
+      </h2>
+
+      <div class="post-meta">
+        <time class="post-time" itemprop="dateCreated"
+              datetime="2018-08-25T00:16:25-07:00"
+              content="2018-08-25">
+          08-25
         </time>
       </div>
 
@@ -761,8 +789,8 @@
       //https://hexo.io/docs/variables.html
       var isPost = ''.length > 0
       var isArchive = '' === 'true'
-      var isCategory = ''.length > 0
-      var isTag = 'Distributed System'.length > 0
+      var isCategory = 'Java'.length > 0
+      var isTag = ''.length > 0
 
       if (isPost) { //is article page
         var title = ''
@@ -773,7 +801,7 @@
       else if (!isArchive && !isCategory && !isTag) { //is index page
         var titles = [] //array to titles
 
-        var postsstr = 'titles.push("Generating unique IDs in a distributed environment at high scale");titles.push("Consistent Hashing Simplified");' //if you have a better way to get titles of posts, please change it
+        var postsstr = 'titles.push("如何设计并实现一个线程安全的 Map");titles.push("Adding Salt to Hashing: A Better Way to Store Passwords");titles.push("Intellij:source release 1.8 requires target release 1.8");' //if you have a better way to get titles of posts, please change it
         eval(postsstr)
 
         var promises = titles.map(function (title) {
