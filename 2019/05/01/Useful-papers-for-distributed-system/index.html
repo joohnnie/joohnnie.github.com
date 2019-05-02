@@ -96,18 +96,18 @@
 
 
 
-  <meta name="description" content="Adding Salt to Hashing: A Better Way to Store PasswordsA salt is added to the hashing process to force their uniqueness, increase their complexity without increasing userrequirements, and to mitigate">
-<meta name="keywords" content="Java">
+  <meta name="description" content="Useful papers for distributed system Dynamo Highly Available Key-value Store Kafka - A Distributed Messaging System for Log Processing Consistent Hashing - Original paper Paxos - Protocol for distribu">
+<meta name="keywords" content="Distributed System">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Adding Salt to Hashing: A Better Way to Store Passwords">
-<meta property="og:url" content="http://www.zyx.fun/[object Object]/Adding-Salt-to-Hashing-A-Better-Way-to-Store-Passwords/index.html">
+<meta property="og:title" content="Useful Papers for distributed system">
+<meta property="og:url" content="http://www.zyx.fun/2019/05/01/Useful-papers-for-distributed-system/index.html">
 <meta property="og:site_name" content="Coffee Time">
-<meta property="og:description" content="Adding Salt to Hashing: A Better Way to Store PasswordsA salt is added to the hashing process to force their uniqueness, increase their complexity without increasing userrequirements, and to mitigate">
+<meta property="og:description" content="Useful papers for distributed system Dynamo Highly Available Key-value Store Kafka - A Distributed Messaging System for Log Processing Consistent Hashing - Original paper Paxos - Protocol for distribu">
 <meta property="og:locale" content="中文">
-<meta property="og:updated_time" content="2019-05-02T03:27:30.374Z">
+<meta property="og:updated_time" content="2019-05-02T06:20:10.961Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Adding Salt to Hashing: A Better Way to Store Passwords">
-<meta name="twitter:description" content="Adding Salt to Hashing: A Better Way to Store PasswordsA salt is added to the hashing process to force their uniqueness, increase their complexity without increasing userrequirements, and to mitigate">
+<meta name="twitter:title" content="Useful Papers for distributed system">
+<meta name="twitter:description" content="Useful papers for distributed system Dynamo Highly Available Key-value Store Kafka - A Distributed Messaging System for Log Processing Consistent Hashing - Original paper Paxos - Protocol for distribu">
 
 
 
@@ -115,7 +115,7 @@
 
   
   
-  <link rel="canonical" href="http://www.zyx.fun/[object Object]/Adding-Salt-to-Hashing-A-Better-Way-to-Store-Passwords/"/>
+  <link rel="canonical" href="http://www.zyx.fun/2019/05/01/Useful-papers-for-distributed-system/"/>
 
 
 
@@ -125,7 +125,7 @@
   };
 </script>
 
-  <title>Adding Salt to Hashing: A Better Way to Store Passwords | Coffee Time</title>
+  <title>Useful Papers for distributed system | Coffee Time</title>
   
 
 
@@ -335,7 +335,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://www.zyx.fun/[object Object]/Adding-Salt-to-Hashing-A-Better-Way-to-Store-Passwords/"/>
+    <link itemprop="mainEntityOfPage" href="http://www.zyx.fun/2019/05/01/Useful-papers-for-distributed-system/"/>
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Johnnie"/>
@@ -352,7 +352,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Adding Salt to Hashing: A Better Way to Store Passwords
+          <h1 class="post-title" itemprop="name headline">Useful Papers for distributed system
 
               
             
@@ -378,24 +378,12 @@
                 
               
 
-              <time title="Created: 2019-04-28 15:16:29" itemprop="dateCreated datePublished" datetime="2019-04-28T15:16:29-07:00">2019-04-28</time>
+              <time title="Created: 2019-05-01 23:12:23 / Modified: 23:20:10" itemprop="dateCreated datePublished" datetime="2019-05-01T23:12:23-07:00">2019-05-01</time>
             
 
             
               
 
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Edited on</span>
-                
-                <time title="Modified: 2019-05-01 20:27:30" itemprop="dateModified" datetime="2019-05-01T20:27:30-07:00">2019-05-01</time>
               
             
           </span>
@@ -412,7 +400,7 @@
                 <span class="post-meta-item-text">In</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Java/" itemprop="url" rel="index"><span itemprop="name">Java</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/BigData/" itemprop="url" rel="index"><span itemprop="name">BigData</span></a></span>
 
                 
                 
@@ -455,14 +443,18 @@
       
 
       
-        <h1 id="Adding-Salt-to-Hashing-A-Better-Way-to-Store-Passwords"><a href="#Adding-Salt-to-Hashing-A-Better-Way-to-Store-Passwords" class="headerlink" title="Adding Salt to Hashing: A Better Way to Store Passwords"></a>Adding Salt to Hashing: A Better Way to Store Passwords</h1><p>A salt is added to the hashing process to force their uniqueness, increase their complexity without increasing user<br>requirements, and to mitigate password attacks like rainbow tables</p>
-<p>Detailed can refer to the following link </p>
-<p><a href="https://auth0.com/blog/adding-salt-to-hashing-a-better-way-to-store-passwords/" target="_blank" rel="noopener">https://auth0.com/blog/adding-salt-to-hashing-a-better-way-to-store-passwords/</a></p>
-<h1 id="Summary"><a href="#Summary" class="headerlink" title="Summary"></a>Summary</h1><ul>
-<li>A cryptographic salt is made up of random bits added to each password instance before its hashing.</li>
-<li>Salts create unique passwords even in the instance of two users choosing the same passwords.</li>
-<li>Salts help us mitigate rainbow table attacks by forcing attackers to re-compute them using the salts.</li>
-<li>Creating cryptographically strong random data to use as salts is very complex and it’s a job better left to leading<br>security solutions and providers.</li>
+        <h1 id="Useful-papers-for-distributed-system"><a href="#Useful-papers-for-distributed-system" class="headerlink" title="Useful papers for distributed system"></a>Useful papers for distributed system</h1><ul>
+<li><a href="https://www.allthingsdistributed.com/files/amazon-dynamo-sosp2007.pdf" target="_blank" rel="noopener">Dynamo Highly Available Key-value Store</a></li>
+<li><a href="http://notes.stephenholiday.com/Kafka.pdf" target="_blank" rel="noopener">Kafka - A Distributed Messaging System for Log Processing</a></li>
+<li><a href="https://www.akamai.com/es/es/multimedia/documents/technical-publication/consistent-hashing-and-random-trees-distributed-caching-protocols-for-relieving-hot-spots-on-the-world-wide-web-technical-publication.pdf" target="_blank" rel="noopener">Consistent Hashing - Original paper</a></li>
+<li><a href="https://www.microsoft.com/en-us/research/uploads/prod/2016/12/paxos-simple-Copy.pdf" target="_blank" rel="noopener">Paxos - Protocol for distributed consensus</a></li>
+<li><a href="http://sites.fas.harvard.edu/~cs265/papers/kung-1981.pdf" target="_blank" rel="noopener">Concurrency Controls - Optimistic methods for concurrency controls</a></li>
+<li><a href="http://highscalability.com/blog/2011/11/14/using-gossip-protocols-for-failure-detection-monitoring-mess.html" target="_blank" rel="noopener">Gossip protocol - For failure detection and more</a></li>
+<li><a href="http://static.googleusercontent.com/media/research.google.com/en/us/archive/chubby-osdi06.pdf" target="_blank" rel="noopener">Chubby - Lock service for loosely-coupled distributed systems</a></li>
+<li><a href="https://www.usenix.org/legacy/event/usenix10/tech/full_papers/Hunt.pdf" target="_blank" rel="noopener">ZooKeeper - Wait-free coordination for Internet-scale systems</a></li>
+<li><a href="https://static.googleusercontent.com/media/research.google.com/en//archive/mapreduce-osdi04.pdf" target="_blank" rel="noopener">MapReduce - Simplified Data Processing on Large Clusters</a></li>
+<li><a href="http://storageconference.us/2010/Papers/MSST/Shvachko.pdf" target="_blank" rel="noopener">Hadoop - A Distributed File System</a></li>
+<li><a href="https://static.googleusercontent.com/media/research.google.com/en//archive/bigtable-osdi06.pdf" target="_blank" rel="noopener">Bigtable: A Distributed Storage System for Structured Data</a></li>
 </ul>
 
       
@@ -487,7 +479,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Java/" rel="tag"># Java</a>
+            <a href="/tags/Distributed-System/" rel="tag"># Distributed System</a>
           
         </div>
       
@@ -500,8 +492,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/[object Object]/MacBook-Pro-突然没有声音/" rel="next" title="MacBook Pro 突然没有声音">
-                <i class="fa fa-chevron-left"></i> MacBook Pro 突然没有声音
+              <a href="/2019/05/01/如何设计并实现一个线程安全的-Map/" rel="next" title="如何设计并实现一个线程安全的 Map">
+                <i class="fa fa-chevron-left"></i> 如何设计并实现一个线程安全的 Map
               </a>
             
           </div>
@@ -509,10 +501,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/[object Object]/Consistent-Hashing-Simplified/" rel="prev" title="Consistent Hashing Simplified">
-                Consistent Hashing Simplified <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -581,7 +569,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">7</span>
+                    <span class="site-state-item-count">8</span>
                     <span class="site-state-item-name">posts</span>
                   </a>
                 </div>
@@ -602,7 +590,9 @@
                     
                       
                     
-                    <span class="site-state-item-count">2</span>
+                      
+                    
+                    <span class="site-state-item-count">3</span>
                     <span class="site-state-item-name">categories</span>
                   </a>
                 </div>
@@ -665,7 +655,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Adding-Salt-to-Hashing-A-Better-Way-to-Store-Passwords"><span class="nav-number">1.</span> <span class="nav-text">Adding Salt to Hashing: A Better Way to Store Passwords</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Summary"><span class="nav-number">2.</span> <span class="nav-text">Summary</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Useful-papers-for-distributed-system"><span class="nav-number">1.</span> <span class="nav-text">Useful papers for distributed system</span></a></li></ol></div>
             
 
           </div>
@@ -914,13 +904,13 @@
       var articles = db.collection('articles')
 
       //https://hexo.io/docs/variables.html
-      var isPost = 'Adding Salt to Hashing: A Better Way to Store Passwords'.length > 0
+      var isPost = 'Useful Papers for distributed system'.length > 0
       var isArchive = '' === 'true'
       var isCategory = ''.length > 0
       var isTag = ''.length > 0
 
       if (isPost) { //is article page
-        var title = 'Adding Salt to Hashing: A Better Way to Store Passwords'
+        var title = 'Useful Papers for distributed system'
         var doc = articles.doc(title)
 
         getCount(doc, true).then(appendCountTo($('.post-meta')))
