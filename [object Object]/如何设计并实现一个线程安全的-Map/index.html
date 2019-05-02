@@ -96,17 +96,18 @@
 
 
 
-  <meta name="description" content="What are Bloom filters?Bloom filters can very quickly answer variations on the Yes/No question “is this item in the set?”,like “have I seen this item before?”. There are two important caveats though.">
+  <meta name="description" content="[转]如何设计并实现一个线程安全的 Map如何设计并实现一个线程安全的 Map ？(上篇) 如何设计并实现一个线程安全的 Map ？(下篇)">
+<meta name="keywords" content="Java">
 <meta property="og:type" content="article">
-<meta property="og:title" content="What are Bloom filters">
-<meta property="og:url" content="http://www.zyx.fun/2019/05/01/What-are-Bloom-filters/index.html">
+<meta property="og:title" content="如何设计并实现一个线程安全的 Map">
+<meta property="og:url" content="http://www.zyx.fun/[object Object]/如何设计并实现一个线程安全的-Map/index.html">
 <meta property="og:site_name" content="Coffee time">
-<meta property="og:description" content="What are Bloom filters?Bloom filters can very quickly answer variations on the Yes/No question “is this item in the set?”,like “have I seen this item before?”. There are two important caveats though.">
+<meta property="og:description" content="[转]如何设计并实现一个线程安全的 Map如何设计并实现一个线程安全的 Map ？(上篇) 如何设计并实现一个线程安全的 Map ？(下篇)">
 <meta property="og:locale" content="中文">
-<meta property="og:updated_time" content="2019-05-01T18:36:50.536Z">
+<meta property="og:updated_time" content="2019-05-01T20:50:08.459Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="What are Bloom filters">
-<meta name="twitter:description" content="What are Bloom filters?Bloom filters can very quickly answer variations on the Yes/No question “is this item in the set?”,like “have I seen this item before?”. There are two important caveats though.">
+<meta name="twitter:title" content="如何设计并实现一个线程安全的 Map">
+<meta name="twitter:description" content="[转]如何设计并实现一个线程安全的 Map如何设计并实现一个线程安全的 Map ？(上篇) 如何设计并实现一个线程安全的 Map ？(下篇)">
 
 
 
@@ -114,7 +115,7 @@
 
   
   
-  <link rel="canonical" href="http://www.zyx.fun/2019/05/01/What-are-Bloom-filters/"/>
+  <link rel="canonical" href="http://www.zyx.fun/[object Object]/如何设计并实现一个线程安全的-Map/"/>
 
 
 
@@ -124,7 +125,7 @@
   };
 </script>
 
-  <title>What are Bloom filters | Coffee time</title>
+  <title>如何设计并实现一个线程安全的 Map | Coffee time</title>
   
 
 
@@ -255,6 +256,23 @@
         
         
           
+          <li class="menu-item menu-item-categories">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br/>Categories</a>
+
+  </li>
+        
+        
+        
+          
           <li class="menu-item menu-item-archives">
 
     
@@ -317,7 +335,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://www.zyx.fun/2019/05/01/What-are-Bloom-filters/"/>
+    <link itemprop="mainEntityOfPage" href="http://www.zyx.fun/[object Object]/如何设计并实现一个线程安全的-Map/"/>
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Johnnie"/>
@@ -334,7 +352,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">What are Bloom filters
+          <h1 class="post-title" itemprop="name headline">如何设计并实现一个线程安全的 Map
 
               
             
@@ -360,7 +378,7 @@
                 
               
 
-              <time title="Created: 2019-05-01 11:27:02 / Modified: 11:36:50" itemprop="dateCreated datePublished" datetime="2019-05-01T11:27:02-07:00">2019-05-01</time>
+              <time title="Created: 2019-05-01 13:39:30 / Modified: 13:50:08" itemprop="dateCreated datePublished" datetime="2019-05-01T13:39:30-07:00">2019-05-01</time>
             
 
             
@@ -407,9 +425,8 @@
       
 
       
-        <h1 id="What-are-Bloom-filters"><a href="#What-are-Bloom-filters" class="headerlink" title="What are Bloom filters?"></a>What are Bloom filters?</h1><p>Bloom filters can very quickly answer variations on the Yes/No question “is this item in the set?”,<br>like “have I seen this item before?”. There are two important caveats though. </p>
-<p>Very rarely, it will say Yes when the answer is actually No (although it will never say No,<br>when the answer is actually Yes). You also can’t remove an item from a Bloom filter.<br>Like elephants and unrelenting Polish designers, Bloom filters never forget.</p>
-<h1 id="More-detailed-from-below"><a href="#More-detailed-from-below" class="headerlink" title="More detailed from below"></a>More detailed from below</h1><p><a href="https://blog.medium.com/what-are-bloom-filters-1ec2a50c68ff" target="_blank" rel="noopener">https://blog.medium.com/what-are-bloom-filters-1ec2a50c68ff</a> </p>
+        <h1 id="转-如何设计并实现一个线程安全的-Map"><a href="#转-如何设计并实现一个线程安全的-Map" class="headerlink" title="[转]如何设计并实现一个线程安全的 Map"></a>[转]如何设计并实现一个线程安全的 Map</h1><p><a href="https://www.jianshu.com/p/cd41ca8741f4" target="_blank" rel="noopener">如何设计并实现一个线程安全的 Map ？(上篇)</a></p>
+<p><a href="https://www.jianshu.com/p/43e66dab535b" target="_blank" rel="noopener">如何设计并实现一个线程安全的 Map ？(下篇)</a></p>
 
       
     </div>
@@ -431,6 +448,12 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/Java/" rel="tag"># Java</a>
+          
+        </div>
+      
 
       
       
@@ -440,8 +463,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/04/29/distributed-unique-id-sequence-number-generator/" rel="next" title="Generating unique IDs in a distributed environment at high scale">
-                <i class="fa fa-chevron-left"></i> Generating unique IDs in a distributed environment at high scale
+              <a href="/[object Object]/What-are-Bloom-filters/" rel="next" title="What are Bloom filters">
+                <i class="fa fa-chevron-left"></i> What are Bloom filters
               </a>
             
           </div>
@@ -449,10 +472,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/05/01/如何设计并实现一个线程安全的-Map/" rel="prev" title="如何设计并实现一个线程安全的 Map">
-                如何设计并实现一个线程安全的 Map <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -584,7 +603,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#What-are-Bloom-filters"><span class="nav-number">1.</span> <span class="nav-text">What are Bloom filters?</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#More-detailed-from-below"><span class="nav-number">2.</span> <span class="nav-text">More detailed from below</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#转-如何设计并实现一个线程安全的-Map"><span class="nav-number">1.</span> <span class="nav-text">[转]如何设计并实现一个线程安全的 Map</span></a></li></ol></div>
             
 
           </div>
@@ -833,13 +852,13 @@
       var articles = db.collection('articles')
 
       //https://hexo.io/docs/variables.html
-      var isPost = 'What are Bloom filters'.length > 0
+      var isPost = '如何设计并实现一个线程安全的 Map'.length > 0
       var isArchive = '' === 'true'
       var isCategory = ''.length > 0
       var isTag = ''.length > 0
 
       if (isPost) { //is article page
-        var title = 'What are Bloom filters'
+        var title = '如何设计并实现一个线程安全的 Map'
         var doc = articles.doc(title)
 
         getCount(doc, true).then(appendCountTo($('.post-meta')))
