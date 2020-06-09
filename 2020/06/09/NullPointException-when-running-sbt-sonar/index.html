@@ -96,18 +96,18 @@
 
 
 
-  <meta name="description" content="[转]如何设计并实现一个线程安全的 Map如何设计并实现一个线程安全的 Map ？(上篇) 如何设计并实现一个线程安全的 Map ？(下篇)">
-<meta name="keywords" content="Java">
+  <meta name="description" content="NullPointException when running sonar-scannerWhen running sonar-scanner to generate Sonar report, got the following exception 1234567891011121314151617181920212223242526272810:20:35.931 ERROR: Error d">
+<meta name="keywords" content="Java, BigData, Scala">
 <meta property="og:type" content="article">
-<meta property="og:title" content="如何设计并实现一个线程安全的 Map">
-<meta property="og:url" content="http://www.zyx.fun/2019/05/01/如何设计并实现一个线程安全的-Map/index.html">
+<meta property="og:title" content="NullPointException when running sonar-scanner with sbt-sonar">
+<meta property="og:url" content="http://www.zyx.fun/2020/06/09/NullPointException-when-running-sbt-sonar/index.html">
 <meta property="og:site_name" content="Coffee Time">
-<meta property="og:description" content="[转]如何设计并实现一个线程安全的 Map如何设计并实现一个线程安全的 Map ？(上篇) 如何设计并实现一个线程安全的 Map ？(下篇)">
+<meta property="og:description" content="NullPointException when running sonar-scannerWhen running sonar-scanner to generate Sonar report, got the following exception 1234567891011121314151617181920212223242526272810:20:35.931 ERROR: Error d">
 <meta property="og:locale" content="中文">
-<meta property="og:updated_time" content="2019-05-02T03:33:21.000Z">
+<meta property="og:updated_time" content="2020-06-09T17:46:13.228Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="如何设计并实现一个线程安全的 Map">
-<meta name="twitter:description" content="[转]如何设计并实现一个线程安全的 Map如何设计并实现一个线程安全的 Map ？(上篇) 如何设计并实现一个线程安全的 Map ？(下篇)">
+<meta name="twitter:title" content="NullPointException when running sonar-scanner with sbt-sonar">
+<meta name="twitter:description" content="NullPointException when running sonar-scannerWhen running sonar-scanner to generate Sonar report, got the following exception 1234567891011121314151617181920212223242526272810:20:35.931 ERROR: Error d">
 
 
 
@@ -115,7 +115,7 @@
 
   
   
-  <link rel="canonical" href="http://www.zyx.fun/2019/05/01/如何设计并实现一个线程安全的-Map/"/>
+  <link rel="canonical" href="http://www.zyx.fun/2020/06/09/NullPointException-when-running-sbt-sonar/"/>
 
 
 
@@ -125,7 +125,7 @@
   };
 </script>
 
-  <title>如何设计并实现一个线程安全的 Map | Coffee Time</title>
+  <title>NullPointException when running sonar-scanner with sbt-sonar | Coffee Time</title>
   
 
 
@@ -335,7 +335,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://www.zyx.fun/2019/05/01/如何设计并实现一个线程安全的-Map/"/>
+    <link itemprop="mainEntityOfPage" href="http://www.zyx.fun/2020/06/09/NullPointException-when-running-sbt-sonar/"/>
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Johnnie"/>
@@ -352,7 +352,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">如何设计并实现一个线程安全的 Map
+          <h1 class="post-title" itemprop="name headline">NullPointException when running sonar-scanner with sbt-sonar
 
               
             
@@ -378,7 +378,7 @@
                 
               
 
-              <time title="Created: 2019-05-01 13:39:30 / Modified: 20:33:21" itemprop="dateCreated datePublished" datetime="2019-05-01T13:39:30-07:00">2019-05-01</time>
+              <time title="Created: 2020-06-09 10:40:04 / Modified: 10:46:13" itemprop="dateCreated datePublished" datetime="2020-06-09T10:40:04-07:00">2020-06-09</time>
             
 
             
@@ -388,24 +388,6 @@
             
           </span>
 
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Java/" itemprop="url" rel="index"><span itemprop="name">Java</span></a></span>
-
-                
-                
-              
-            </span>
           
 
           
@@ -443,8 +425,11 @@
       
 
       
-        <h1 id="转-如何设计并实现一个线程安全的-Map"><a href="#转-如何设计并实现一个线程安全的-Map" class="headerlink" title="[转]如何设计并实现一个线程安全的 Map"></a>[转]如何设计并实现一个线程安全的 Map</h1><p><a href="https://www.jianshu.com/p/cd41ca8741f4" target="_blank" rel="noopener">如何设计并实现一个线程安全的 Map ？(上篇)</a></p>
-<p><a href="https://www.jianshu.com/p/43e66dab535b" target="_blank" rel="noopener">如何设计并实现一个线程安全的 Map ？(下篇)</a></p>
+        <h1 id="NullPointException-when-running-sonar-scanner"><a href="#NullPointException-when-running-sonar-scanner" class="headerlink" title="NullPointException when running sonar-scanner"></a>NullPointException when running sonar-scanner</h1><p>When running sonar-scanner to generate Sonar report, got the following exception</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">10:20:35.931 ERROR: Error during SonarQube Scanner execution</span><br><span class="line">java.lang.NullPointerException</span><br><span class="line">	at org.sonarsource.scm.git.GitScmProviderBefore77.revisionId(GitScmProviderBefore77.java:173)</span><br><span class="line">	at org.sonar.scanner.scm.ScmRevisionImpl.get(ScmRevisionImpl.java:62)</span><br><span class="line">	at org.sonar.scanner.report.MetadataPublisher.addScmInformation(MetadataPublisher.java:153)</span><br><span class="line">	at org.sonar.scanner.report.MetadataPublisher.publish(MetadataPublisher.java:105)</span><br><span class="line">	at org.sonar.scanner.report.ReportPublisher.generateReportFile(ReportPublisher.java:152)</span><br><span class="line">	at org.sonar.scanner.report.ReportPublisher.execute(ReportPublisher.java:138)</span><br><span class="line">	at org.sonar.scanner.scan.ProjectScanContainer.doAfterStart(ProjectScanContainer.java:366)</span><br><span class="line">	at org.sonar.core.platform.ComponentContainer.startComponents(ComponentContainer.java:136)</span><br><span class="line">	at org.sonar.core.platform.ComponentContainer.execute(ComponentContainer.java:122)</span><br><span class="line">	at org.sonar.scanner.bootstrap.GlobalContainer.doAfterStart(GlobalContainer.java:141)</span><br><span class="line">	at org.sonar.core.platform.ComponentContainer.startComponents(ComponentContainer.java:136)</span><br><span class="line">	at org.sonar.core.platform.ComponentContainer.execute(ComponentContainer.java:122)</span><br><span class="line">	at org.sonar.batch.bootstrapper.Batch.doExecute(Batch.java:73)</span><br><span class="line">	at org.sonar.batch.bootstrapper.Batch.execute(Batch.java:67)</span><br><span class="line">	at org.sonarsource.scanner.api.internal.batch.BatchIsolatedLauncher.execute(BatchIsolatedLauncher.java:46)</span><br><span class="line">	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)</span><br><span class="line">	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)</span><br><span class="line">	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)</span><br><span class="line">	at java.lang.reflect.Method.invoke(Method.java:498)</span><br><span class="line">	at org.sonarsource.scanner.api.internal.IsolatedLauncherProxy.invoke(IsolatedLauncherProxy.java:60)</span><br><span class="line">	at com.sun.proxy.$Proxy0.execute(Unknown Source)</span><br><span class="line">	at org.sonarsource.scanner.api.EmbeddedScanner.doExecute(EmbeddedScanner.java:185)</span><br><span class="line">	at org.sonarsource.scanner.api.EmbeddedScanner.execute(EmbeddedScanner.java:137)</span><br><span class="line">	at org.sonarsource.scanner.cli.Main.execute(Main.java:112)</span><br><span class="line">	at org.sonarsource.scanner.cli.Main.execute(Main.java:75)</span><br><span class="line">	at org.sonarsource.scanner.cli.Main.main(Main.java:61)</span><br></pre></td></tr></table></figure>
+<h1 id="Root-cause"><a href="#Root-cause" class="headerlink" title="Root cause"></a>Root cause</h1><p>Need to commit the code before run the sonar-scanner command.</p>
+<p>Alternatively, if there is no HEAD, just specify -Dsonar.scm.disabled=true.</p>
+<h1 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h1><p><a href="https://community.sonarsource.com/t/nullpointerexception-when-running-scan/15598" target="_blank" rel="noopener">https://community.sonarsource.com/t/nullpointerexception-when-running-scan/15598</a></p>
 
       
     </div>
@@ -466,12 +451,6 @@
 
     <footer class="post-footer">
       
-        <div class="post-tags">
-          
-            <a href="/tags/Java/" rel="tag"># Java</a>
-          
-        </div>
-      
 
       
       
@@ -481,8 +460,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/05/01/What-are-Bloom-filters/" rel="next" title="What are Bloom filters">
-                <i class="fa fa-chevron-left"></i> What are Bloom filters
+              <a href="/2019/05/01/Useful-papers-for-distributed-system/" rel="next" title="Useful Papers for distributed system">
+                <i class="fa fa-chevron-left"></i> Useful Papers for distributed system
               </a>
             
           </div>
@@ -490,10 +469,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/05/01/Useful-papers-for-distributed-system/" rel="prev" title="Useful Papers for distributed system">
-                Useful Papers for distributed system <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -648,7 +623,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#转-如何设计并实现一个线程安全的-Map"><span class="nav-number">1.</span> <span class="nav-text">[转]如何设计并实现一个线程安全的 Map</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#NullPointException-when-running-sonar-scanner"><span class="nav-number">1.</span> <span class="nav-text">NullPointException when running sonar-scanner</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Root-cause"><span class="nav-number">2.</span> <span class="nav-text">Root cause</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Reference"><span class="nav-number">3.</span> <span class="nav-text">Reference</span></a></li></ol></div>
             
 
           </div>
@@ -897,13 +872,13 @@
       var articles = db.collection('articles')
 
       //https://hexo.io/docs/variables.html
-      var isPost = '如何设计并实现一个线程安全的 Map'.length > 0
+      var isPost = 'NullPointException when running sonar-scanner with sbt-sonar'.length > 0
       var isArchive = '' === 'true'
       var isCategory = ''.length > 0
       var isTag = ''.length > 0
 
       if (isPost) { //is article page
-        var title = '如何设计并实现一个线程安全的 Map'
+        var title = 'NullPointException when running sonar-scanner with sbt-sonar'
         var doc = articles.doc(title)
 
         getCount(doc, true).then(appendCountTo($('.post-meta')))

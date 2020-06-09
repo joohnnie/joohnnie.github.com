@@ -2,72 +2,79 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.zyx.fun/2020/06/09/NullPointException-when-running-sbt-sonar/</loc>
+    
+    <lastmod>2020-06-09T17:46:13.228Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://www.zyx.fun/2019/05/01/Useful-papers-for-distributed-system/</loc>
     
-    <lastmod>2019-05-02T06:20:10.961Z</lastmod>
+    <lastmod>2019-05-02T06:20:10.000Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://www.zyx.fun/tags/index.html</loc>
     
-    <lastmod>2019-05-02T06:14:12.068Z</lastmod>
+    <lastmod>2019-05-02T06:14:12.000Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://www.zyx.fun/2018/10/10/MacBook-Pro-%E7%AA%81%E7%84%B6%E6%B2%A1%E6%9C%89%E5%A3%B0%E9%9F%B3/</loc>
     
-    <lastmod>2019-05-02T03:34:11.978Z</lastmod>
+    <lastmod>2019-05-02T03:34:11.000Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://www.zyx.fun/2019/04/28/Adding-Salt-to-Hashing-A-Better-Way-to-Store-Passwords/</loc>
     
-    <lastmod>2019-05-02T03:33:57.337Z</lastmod>
+    <lastmod>2019-05-02T03:33:57.000Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://www.zyx.fun/2019/04/28/Consistent-Hashing-Simplified/</loc>
     
-    <lastmod>2019-05-02T03:33:54.036Z</lastmod>
+    <lastmod>2019-05-02T03:33:54.000Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://www.zyx.fun/2019/04/29/distributed-unique-id-sequence-number-generator/</loc>
     
-    <lastmod>2019-05-02T03:33:49.730Z</lastmod>
+    <lastmod>2019-05-02T03:33:49.000Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://www.zyx.fun/2018/08/25/Intellij-source-release-1-8-requires-target-release-1-8/</loc>
     
-    <lastmod>2019-05-02T03:33:46.106Z</lastmod>
+    <lastmod>2019-05-02T03:33:46.000Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://www.zyx.fun/2019/05/01/What-are-Bloom-filters/</loc>
     
-    <lastmod>2019-05-02T03:33:40.163Z</lastmod>
+    <lastmod>2019-05-02T03:33:40.000Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://www.zyx.fun/2019/05/01/%E5%A6%82%E4%BD%95%E8%AE%BE%E8%AE%A1%E5%B9%B6%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%B8%AA%E7%BA%BF%E7%A8%8B%E5%AE%89%E5%85%A8%E7%9A%84-Map/</loc>
     
-    <lastmod>2019-05-02T03:33:21.312Z</lastmod>
+    <lastmod>2019-05-02T03:33:21.000Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://www.zyx.fun/categories/index.html</loc>
     
-    <lastmod>2019-05-02T03:26:17.742Z</lastmod>
+    <lastmod>2019-05-02T03:26:17.000Z</lastmod>
     
   </url>
   
