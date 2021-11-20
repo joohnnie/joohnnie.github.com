@@ -121,18 +121,18 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">11</span>
+          <span class="site-state-item-count">12</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
           <a href="/categories/">
-        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-count">5</span>
         <span class="site-state-item-name">categories</span></a>
       </div>
       <div class="site-state-item site-state-tags">
           <a href="/tags/">
-        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-count">5</span>
         <span class="site-state-item-name">tags</span></a>
       </div>
   </nav>
@@ -161,6 +161,82 @@
 
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://www.zyx.fun/2021/11/19/2053-Kth-Distinct-String-in-an-Array/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Johnnie">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Coffee Time">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2021/11/19/2053-Kth-Distinct-String-in-an-Array/" class="post-title-link" itemprop="url">2053. Kth Distinct String in an Array</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+      
+
+      <time title="Created: 2021-11-19 23:16:54 / Modified: 23:22:57" itemprop="dateCreated datePublished" datetime="2021-11-19T23:16:54-08:00">2021-11-19</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/Leetcode/" itemprop="url" rel="index"><span itemprop="name">Leetcode</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h2 id="2053-Kth-Distinct-String-in-an-Array"><a href="#2053-Kth-Distinct-String-in-an-Array" class="headerlink" title="2053. Kth Distinct String in an Array"></a>2053. Kth Distinct String in an Array</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line">A distinct string is a string that is present only once in an array.</span><br><span class="line"></span><br><span class="line">Given an array of strings arr, and an integer k, return the kth distinct string present in arr. If there are fewer than k distinct strings, return an empty string &quot;&quot;.</span><br><span class="line"></span><br><span class="line">Note that the strings are considered in the order in which they appear in the array.</span><br><span class="line"></span><br><span class="line"> </span><br><span class="line"></span><br><span class="line">Example 1:</span><br><span class="line"></span><br><span class="line">Input: arr = [&quot;d&quot;,&quot;b&quot;,&quot;c&quot;,&quot;b&quot;,&quot;c&quot;,&quot;a&quot;], k = 2</span><br><span class="line">Output: &quot;a&quot;</span><br><span class="line">Explanation:</span><br><span class="line">The only distinct strings in arr are &quot;d&quot; and &quot;a&quot;.</span><br><span class="line">&quot;d&quot; appears 1st, so it is the 1st distinct string.</span><br><span class="line">&quot;a&quot; appears 2nd, so it is the 2nd distinct string.</span><br><span class="line">Since k == 2, &quot;a&quot; is returned. </span><br><span class="line">Example 2:</span><br><span class="line"></span><br><span class="line">Input: arr = [&quot;aaa&quot;,&quot;aa&quot;,&quot;a&quot;], k = 1</span><br><span class="line">Output: &quot;aaa&quot;</span><br><span class="line">Explanation:</span><br><span class="line">All strings in arr are distinct, so the 1st string &quot;aaa&quot; is returned.</span><br><span class="line">Example 3:</span><br><span class="line"></span><br><span class="line">Input: arr = [&quot;a&quot;,&quot;b&quot;,&quot;a&quot;], k = 3</span><br><span class="line">Output: &quot;&quot;</span><br><span class="line">Explanation:</span><br><span class="line">The only distinct string is &quot;b&quot;. Since there are fewer than 3 distinct strings, we return an empty string &quot;&quot;.</span><br><span class="line"> </span><br><span class="line"></span><br><span class="line">Constraints:</span><br><span class="line"></span><br><span class="line">1 &lt;= k &lt;= arr.length &lt;= 1000</span><br><span class="line">1 &lt;= arr[i].length &lt;= 5</span><br><span class="line">arr[i] consists of lowercase English letters.</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>难度 : Easy</p>
+<h2 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h2><p>先用HashMap来记录每个string出现的次数然后遍历数组得到第k个distinct的string<br>注意edge case: 如果k非常大直接返回””.<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">kthDistinct</span><span class="params">(String[] arr, <span class="keyword">int</span> k)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (k &gt; arr.length) &#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="string">&quot;&quot;</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        Map&lt;String, Integer&gt; counts = <span class="keyword">new</span> HashMap&lt;&gt;();</span><br><span class="line">        <span class="keyword">for</span> (String str : arr) &#123;</span><br><span class="line">            <span class="keyword">int</span> cnt = counts.getOrDefault(str, <span class="number">0</span>) + <span class="number">1</span>;            </span><br><span class="line">            counts.put(str, cnt);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">int</span> index = <span class="number">1</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; arr.length &amp;&amp; index &lt;= k; i++) &#123;</span><br><span class="line">            <span class="keyword">if</span> (counts.get(arr[i]) == <span class="number">1</span>) &#123;</span><br><span class="line">                <span class="keyword">if</span> (index == k) &#123;</span><br><span class="line">                    <span class="keyword">return</span> arr[i];</span><br><span class="line">                &#125;</span><br><span class="line">                index++;</span><br><span class="line">            &#125;</span><br><span class="line">            </span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="string">&quot;&quot;</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
@@ -885,94 +961,6 @@
 <li>Salts help us mitigate rainbow table attacks by forcing attackers to re-compute them using the salts.</li>
 <li>Creating cryptographically strong random data to use as salts is very complex and it’s a job better left to leading<br>security solutions and providers.</li>
 </ul>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://www.zyx.fun/2018/10/10/MacBook-Pro-%E7%AA%81%E7%84%B6%E6%B2%A1%E6%9C%89%E5%A3%B0%E9%9F%B3/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Johnnie">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Coffee Time">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2018/10/10/MacBook-Pro-%E7%AA%81%E7%84%B6%E6%B2%A1%E6%9C%89%E5%A3%B0%E9%9F%B3/" class="post-title-link" itemprop="url">MacBook Pro 突然没有声音</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2018-10-10 20:40:30" itemprop="dateCreated datePublished" datetime="2018-10-10T20:40:30-07:00">2018-10-10</time>
-    </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">Edited on</span>
-        <time title="Modified: 2019-05-01 20:34:11" itemprop="dateModified" datetime="2019-05-01T20:34:11-07:00">2019-05-01</time>
-      </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">In</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/Mac/" itemprop="url" rel="index"><span itemprop="name">Mac</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h1 id="MacBook-突然没有声音的原因"><a href="#MacBook-突然没有声音的原因" class="headerlink" title="MacBook 突然没有声音的原因"></a>MacBook 突然没有声音的原因</h1><p>有时候 Mac 从睡眠状态恢复之后没有声音，这是 Mac OS X 系统的一个 Bug。<br>这是因为 Mac OS X 的核心音频守护进程「coreaudiod」出了问题，<br>虽然简单的重启电脑就能解决，但是如果此时开启了很多程序后者有其他情况不想重启电脑的话，<br>可以按照下面的方法解决此问题。</p>
-<h1 id="解决方案-1"><a href="#解决方案-1" class="headerlink" title="解决方案 1"></a>解决方案 1</h1><ul>
-<li>在 Mac 中打开活动监视器（在 Finder 的「应用程序」中搜索「活动监视器」可以找到</li>
-<li>在「活动监视器」窗口右上角的搜索框里输入「audio」，此时可以搜索到「coreaudiod」进程。</li>
-<li>选中「coreaudiod」进程，点击「活动监视器」窗口左上角的「退出进程」按钮，在弹出的对话框中点击「退出」。</li>
-<li>「coreaudiod」进程退出后会自动重启，这时声音就恢复了。</li>
-</ul>
-<h1 id="解决方案-2"><a href="#解决方案-2" class="headerlink" title="解决方案 2"></a>解决方案 2</h1><p>在终端输入sudo killall coreaudiod命令并输入密码即可</p>
-<h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1><p>转自<br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/23498580">https://www.zhihu.com/question/23498580</a></p>
 
       
     </div>
