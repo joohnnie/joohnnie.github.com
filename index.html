@@ -121,7 +121,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">23</span>
+          <span class="site-state-item-count">24</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -132,7 +132,7 @@
       </div>
       <div class="site-state-item site-state-tags">
           <a href="/tags/">
-        <span class="site-state-item-count">11</span>
+        <span class="site-state-item-count">13</span>
         <span class="site-state-item-name">tags</span></a>
       </div>
   </nav>
@@ -162,6 +162,103 @@
 
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://www.zyx.fun/2021/11/27/34-Find-First-and-Last-Position-of-Element-in-Sorted-Array/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Johnnie">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Coffee Time">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2021/11/27/34-Find-First-and-Last-Position-of-Element-in-Sorted-Array/" class="post-title-link" itemprop="url">34. Find First and Last Position of Element in Sorted Array</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+      
+
+      <time title="Created: 2021-11-27 21:45:42 / Modified: 21:49:34" itemprop="dateCreated datePublished" datetime="2021-11-27T21:45:42-08:00">2021-11-27</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/Leetcode/" itemprop="url" rel="index"><span itemprop="name">Leetcode</span></a>
+        </span>
+    </span>
+
+  
+    <span class="post-meta-break"></span>
+    <span class="post-meta-item" title="Words count">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">Words count: </span>
+      <span>1.9k</span>
+    </span>
+    <span class="post-meta-item" title="Reading time">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">Reading time &asymp;</span>
+      <span>2 mins.</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h2 id="34-Find-First-and-Last-Position-of-Element-in-Sorted-Array"><a href="#34-Find-First-and-Last-Position-of-Element-in-Sorted-Array" class="headerlink" title="34. Find First and Last Position of Element in Sorted Array"></a>34. Find First and Last Position of Element in Sorted Array</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">Given an array of integers nums sorted in non-decreasing order, find the starting and ending position of a given target value.</span><br><span class="line"></span><br><span class="line">If target is not found in the array, return [-1, -1].</span><br><span class="line"></span><br><span class="line">You must write an algorithm with O(log n) runtime complexity.</span><br><span class="line"></span><br><span class="line"> </span><br><span class="line"></span><br><span class="line">Example 1:</span><br><span class="line"></span><br><span class="line">Input: nums = [5,7,7,8,8,10], target = 8</span><br><span class="line">Output: [3,4]</span><br><span class="line">Example 2:</span><br><span class="line"></span><br><span class="line">Input: nums = [5,7,7,8,8,10], target = 6</span><br><span class="line">Output: [-1,-1]</span><br><span class="line">Example 3:</span><br><span class="line"></span><br><span class="line">Input: nums = [], target = 0</span><br><span class="line">Output: [-1,-1]</span><br><span class="line"> </span><br><span class="line"></span><br><span class="line">Constraints:</span><br><span class="line"></span><br><span class="line">0 &lt;= nums.length &lt;= 105</span><br><span class="line">-109 &lt;= nums[i] &lt;= 109</span><br><span class="line">nums is a non-decreasing array.</span><br><span class="line">-109 &lt;= target &lt;= 109</span><br></pre></td></tr></table></figure>
+<p>难度 : Medium<br>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2021/11/27/34-Find-First-and-Last-Position-of-Element-in-Sorted-Array/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
@@ -293,7 +390,7 @@
       <span class="post-meta-item-text">Posted on</span>
       
 
-      <time title="Created: 2021-11-27 16:20:51 / Modified: 16:25:06" itemprop="dateCreated datePublished" datetime="2021-11-27T16:20:51-08:00">2021-11-27</time>
+      <time title="Created: 2021-11-27 16:20:51 / Modified: 21:46:34" itemprop="dateCreated datePublished" datetime="2021-11-27T16:20:51-08:00">2021-11-27</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -390,7 +487,7 @@
       <span class="post-meta-item-text">Posted on</span>
       
 
-      <time title="Created: 2021-11-27 16:14:05 / Modified: 16:20:06" itemprop="dateCreated datePublished" datetime="2021-11-27T16:14:05-08:00">2021-11-27</time>
+      <time title="Created: 2021-11-27 16:14:05 / Modified: 21:46:34" itemprop="dateCreated datePublished" datetime="2021-11-27T16:14:05-08:00">2021-11-27</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -1013,103 +1110,6 @@
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/2021/11/21/2078-Two-Furthest-Houses-With-Different-Colors/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://www.zyx.fun/2021/11/21/450-Delete-Node-in-a-BST/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Johnnie">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Coffee Time">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2021/11/21/450-Delete-Node-in-a-BST/" class="post-title-link" itemprop="url">450. Delete Node in a BST</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-      
-
-      <time title="Created: 2021-11-21 16:08:04 / Modified: 17:04:07" itemprop="dateCreated datePublished" datetime="2021-11-21T16:08:04-08:00">2021-11-21</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">In</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/Leetcode/" itemprop="url" rel="index"><span itemprop="name">Leetcode</span></a>
-        </span>
-    </span>
-
-  
-    <span class="post-meta-break"></span>
-    <span class="post-meta-item" title="Words count">
-      <span class="post-meta-item-icon">
-        <i class="far fa-file-word"></i>
-      </span>
-      <span class="post-meta-item-text">Words count: </span>
-      <span>2.3k</span>
-    </span>
-    <span class="post-meta-item" title="Reading time">
-      <span class="post-meta-item-icon">
-        <i class="far fa-clock"></i>
-      </span>
-      <span class="post-meta-item-text">Reading time &asymp;</span>
-      <span>2 mins.</span>
-    </span>
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h2 id="450-Delete-Node-in-a-BST"><a href="#450-Delete-Node-in-a-BST" class="headerlink" title="450. Delete Node in a BST"></a>450. Delete Node in a BST</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">Given a root node reference of a BST and a key, delete the node with the given key in the BST. Return the root node reference (possibly updated) of the BST.</span><br><span class="line"></span><br><span class="line">Basically, the deletion can be divided into two stages:</span><br><span class="line"></span><br><span class="line">Search for a node to remove.</span><br><span class="line">If the node is found, delete the node.</span><br><span class="line"> </span><br></pre></td></tr></table></figure>
-<p>Example 1:<br><img src="https://assets.leetcode.com/uploads/2020/09/04/del_node_1.jpg" alt=""><br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Input: root = [5,3,6,2,4,null,7], key = 3</span><br><span class="line">Output: [5,4,6,2,null,null,7]</span><br><span class="line">Explanation: Given key to delete is 3. So we find the node with value 3 and delete it.</span><br><span class="line">One valid answer is [5,4,6,2,null,null,7], shown in the above BST.</span><br><span class="line">Please notice that another valid answer is [5,2,6,null,4,null,7] and it&#x27;s also accepted.</span><br></pre></td></tr></table></figure><br>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2021/11/21/450-Delete-Node-in-a-BST/#more" rel="contents">
                 Read more &raquo;
               </a>
             </div>
