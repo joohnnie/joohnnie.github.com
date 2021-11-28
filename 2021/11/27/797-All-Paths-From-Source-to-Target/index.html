@@ -23,33 +23,33 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"www.zyx.fun","root":"/","images":"/images","scheme":"Muse","darkmode":false,"version":"8.8.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js"></script>
-<meta name="description" content="2078. Two Furthest Houses With Different Colors1234567There are n houses evenly lined up on the street, and each house is beautifully painted. You are given a 0-indexed integer array colors of length">
+<meta name="description" content="797. All Paths From Source to Target123456789Given a directed acyclic graph (DAG) of n nodes labeled from 0 to n - 1, find all possible paths from node 0 to node n - 1 and return them in any order.The">
 <meta property="og:type" content="article">
-<meta property="og:title" content="2078. Two Furthest Houses With Different Colors">
-<meta property="og:url" content="http://www.zyx.fun/2021/11/21/2078-Two-Furthest-Houses-With-Different-Colors/index.html">
+<meta property="og:title" content="797. All Paths From Source to Target">
+<meta property="og:url" content="http://www.zyx.fun/2021/11/27/797-All-Paths-From-Source-to-Target/index.html">
 <meta property="og:site_name" content="Coffee Time">
-<meta property="og:description" content="2078. Two Furthest Houses With Different Colors1234567There are n houses evenly lined up on the street, and each house is beautifully painted. You are given a 0-indexed integer array colors of length">
+<meta property="og:description" content="797. All Paths From Source to Target123456789Given a directed acyclic graph (DAG) of n nodes labeled from 0 to n - 1, find all possible paths from node 0 to node n - 1 and return them in any order.The">
 <meta property="og:locale">
-<meta property="og:image" content="https://assets.leetcode.com/uploads/2021/10/31/eg1.png">
-<meta property="og:image" content="https://assets.leetcode.com/uploads/2021/10/31/eg2.png">
-<meta property="article:published_time" content="2021-11-22T00:40:32.000Z">
-<meta property="article:modified_time" content="2021-11-22T00:54:10.432Z">
+<meta property="og:image" content="https://assets.leetcode.com/uploads/2020/09/28/all_1.jpg">
+<meta property="og:image" content="https://assets.leetcode.com/uploads/2020/09/28/all_2.jpg">
+<meta property="article:published_time" content="2021-11-28T00:14:05.000Z">
+<meta property="article:modified_time" content="2021-11-28T00:20:06.716Z">
 <meta property="article:author" content="Johnnie">
 <meta property="article:tag" content="Leetcode">
 <meta property="article:tag" content="Algorithm">
-<meta property="article:tag" content="Easy">
+<meta property="article:tag" content="Medium">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://assets.leetcode.com/uploads/2021/10/31/eg1.png">
+<meta name="twitter:image" content="https://assets.leetcode.com/uploads/2020/09/28/all_1.jpg">
 
 
-<link rel="canonical" href="http://www.zyx.fun/2021/11/21/2078-Two-Furthest-Houses-With-Different-Colors/">
+<link rel="canonical" href="http://www.zyx.fun/2021/11/27/797-All-Paths-From-Source-to-Target/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"中文","comments":true,"permalink":"http://www.zyx.fun/2021/11/21/2078-Two-Furthest-Houses-With-Different-Colors/","path":"2021/11/21/2078-Two-Furthest-Houses-With-Different-Colors/","title":"2078. Two Furthest Houses With Different Colors"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"中文","comments":true,"permalink":"http://www.zyx.fun/2021/11/27/797-All-Paths-From-Source-to-Target/","path":"2021/11/27/797-All-Paths-From-Source-to-Target/","title":"797. All Paths From Source to Target"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>2078. Two Furthest Houses With Different Colors | Coffee Time</title>
+<title>797. All Paths From Source to Target | Coffee Time</title>
   
   <script class="next-config" data-name="google_analytics" type="application/json">{"tracking_id":"UA-139388604-1","only_pageview":true}</script>
   <script src="/js/third-party/analytics/google-analytics.js"></script>
@@ -118,7 +118,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#2078-Two-Furthest-Houses-With-Different-Colors"><span class="nav-number">1.</span> <span class="nav-text">2078. Two Furthest Houses With Different Colors</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%80%9D%E8%B7%AF"><span class="nav-number">2.</span> <span class="nav-text">思路</span></a></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#797-All-Paths-From-Source-to-Target"><span class="nav-number">1.</span> <span class="nav-text">797. All Paths From Source to Target</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -182,7 +182,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="中文">
-    <link itemprop="mainEntityOfPage" href="http://www.zyx.fun/2021/11/21/2078-Two-Furthest-Houses-With-Different-Colors/">
+    <link itemprop="mainEntityOfPage" href="http://www.zyx.fun/2021/11/27/797-All-Paths-From-Source-to-Target/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -195,7 +195,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          2078. Two Furthest Houses With Different Colors
+          797. All Paths From Source to Target
         </h1>
 
         <div class="post-meta-container">
@@ -207,7 +207,7 @@
       <span class="post-meta-item-text">Posted on</span>
       
 
-      <time title="Created: 2021-11-21 16:40:32 / Modified: 16:54:10" itemprop="dateCreated datePublished" datetime="2021-11-21T16:40:32-08:00">2021-11-21</time>
+      <time title="Created: 2021-11-27 16:14:05 / Modified: 16:20:06" itemprop="dateCreated datePublished" datetime="2021-11-27T16:14:05-08:00">2021-11-27</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -233,7 +233,7 @@
         <i class="far fa-file-word"></i>
       </span>
       <span class="post-meta-item-text">Words count: </span>
-      <span>1.6k</span>
+      <span>1.5k</span>
     </span>
     <span class="post-meta-item" title="Reading time">
       <span class="post-meta-item-icon">
@@ -251,11 +251,10 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <h2 id="2078-Two-Furthest-Houses-With-Different-Colors"><a href="#2078-Two-Furthest-Houses-With-Different-Colors" class="headerlink" title="2078. Two Furthest Houses With Different Colors"></a>2078. Two Furthest Houses With Different Colors</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">There are n houses evenly lined up on the street, and each house is beautifully painted. You are given a 0-indexed integer array colors of length n, where colors[i] represents the color of the ith house.</span><br><span class="line"></span><br><span class="line">Return the maximum distance between two houses with different colors.</span><br><span class="line"></span><br><span class="line">The distance between the ith and jth houses is abs(i - j), where abs(x) is the absolute value of x.</span><br><span class="line"></span><br><span class="line"> </span><br></pre></td></tr></table></figure>
-<p>Example 1:<br><img src="https://assets.leetcode.com/uploads/2021/10/31/eg1.png" alt=""><br><span id="more"></span><br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">Input: colors = [1,1,1,6,1,1,1]</span><br><span class="line">Output: 3</span><br><span class="line">Explanation: In the above image, color 1 is blue, and color 6 is red.</span><br><span class="line">The furthest two houses with different colors are house 0 and house 3.</span><br><span class="line">House 0 has color 1, and house 3 has color 6. The distance between them is abs(0 - 3) = 3.</span><br><span class="line">Note that houses 3 and 6 can also produce the optimal answer.</span><br></pre></td></tr></table></figure><br>Example 2:<br><img src="https://assets.leetcode.com/uploads/2021/10/31/eg2.png" alt=""><br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">Input: colors = [1,8,3,8,3]</span><br><span class="line">Output: 4</span><br><span class="line">Explanation: In the above image, color 1 is blue, color 8 is yellow, and color 3 is green.</span><br><span class="line">The furthest two houses with different colors are house 0 and house 4.</span><br><span class="line">House 0 has color 1, and house 4 has color 3. The distance between them is abs(0 - 4) = 4.</span><br><span class="line">Example 3:</span><br><span class="line"></span><br><span class="line">Input: colors = [0,1]</span><br><span class="line">Output: 1</span><br><span class="line">Explanation: The furthest two houses with different colors are house 0 and house 1.</span><br><span class="line">House 0 has color 0, and house 1 has color 1. The distance between them is abs(0 - 1) = 1.</span><br><span class="line"> </span><br><span class="line"></span><br><span class="line">Constraints:</span><br><span class="line"></span><br><span class="line">n == colors.length</span><br><span class="line">2 &lt;= n &lt;= 100</span><br><span class="line">0 &lt;= colors[i] &lt;= 100</span><br><span class="line">Test data are generated such that at least two houses have different colors.</span><br></pre></td></tr></table></figure><br>难度 : Easy</p>
-<h2 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h2><p>第一个或者最后一个house会是最远的house pair里的一个<br>所以遍历colors数组找到最大的值</p>
-<p>Time Complexity : O(N)<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line">    public int maxDistance(int[] colors) &#123;</span><br><span class="line">        </span><br><span class="line">        int n = colors.length;</span><br><span class="line">        int ans = 0;        </span><br><span class="line">        for (int i = 0; i &lt; n; i++) &#123;</span><br><span class="line">            if (colors[i] != colors[0]) &#123;</span><br><span class="line">                ans = Math.max(ans, i);</span><br><span class="line">            &#125;</span><br><span class="line">            if (colors[i] != colors[n - 1]) &#123;</span><br><span class="line">                ans = Math.max(ans, n - 1 - i);</span><br><span class="line">            &#125;</span><br><span class="line">            </span><br><span class="line">        &#125;</span><br><span class="line">        return ans;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-
+        <h2 id="797-All-Paths-From-Source-to-Target"><a href="#797-All-Paths-From-Source-to-Target" class="headerlink" title="797. All Paths From Source to Target"></a>797. All Paths From Source to Target</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">Given a directed acyclic graph (DAG) of n nodes labeled from 0 to n - 1, find all possible paths from node 0 to </span><br><span class="line">node n - 1 and return them in any order.</span><br><span class="line"></span><br><span class="line">The graph is given as follows: graph[i] is a list of all nodes you can visit from node i (i.e., there is a directed </span><br><span class="line">edge from node i to node graph[i][j]).</span><br><span class="line"></span><br><span class="line"> </span><br><span class="line"></span><br><span class="line">Example 1:</span><br></pre></td></tr></table></figure>
+<p><img src="https://assets.leetcode.com/uploads/2020/09/28/all_1.jpg" alt=""><br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Input: graph = [[1,2],[3],[3],[]]</span><br><span class="line">Output: [[0,1,3],[0,2,3]]</span><br><span class="line">Explanation: There are two paths: 0 -&gt; 1 -&gt; 3 and 0 -&gt; 2 -&gt; 3.</span><br><span class="line">Example 2:</span><br></pre></td></tr></table></figure><br><img src="https://assets.leetcode.com/uploads/2020/09/28/all_2.jpg" alt=""><br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">Input: graph = [[4,3,1],[3,2,4],[3],[4],[]]</span><br><span class="line">Output: [[0,4],[0,3,4],[0,1,3,4],[0,1,2,3,4],[0,1,4]]</span><br><span class="line">Example 3:</span><br><span class="line"></span><br><span class="line">Input: graph = [[1],[]]</span><br><span class="line">Output: [[0,1]]</span><br><span class="line">Example 4:</span><br><span class="line"></span><br><span class="line">Input: graph = [[1,2,3],[2],[3],[]]</span><br><span class="line">Output: [[0,1,2,3],[0,2,3],[0,3]]</span><br><span class="line">Example 5:</span><br><span class="line"></span><br><span class="line">Input: graph = [[1,3],[2],[3],[]]</span><br><span class="line">Output: [[0,1,2,3],[0,3]]</span><br><span class="line"> </span><br><span class="line"></span><br><span class="line">Constraints:</span><br><span class="line"></span><br><span class="line">n == graph.length</span><br><span class="line">2 &lt;= n &lt;= 15</span><br><span class="line">0 &lt;= graph[i][j] &lt; n</span><br><span class="line">graph[i][j] != i (i.e., there will be no self-loops).</span><br><span class="line">All the elements of graph[i] are unique.</span><br><span class="line">The input graph is guaranteed to be a DAG.</span><br></pre></td></tr></table></figure><br>难度 : Medium<br><span id="more"></span></p>
+<p>##思路<br>使用dfs+backtracking从0开始扫描记录所有的路径</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="keyword">public</span> List&lt;List&lt;Integer&gt;&gt; allPathsSourceTarget(<span class="keyword">int</span>[][] graph) &#123;</span><br><span class="line">        List&lt;List&lt;Integer&gt;&gt; ans = <span class="keyword">new</span> ArrayList&lt;&gt;();</span><br><span class="line">        List&lt;Integer&gt; cur = <span class="keyword">new</span> ArrayList&lt;&gt;();</span><br><span class="line">        cur.add(<span class="number">0</span>);</span><br><span class="line">        dfs(graph, <span class="number">0</span>, cur, ans);</span><br><span class="line">        <span class="keyword">return</span> ans;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">dfs</span><span class="params">(<span class="keyword">int</span>[][] graph, <span class="keyword">int</span> node, List&lt;Integer&gt; cur, List&lt;List&lt;Integer&gt;&gt; ans)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (node == graph.length - <span class="number">1</span>) &#123;</span><br><span class="line">            ans.add(<span class="keyword">new</span> ArrayList&lt;&gt;(cur));</span><br><span class="line">            <span class="keyword">return</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> next : graph[node]) &#123;</span><br><span class="line">            cur.add(next);</span><br><span class="line">            dfs(graph, next, cur, ans);</span><br><span class="line">            cur.remove(cur.size() - <span class="number">1</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
     </div>
 
     
@@ -266,21 +265,18 @@
           <div class="post-tags">
               <a href="/tags/Leetcode/" rel="tag"># Leetcode</a>
               <a href="/tags/Algorithm/" rel="tag"># Algorithm</a>
-              <a href="/tags/Easy/" rel="tag"># Easy</a>
+              <a href="/tags/Medium/" rel="tag"># Medium</a>
           </div>
 
         
 
           <div class="post-nav">
             <div class="post-nav-item">
-                <a href="/2021/11/21/450-Delete-Node-in-a-BST/" rel="prev" title="450. Delete Node in a BST">
-                  <i class="fa fa-chevron-left"></i> 450. Delete Node in a BST
+                <a href="/2021/11/27/238-Product-of-Array-Except-Self/" rel="prev" title="238. Product of Array Except Self">
+                  <i class="fa fa-chevron-left"></i> 238. Product of Array Except Self
                 </a>
             </div>
             <div class="post-nav-item">
-                <a href="/2021/11/21/hexo%E7%9A%84%E9%A6%96%E9%A1%B5%E5%8F%AA%E6%98%BE%E7%A4%BA%E6%96%87%E7%AB%A0%E7%9A%84%E9%83%A8%E5%88%86%E5%86%85%E5%AE%B9/" rel="next" title="Hexo的Next主题首页只显示文章的部分内容">
-                  Hexo的Next主题首页只显示文章的部分内容 <i class="fa fa-chevron-right"></i>
-                </a>
             </div>
           </div>
     </footer>
