@@ -23,28 +23,30 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"www.zyx.fun","root":"/","images":"/images","scheme":"Muse","darkmode":false,"version":"8.8.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js"></script>
-<meta name="description" content="Useful papers for distributed system Dynamo Highly Available Key-value Store Kafka - A Distributed Messaging System for Log Processing Consistent Hashing - Original paper Paxos - Protocol for distribu">
+<meta name="description" content="35. Search Insert Position1234567891011121314151617181920212223242526272829303132333435Given a sorted array of distinct integers and a target value, return the index if the target is found. If not, re">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Useful Papers for distributed system">
-<meta property="og:url" content="http://www.zyx.fun/2019/05/01/Useful-papers-for-distributed-system/index.html">
+<meta property="og:title" content="35. Search Insert Position">
+<meta property="og:url" content="http://www.zyx.fun/2021/11/27/35-Search-Insert-Position/index.html">
 <meta property="og:site_name" content="Coffee Time">
-<meta property="og:description" content="Useful papers for distributed system Dynamo Highly Available Key-value Store Kafka - A Distributed Messaging System for Log Processing Consistent Hashing - Original paper Paxos - Protocol for distribu">
+<meta property="og:description" content="35. Search Insert Position1234567891011121314151617181920212223242526272829303132333435Given a sorted array of distinct integers and a target value, return the index if the target is found. If not, re">
 <meta property="og:locale">
-<meta property="article:published_time" content="2019-05-02T06:12:23.000Z">
-<meta property="article:modified_time" content="2019-05-02T06:20:10.000Z">
+<meta property="article:published_time" content="2021-11-28T00:20:51.000Z">
+<meta property="article:modified_time" content="2021-11-28T00:25:06.634Z">
 <meta property="article:author" content="Johnnie">
-<meta property="article:tag" content="Distributed System">
+<meta property="article:tag" content="Leetcode">
+<meta property="article:tag" content="Algorithm">
+<meta property="article:tag" content="Easy">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="http://www.zyx.fun/2019/05/01/Useful-papers-for-distributed-system/">
+<link rel="canonical" href="http://www.zyx.fun/2021/11/27/35-Search-Insert-Position/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"中文","comments":true,"permalink":"http://www.zyx.fun/2019/05/01/Useful-papers-for-distributed-system/","path":"2019/05/01/Useful-papers-for-distributed-system/","title":"Useful Papers for distributed system"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"中文","comments":true,"permalink":"http://www.zyx.fun/2021/11/27/35-Search-Insert-Position/","path":"2021/11/27/35-Search-Insert-Position/","title":"35. Search Insert Position"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>Useful Papers for distributed system | Coffee Time</title>
+<title>35. Search Insert Position | Coffee Time</title>
   
   <script class="next-config" data-name="google_analytics" type="application/json">{"tracking_id":"UA-139388604-1","only_pageview":true}</script>
   <script src="/js/third-party/analytics/google-analytics.js"></script>
@@ -113,7 +115,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Useful-papers-for-distributed-system"><span class="nav-number">1.</span> <span class="nav-text">Useful papers for distributed system</span></a></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#35-Search-Insert-Position"><span class="nav-number">1.</span> <span class="nav-text">35. Search Insert Position</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%80%9D%E8%B7%AF"><span class="nav-number">2.</span> <span class="nav-text">思路</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -177,7 +179,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="中文">
-    <link itemprop="mainEntityOfPage" href="http://www.zyx.fun/2019/05/01/Useful-papers-for-distributed-system/">
+    <link itemprop="mainEntityOfPage" href="http://www.zyx.fun/2021/11/27/35-Search-Insert-Position/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -190,7 +192,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          Useful Papers for distributed system
+          35. Search Insert Position
         </h1>
 
         <div class="post-meta-container">
@@ -202,7 +204,7 @@
       <span class="post-meta-item-text">Posted on</span>
       
 
-      <time title="Created: 2019-05-01 23:12:23 / Modified: 23:20:10" itemprop="dateCreated datePublished" datetime="2019-05-01T23:12:23-07:00">2019-05-01</time>
+      <time title="Created: 2021-11-27 16:20:51 / Modified: 16:25:06" itemprop="dateCreated datePublished" datetime="2021-11-27T16:20:51-08:00">2021-11-27</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -210,7 +212,7 @@
       </span>
       <span class="post-meta-item-text">In</span>
         <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/BigData/" itemprop="url" rel="index"><span itemprop="name">BigData</span></a>
+          <a href="/categories/Leetcode/" itemprop="url" rel="index"><span itemprop="name">Leetcode</span></a>
         </span>
     </span>
 
@@ -228,7 +230,7 @@
         <i class="far fa-file-word"></i>
       </span>
       <span class="post-meta-item-text">Words count: </span>
-      <span>522</span>
+      <span>999</span>
     </span>
     <span class="post-meta-item" title="Reading time">
       <span class="post-meta-item-icon">
@@ -246,19 +248,10 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <h1 id="Useful-papers-for-distributed-system"><a href="#Useful-papers-for-distributed-system" class="headerlink" title="Useful papers for distributed system"></a>Useful papers for distributed system</h1><ul>
-<li><a target="_blank" rel="noopener" href="https://www.allthingsdistributed.com/files/amazon-dynamo-sosp2007.pdf">Dynamo Highly Available Key-value Store</a></li>
-<li><a target="_blank" rel="noopener" href="http://notes.stephenholiday.com/Kafka.pdf">Kafka - A Distributed Messaging System for Log Processing</a></li>
-<li><a target="_blank" rel="noopener" href="https://www.akamai.com/es/es/multimedia/documents/technical-publication/consistent-hashing-and-random-trees-distributed-caching-protocols-for-relieving-hot-spots-on-the-world-wide-web-technical-publication.pdf">Consistent Hashing - Original paper</a></li>
-<li><a target="_blank" rel="noopener" href="https://www.microsoft.com/en-us/research/uploads/prod/2016/12/paxos-simple-Copy.pdf">Paxos - Protocol for distributed consensus</a></li>
-<li><a target="_blank" rel="noopener" href="http://sites.fas.harvard.edu/~cs265/papers/kung-1981.pdf">Concurrency Controls - Optimistic methods for concurrency controls</a></li>
-<li><a target="_blank" rel="noopener" href="http://highscalability.com/blog/2011/11/14/using-gossip-protocols-for-failure-detection-monitoring-mess.html">Gossip protocol - For failure detection and more</a></li>
-<li><a target="_blank" rel="noopener" href="http://static.googleusercontent.com/media/research.google.com/en/us/archive/chubby-osdi06.pdf">Chubby - Lock service for loosely-coupled distributed systems</a></li>
-<li><a target="_blank" rel="noopener" href="https://www.usenix.org/legacy/event/usenix10/tech/full_papers/Hunt.pdf">ZooKeeper - Wait-free coordination for Internet-scale systems</a></li>
-<li><a target="_blank" rel="noopener" href="https://static.googleusercontent.com/media/research.google.com/en//archive/mapreduce-osdi04.pdf">MapReduce - Simplified Data Processing on Large Clusters</a></li>
-<li><a target="_blank" rel="noopener" href="http://storageconference.us/2010/Papers/MSST/Shvachko.pdf">Hadoop - A Distributed File System</a></li>
-<li><a target="_blank" rel="noopener" href="https://static.googleusercontent.com/media/research.google.com/en//archive/bigtable-osdi06.pdf">Bigtable: A Distributed Storage System for Structured Data</a></li>
-</ul>
+        <h2 id="35-Search-Insert-Position"><a href="#35-Search-Insert-Position" class="headerlink" title="35. Search Insert Position"></a>35. Search Insert Position</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line">Given a sorted array of distinct integers and a target value, return the index if the target is found. </span><br><span class="line">If not, return the index where it would be if it were inserted in order.</span><br><span class="line"></span><br><span class="line">You must write an algorithm with O(log n) runtime complexity.</span><br><span class="line"></span><br><span class="line"> </span><br><span class="line"></span><br><span class="line">Example 1:</span><br><span class="line"></span><br><span class="line">Input: nums = [1,3,5,6], target = 5</span><br><span class="line">Output: 2</span><br><span class="line">Example 2:</span><br><span class="line"></span><br><span class="line">Input: nums = [1,3,5,6], target = 2</span><br><span class="line">Output: 1</span><br><span class="line">Example 3:</span><br><span class="line"></span><br><span class="line">Input: nums = [1,3,5,6], target = 7</span><br><span class="line">Output: 4</span><br><span class="line">Example 4:</span><br><span class="line"></span><br><span class="line">Input: nums = [1,3,5,6], target = 0</span><br><span class="line">Output: 0</span><br><span class="line">Example 5:</span><br><span class="line"></span><br><span class="line">Input: nums = [1], target = 0</span><br><span class="line">Output: 0</span><br><span class="line"> </span><br><span class="line"></span><br><span class="line">Constraints:</span><br><span class="line"></span><br><span class="line">1 &lt;= nums.length &lt;= 104</span><br><span class="line">-104 &lt;= nums[i] &lt;= 104</span><br><span class="line">nums contains distinct values sorted in ascending order.</span><br><span class="line">-104 &lt;= target &lt;= 104</span><br></pre></td></tr></table></figure>
+<p>难度 : Easy<br><span id="more"></span></p>
+<h2 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h2><p>这是用BinarySearch查找lowerbound的问题。<br>注意这里 <code>r = n</code>, 而且判断的条件是 <code>nums[m] &gt;= target</code>.<br>因为搜索的范围是<code>[l,r)</code> 不包括<code>r</code>。这里每次缩小搜索范围的时候需要保证满足这个条件<br>结果就是<code>l</code></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">searchInsert</span><span class="params">(<span class="keyword">int</span>[] nums, <span class="keyword">int</span> target)</span> </span>&#123;</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">int</span> n = nums.length;</span><br><span class="line">        <span class="keyword">int</span> l = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">int</span> r = n;</span><br><span class="line">        <span class="keyword">while</span>(l &lt; r) &#123;</span><br><span class="line">            <span class="keyword">int</span> m = l + (r - l) / <span class="number">2</span>;</span><br><span class="line">            <span class="keyword">if</span> (nums[m] &gt;= target) &#123;</span><br><span class="line">                r = m;</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                l = m + <span class="number">1</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> l;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
     </div>
 
@@ -268,21 +261,20 @@
 
     <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/Distributed-System/" rel="tag"># Distributed System</a>
+              <a href="/tags/Leetcode/" rel="tag"># Leetcode</a>
+              <a href="/tags/Algorithm/" rel="tag"># Algorithm</a>
+              <a href="/tags/Easy/" rel="tag"># Easy</a>
           </div>
 
         
 
           <div class="post-nav">
             <div class="post-nav-item">
-                <a href="/2019/05/01/%E5%A6%82%E4%BD%95%E8%AE%BE%E8%AE%A1%E5%B9%B6%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%B8%AA%E7%BA%BF%E7%A8%8B%E5%AE%89%E5%85%A8%E7%9A%84-Map/" rel="prev" title="如何设计并实现一个线程安全的 Map">
-                  <i class="fa fa-chevron-left"></i> 如何设计并实现一个线程安全的 Map
+                <a href="/2021/11/27/797-All-Paths-From-Source-to-Target/" rel="prev" title="797. All Paths From Source to Target">
+                  <i class="fa fa-chevron-left"></i> 797. All Paths From Source to Target
                 </a>
             </div>
             <div class="post-nav-item">
-                <a href="/2020/06/09/NullPointException-when-running-sbt-sonar/" rel="next" title="NullPointException when running sonar-scanner with sbt-sonar">
-                  NullPointException when running sonar-scanner with sbt-sonar <i class="fa fa-chevron-right"></i>
-                </a>
             </div>
           </div>
     </footer>
