@@ -121,7 +121,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">25</span>
+          <span class="site-state-item-count">26</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -162,6 +162,103 @@
 
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://www.zyx.fun/2021/11/28/2089-Find-Target-Indices-After-Sorting-Array/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Johnnie">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Coffee Time">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2021/11/28/2089-Find-Target-Indices-After-Sorting-Array/" class="post-title-link" itemprop="url">2089. Find Target Indices After Sorting Array</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+      
+
+      <time title="Created: 2021-11-28 11:30:34 / Modified: 11:36:24" itemprop="dateCreated datePublished" datetime="2021-11-28T11:30:34-08:00">2021-11-28</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/Leetcode/" itemprop="url" rel="index"><span itemprop="name">Leetcode</span></a>
+        </span>
+    </span>
+
+  
+    <span class="post-meta-break"></span>
+    <span class="post-meta-item" title="Words count">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">Words count: </span>
+      <span>1.6k</span>
+    </span>
+    <span class="post-meta-item" title="Reading time">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">Reading time &asymp;</span>
+      <span>1 mins.</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h2 id="2089-Find-Target-Indices-After-Sorting-Array"><a href="#2089-Find-Target-Indices-After-Sorting-Array" class="headerlink" title="2089. Find Target Indices After Sorting Array"></a>2089. Find Target Indices After Sorting Array</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line">You are given a 0-indexed integer array nums and a target element target.</span><br><span class="line"></span><br><span class="line">A target index is an index i such that nums[i] == target.</span><br><span class="line"></span><br><span class="line">Return a list of the target indices of nums after sorting nums in non-decreasing order. </span><br><span class="line">If there are no target indices, return an empty list. The returned list must be sorted in increasing order.</span><br><span class="line"></span><br><span class="line"> </span><br><span class="line"></span><br><span class="line">Example 1:</span><br><span class="line"></span><br><span class="line">Input: nums = [1,2,5,2,3], target = 2</span><br><span class="line">Output: [1,2]</span><br><span class="line">Explanation: After sorting, nums is [1,2,2,3,5].</span><br><span class="line">The indices where nums[i] == 2 are 1 and 2.</span><br><span class="line">Example 2:</span><br><span class="line"></span><br><span class="line">Input: nums = [1,2,5,2,3], target = 3</span><br><span class="line">Output: [3]</span><br><span class="line">Explanation: After sorting, nums is [1,2,2,3,5].</span><br><span class="line">The index where nums[i] == 3 is 3.</span><br><span class="line">Example 3:</span><br><span class="line"></span><br><span class="line">Input: nums = [1,2,5,2,3], target = 5</span><br><span class="line">Output: [4]</span><br><span class="line">Explanation: After sorting, nums is [1,2,2,3,5].</span><br><span class="line">The index where nums[i] == 5 is 4.</span><br><span class="line">Example 4:</span><br><span class="line"></span><br><span class="line">Input: nums = [1,2,5,2,3], target = 4</span><br><span class="line">Output: []</span><br><span class="line">Explanation: There are no elements in nums with value 4.</span><br><span class="line"> </span><br><span class="line"></span><br><span class="line">Constraints:</span><br><span class="line"></span><br><span class="line">1 &lt;= nums.length &lt;= 100</span><br><span class="line">1 &lt;= nums[i], target &lt;= 100</span><br></pre></td></tr></table></figure>
+<p>难度 : Easy<br>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2021/11/28/2089-Find-Target-Indices-After-Sorting-Array/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
@@ -1056,102 +1153,6 @@
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/2021/11/21/1872-Stone-Game-VIII/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://www.zyx.fun/2021/11/21/hexo%E7%9A%84%E9%A6%96%E9%A1%B5%E5%8F%AA%E6%98%BE%E7%A4%BA%E6%96%87%E7%AB%A0%E7%9A%84%E9%83%A8%E5%88%86%E5%86%85%E5%AE%B9/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Johnnie">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Coffee Time">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2021/11/21/hexo%E7%9A%84%E9%A6%96%E9%A1%B5%E5%8F%AA%E6%98%BE%E7%A4%BA%E6%96%87%E7%AB%A0%E7%9A%84%E9%83%A8%E5%88%86%E5%86%85%E5%AE%B9/" class="post-title-link" itemprop="url">Hexo的Next主题首页只显示文章的部分内容</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-      
-
-      <time title="Created: 2021-11-21 16:56:47 / Modified: 17:03:01" itemprop="dateCreated datePublished" datetime="2021-11-21T16:56:47-08:00">2021-11-21</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">In</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/Hexo/" itemprop="url" rel="index"><span itemprop="name">Hexo</span></a>
-        </span>
-    </span>
-
-  
-    <span class="post-meta-break"></span>
-    <span class="post-meta-item" title="Words count">
-      <span class="post-meta-item-icon">
-        <i class="far fa-file-word"></i>
-      </span>
-      <span class="post-meta-item-text">Words count: </span>
-      <span>282</span>
-    </span>
-    <span class="post-meta-item" title="Reading time">
-      <span class="post-meta-item-icon">
-        <i class="far fa-clock"></i>
-      </span>
-      <span class="post-meta-item-text">Reading time &asymp;</span>
-      <span>1 mins.</span>
-    </span>
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h2 id="Hexo的Next主题首页只显示文章的部分内容而不是全部"><a href="#Hexo的Next主题首页只显示文章的部分内容而不是全部" class="headerlink" title="Hexo的Next主题首页只显示文章的部分内容而不是全部"></a>Hexo的Next主题首页只显示文章的部分内容而不是全部</h2><p>默认首页会显示post的全部内容。下面有2种办法可以使首页里只显示文章的部分内容而不是全部内容<br>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2021/11/21/hexo%E7%9A%84%E9%A6%96%E9%A1%B5%E5%8F%AA%E6%98%BE%E7%A4%BA%E6%96%87%E7%AB%A0%E7%9A%84%E9%83%A8%E5%88%86%E5%86%85%E5%AE%B9/#more" rel="contents">
                 Read more &raquo;
               </a>
             </div>
