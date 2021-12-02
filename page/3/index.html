@@ -121,7 +121,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">27</span>
+          <span class="site-state-item-count">28</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -132,7 +132,7 @@
       </div>
       <div class="site-state-item site-state-tags">
           <a href="/tags/">
-        <span class="site-state-item-count">15</span>
+        <span class="site-state-item-count">16</span>
         <span class="site-state-item-name">tags</span></a>
       </div>
   </nav>
@@ -162,6 +162,109 @@
 
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://www.zyx.fun/2021/11/27/2085-Count-Common-Words-With-One-Occurrence/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Johnnie">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Coffee Time">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2021/11/27/2085-Count-Common-Words-With-One-Occurrence/" class="post-title-link" itemprop="url">2085. Count Common Words With One Occurrence</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2021-11-27 15:27:49" itemprop="dateCreated datePublished" datetime="2021-11-27T15:27:49-08:00">2021-11-27</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">Edited on</span>
+        <time title="Modified: 2021-11-28 11:22:39" itemprop="dateModified" datetime="2021-11-28T11:22:39-08:00">2021-11-28</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/Leetcode/" itemprop="url" rel="index"><span itemprop="name">Leetcode</span></a>
+        </span>
+    </span>
+
+  
+    <span class="post-meta-break"></span>
+    <span class="post-meta-item" title="Words count">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">Words count: </span>
+      <span>2k</span>
+    </span>
+    <span class="post-meta-item" title="Reading time">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">Reading time &asymp;</span>
+      <span>2 mins.</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h2 id="2085-Count-Common-Words-With-One-Occurrence"><a href="#2085-Count-Common-Words-With-One-Occurrence" class="headerlink" title="2085. Count Common Words With One Occurrence"></a>2085. Count Common Words With One Occurrence</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line">Given two string arrays words1 and words2, return the number of strings that appear </span><br><span class="line">exactly once in each of the two arrays.</span><br><span class="line"></span><br><span class="line"> </span><br><span class="line"></span><br><span class="line">Example 1:</span><br><span class="line"></span><br><span class="line">Input: words1 = [&quot;leetcode&quot;,&quot;is&quot;,&quot;amazing&quot;,&quot;as&quot;,&quot;is&quot;], words2 = [&quot;amazing&quot;,&quot;leetcode&quot;,&quot;is&quot;]</span><br><span class="line">Output: 2</span><br><span class="line">Explanation:</span><br><span class="line">- &quot;leetcode&quot; appears exactly once in each of the two arrays. We count this string.</span><br><span class="line">- &quot;amazing&quot; appears exactly once in each of the two arrays. We count this string.</span><br><span class="line">- &quot;is&quot; appears in each of the two arrays, but there are 2 occurrences of it in words1. </span><br><span class="line">We do not count this string.</span><br><span class="line">- &quot;as&quot; appears once in words1, but does not appear in words2. We do not count this string.</span><br><span class="line">Thus, there are 2 strings that appear exactly once in each of the two arrays.</span><br><span class="line">Example 2:</span><br><span class="line"></span><br><span class="line">Input: words1 = [&quot;b&quot;,&quot;bb&quot;,&quot;bbb&quot;], words2 = [&quot;a&quot;,&quot;aa&quot;,&quot;aaa&quot;]</span><br><span class="line">Output: 0</span><br><span class="line">Explanation: There are no strings that appear in each of the two arrays.</span><br><span class="line">Example 3:</span><br><span class="line"></span><br><span class="line">Input: words1 = [&quot;a&quot;,&quot;ab&quot;], words2 = [&quot;a&quot;,&quot;a&quot;,&quot;a&quot;,&quot;ab&quot;]</span><br><span class="line">Output: 1</span><br><span class="line">Explanation: The only string that appears exactly once in each of the two arrays is &quot;ab&quot;.</span><br><span class="line"> </span><br><span class="line"></span><br><span class="line">Constraints:</span><br><span class="line"></span><br><span class="line">1 &lt;= words1.length, words2.length &lt;= 1000</span><br><span class="line">1 &lt;= words1[i].length, words2[j].length &lt;= 30</span><br><span class="line">words1[i] and words2[j] consists only of lowercase English letters.</span><br></pre></td></tr></table></figure>
+<p>难度 : Easy</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2021/11/27/2085-Count-Common-Words-With-One-Occurrence/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
@@ -546,108 +649,6 @@
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/2021/11/21/450-Delete-Node-in-a-BST/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://www.zyx.fun/2021/11/19/2073-Time-Needed-to-Buy-Tickets/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Johnnie">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Coffee Time">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2021/11/19/2073-Time-Needed-to-Buy-Tickets/" class="post-title-link" itemprop="url">2073. Time Needed to Buy Tickets</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2021-11-19 23:30:18" itemprop="dateCreated datePublished" datetime="2021-11-19T23:30:18-08:00">2021-11-19</time>
-    </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">Edited on</span>
-        <time title="Modified: 2021-11-28 11:22:39" itemprop="dateModified" datetime="2021-11-28T11:22:39-08:00">2021-11-28</time>
-      </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">In</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/Leetcode/" itemprop="url" rel="index"><span itemprop="name">Leetcode</span></a>
-        </span>
-    </span>
-
-  
-    <span class="post-meta-break"></span>
-    <span class="post-meta-item" title="Words count">
-      <span class="post-meta-item-icon">
-        <i class="far fa-file-word"></i>
-      </span>
-      <span class="post-meta-item-text">Words count: </span>
-      <span>2k</span>
-    </span>
-    <span class="post-meta-item" title="Reading time">
-      <span class="post-meta-item-icon">
-        <i class="far fa-clock"></i>
-      </span>
-      <span class="post-meta-item-text">Reading time &asymp;</span>
-      <span>2 mins.</span>
-    </span>
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h2 id="2073-Time-Needed-to-Buy-Tickets"><a href="#2073-Time-Needed-to-Buy-Tickets" class="headerlink" title="2073. Time Needed to Buy Tickets"></a>2073. Time Needed to Buy Tickets</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><span class="line">There are n people in a line queuing to buy tickets, where the 0th person is at the front of the line and </span><br><span class="line">the (n - 1)th person is at the back of the line.</span><br><span class="line"></span><br><span class="line">You are given a 0-indexed integer array tickets of length n where the number of tickets that the ith person </span><br><span class="line">would like to buy is tickets[i].</span><br><span class="line"></span><br><span class="line">Each person takes exactly 1 second to buy a ticket. A person can only buy 1 ticket at a time and has to go back </span><br><span class="line">to the end of the line (which happens instantaneously) in order to buy more tickets. If a person does not have </span><br><span class="line">any tickets left to buy, the person will leave the line.</span><br><span class="line"></span><br><span class="line">Return the time taken for the person at position k (0-indexed) to finish buying tickets.</span><br><span class="line"></span><br><span class="line"> </span><br><span class="line"></span><br><span class="line">Example 1:</span><br><span class="line"></span><br><span class="line">Input: tickets = [2,3,2], k = 2</span><br><span class="line">Output: 6</span><br><span class="line">Explanation: </span><br><span class="line">- In the first pass, everyone in the line buys a ticket and the line becomes [1, 2, 1].</span><br><span class="line">- In the second pass, everyone in the line buys a ticket and the line becomes [0, 1, 0].</span><br><span class="line">The person at position 2 has successfully bought 2 tickets and it took 3 + 3 = 6 seconds.</span><br><span class="line"></span><br><span class="line">Example 2:</span><br><span class="line"></span><br><span class="line">Input: tickets = [5,1,1,1], k = 0</span><br><span class="line">Output: 8</span><br><span class="line">Explanation:</span><br><span class="line">- In the first pass, everyone in the line buys a ticket and the line becomes [4, 0, 0, 0].</span><br><span class="line">- In the next 4 passes, only the person in position 0 is buying tickets.</span><br><span class="line">The person at position 0 has successfully bought 5 tickets and it took 4 + 1 + 1 + 1 + 1 = 8 seconds.</span><br><span class="line"> </span><br><span class="line"></span><br><span class="line">Constraints:</span><br><span class="line"></span><br><span class="line">n == tickets.length</span><br><span class="line">1 &lt;= n &lt;= 100</span><br><span class="line">1 &lt;= tickets[i] &lt;= 100</span><br><span class="line">0 &lt;= k &lt; n</span><br></pre></td></tr></table></figure>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2021/11/19/2073-Time-Needed-to-Buy-Tickets/#more" rel="contents">
                 Read more &raquo;
               </a>
             </div>
