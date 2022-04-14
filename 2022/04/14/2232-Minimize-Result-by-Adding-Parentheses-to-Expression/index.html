@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="中文">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="google-site-verification" content="9LXdSXXZMPrBjCfTtv4acI-eS-sqhNbKG40t084hBYs" />
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6027626988074828"
+        crossorigin="anonymous"></script>
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.4.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css" integrity="sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"www.zyx.fun","root":"/","images":"/images","scheme":"Muse","darkmode":false,"version":"8.8.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js"></script>
+<meta name="description" content="2232. Minimize Result by Adding Parentheses to Expression1234567891011121314151617181920212223242526272829303132333435363738394041You are given a 0-indexed string expression of the form &quot;&lt;num1">
+<meta property="og:type" content="article">
+<meta property="og:title" content="2232. Minimize Result by Adding Parentheses to Expression">
+<meta property="og:url" content="http://www.zyx.fun/2022/04/14/2232-Minimize-Result-by-Adding-Parentheses-to-Expression/index.html">
+<meta property="og:site_name" content="Coffee Time">
+<meta property="og:description" content="2232. Minimize Result by Adding Parentheses to Expression1234567891011121314151617181920212223242526272829303132333435363738394041You are given a 0-indexed string expression of the form &quot;&lt;num1">
+<meta property="og:locale">
+<meta property="article:published_time" content="2022-04-14T07:32:39.000Z">
+<meta property="article:modified_time" content="2022-04-14T07:34:28.936Z">
+<meta property="article:author" content="Johnnie">
+<meta property="article:tag" content="Leetcode">
+<meta property="article:tag" content="Algorithm">
+<meta property="article:tag" content="Medium">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="http://www.zyx.fun/2022/04/14/2232-Minimize-Result-by-Adding-Parentheses-to-Expression/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"中文","comments":true,"permalink":"http://www.zyx.fun/2022/04/14/2232-Minimize-Result-by-Adding-Parentheses-to-Expression/","path":"2022/04/14/2232-Minimize-Result-by-Adding-Parentheses-to-Expression/","title":"2232. Minimize Result by Adding Parentheses to Expression"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>2232. Minimize Result by Adding Parentheses to Expression | Coffee Time</title>
+  
+  <script class="next-config" data-name="google_analytics" type="application/json">{"tracking_id":"UA-139388604-1","only_pageview":true}</script>
+  <script src="/js/third-party/analytics/google-analytics.js"></script>
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar" role="button">
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <h1 class="site-title">Coffee Time</h1>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#2232-Minimize-Result-by-Adding-Parentheses-to-Expression"><span class="nav-number">1.</span> <span class="nav-text">2232. Minimize Result by Adding Parentheses to Expression</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Solution"><span class="nav-number">2.</span> <span class="nav-text">Solution</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Johnnie</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">33</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">7</span>
+        <span class="site-state-item-name">categories</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">18</span>
+        <span class="site-state-item-name">tags</span></a>
+      </div>
+  </nav>
+</div>
+
+
+
+        </div>
+      </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+  <div class="back-to-top" role="button" aria-label="Back to top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="中文">
+    <link itemprop="mainEntityOfPage" href="http://www.zyx.fun/2022/04/14/2232-Minimize-Result-by-Adding-Parentheses-to-Expression/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Johnnie">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Coffee Time">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          2232. Minimize Result by Adding Parentheses to Expression
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+      
+
+      <time title="Created: 2022-04-14 00:32:39 / Modified: 00:34:28" itemprop="dateCreated datePublished" datetime="2022-04-14T00:32:39-07:00">2022-04-14</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/Leetcode/" itemprop="url" rel="index"><span itemprop="name">Leetcode</span></a>
+        </span>
+    </span>
+
+  
+    <span class="post-meta-item" title="Views" id="busuanzi_container_page_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="far fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">Views: </span>
+      <span id="busuanzi_value_page_pv"></span>
+    </span>
+    <span class="post-meta-break"></span>
+    <span class="post-meta-item" title="Words count">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">Words count: </span>
+      <span>2.5k</span>
+    </span>
+    <span class="post-meta-item" title="Reading time">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">Reading time &asymp;</span>
+      <span>2 mins.</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <h2 id="2232-Minimize-Result-by-Adding-Parentheses-to-Expression"><a href="#2232-Minimize-Result-by-Adding-Parentheses-to-Expression" class="headerlink" title="2232. Minimize Result by Adding Parentheses to Expression"></a>2232. Minimize Result by Adding Parentheses to Expression</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><span class="line">You are given a 0-indexed string expression of the form &quot;&lt;num1&gt;+&lt;num2&gt;&quot; where &lt;num1&gt; and &lt;num2&gt; represent positive integers.</span><br><span class="line"></span><br><span class="line">Add a pair of parentheses to expression such that after the addition of parentheses, expression is a valid mathematical </span><br><span class="line">expression and evaluates to the smallest possible value. The left parenthesis must be added to the left of &#x27;+&#x27; and the </span><br><span class="line">right parenthesis must be added to the right of &#x27;+&#x27;.</span><br><span class="line"></span><br><span class="line">Return expression after adding a pair of parentheses such that expression evaluates to the smallest possible value. </span><br><span class="line">If there are multiple answers that yield the same result, return any of them.</span><br><span class="line"></span><br><span class="line">The input has been generated such that the original value of expression, and the value of expression after </span><br><span class="line">adding any pair of parentheses that meets the requirements fits within a signed 32-bit integer.</span><br><span class="line"></span><br><span class="line"> </span><br><span class="line"></span><br><span class="line">Example 1:</span><br><span class="line"></span><br><span class="line">Input: expression = &quot;247+38&quot;</span><br><span class="line">Output: &quot;2(47+38)&quot;</span><br><span class="line">Explanation: The expression evaluates to 2 * (47 + 38) = 2 * 85 = 170.</span><br><span class="line">Note that &quot;2(4)7+38&quot; is invalid because the right parenthesis must be to the right of the &#x27;+&#x27;.</span><br><span class="line">It can be shown that 170 is the smallest possible value.</span><br><span class="line">Example 2:</span><br><span class="line"></span><br><span class="line">Input: expression = &quot;12+34&quot;</span><br><span class="line">Output: &quot;1(2+3)4&quot;</span><br><span class="line">Explanation: The expression evaluates to 1 * (2 + 3) * 4 = 1 * 5 * 4 = 20.</span><br><span class="line">Example 3:</span><br><span class="line"></span><br><span class="line">Input: expression = &quot;999+999&quot;</span><br><span class="line">Output: &quot;(999+999)&quot;</span><br><span class="line">Explanation: The expression evaluates to 999 + 999 = 1998.</span><br><span class="line"> </span><br><span class="line"></span><br><span class="line">Constraints:</span><br><span class="line"></span><br><span class="line">3 &lt;= expression.length &lt;= 10</span><br><span class="line">expression consists of digits from &#x27;1&#x27; to &#x27;9&#x27; and &#x27;+&#x27;.</span><br><span class="line">expression starts and ends with digits.</span><br><span class="line">expression contains exactly one &#x27;+&#x27;.</span><br><span class="line">The original value of expression, and the value of expression after adding any pair of parentheses that meets the </span><br><span class="line">requirements fits within a signed 32-bit integer.</span><br></pre></td></tr></table></figure>
+<p>Difficulty : Medium<br><span id="more"></span></p>
+<h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><p>Brute force<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line">    public String minimizeResult(String expression) &#123;</span><br><span class="line">        int n = expression.length();</span><br><span class="line">        int p = expression.indexOf(&quot;+&quot;);</span><br><span class="line">        int min = Integer.MAX_VALUE;</span><br><span class="line">        String ans = &quot;&quot;;</span><br><span class="line">        for (int l = 0; l &lt; p; l++) &#123;</span><br><span class="line">            for (int r = p + 2; r &lt; n + 1; r++) &#123;</span><br><span class="line">                int m1 = l &gt; 0? Integer.parseInt(expression.substring(0,l)) : 1;</span><br><span class="line">                int m2 = r &lt; n? Integer.parseInt(expression.substring(r)) : 1;</span><br><span class="line">                int n1 = Integer.parseInt(expression.substring(l, p));</span><br><span class="line">                int n2 = Integer.parseInt(expression.substring(p+1, r));</span><br><span class="line">                int cur = m1 * m2 * (n1 + n2);</span><br><span class="line">                if (cur &lt; min) &#123;</span><br><span class="line">                    min = cur;</span><br><span class="line">                    StringBuilder tmp = new StringBuilder(expression);</span><br><span class="line">                    tmp.insert(l, &quot;(&quot;);</span><br><span class="line">                    tmp.insert(r + 1, &quot;)&quot;);</span><br><span class="line">                    ans = tmp.toString();</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        return ans;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/Leetcode/" rel="tag"># Leetcode</a>
+              <a href="/tags/Algorithm/" rel="tag"># Algorithm</a>
+              <a href="/tags/Medium/" rel="tag"># Medium</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2022/04/14/hexo-deploy-TypeError-ERR-INVALID-ARG-TYPE/" rel="prev" title="hexo deploy TypeError [ERR_INVALID_ARG_TYPE]">
+                  <i class="fa fa-chevron-left"></i> hexo deploy TypeError [ERR_INVALID_ARG_TYPE]
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 
+  <span itemprop="copyrightYear">2022</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Johnnie</span>
+</div>
+<div class="busuanzi-count">
+    <span class="post-meta-item" id="busuanzi_container_site_uv">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="Total Visitors">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="Total Views">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+
+    </div>
+  </footer>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/schemes/muse.js"></script><script src="/js/next-boot.js"></script>
+
+  
+
+
+
+
+
+  
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+
+</body>
+</html>
