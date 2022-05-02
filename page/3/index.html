@@ -121,7 +121,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">36</span>
+          <span class="site-state-item-count">37</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -162,6 +162,103 @@
 
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://www.zyx.fun/2021/11/28/2062-Count-Vowel-Substrings-of-a-String/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Johnnie">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Coffee Time">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2021/11/28/2062-Count-Vowel-Substrings-of-a-String/" class="post-title-link" itemprop="url">2062. Count Vowel Substrings of a String</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+      
+
+      <time title="Created: 2021-11-28 21:37:17 / Modified: 21:59:31" itemprop="dateCreated datePublished" datetime="2021-11-28T21:37:17-08:00">2021-11-28</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/Leetcode/" itemprop="url" rel="index"><span itemprop="name">Leetcode</span></a>
+        </span>
+    </span>
+
+  
+    <span class="post-meta-break"></span>
+    <span class="post-meta-item" title="Words count">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">Words count: </span>
+      <span>2.2k</span>
+    </span>
+    <span class="post-meta-item" title="Reading time">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">Reading time &asymp;</span>
+      <span>2 mins.</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h2 id="2062-Count-Vowel-Substrings-of-a-String"><a href="#2062-Count-Vowel-Substrings-of-a-String" class="headerlink" title="2062. Count Vowel Substrings of a String"></a>2062. Count Vowel Substrings of a String</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br></pre></td><td class="code"><pre><span class="line">A substring is a contiguous (non-empty) sequence of characters within a string.</span><br><span class="line"></span><br><span class="line">A vowel substring is a substring that only consists of vowels (&#x27;a&#x27;, &#x27;e&#x27;, &#x27;i&#x27;, &#x27;o&#x27;, and &#x27;u&#x27;) and has all five vowels present in it.</span><br><span class="line"></span><br><span class="line">Given a string word, return the number of vowel substrings in word.</span><br><span class="line"></span><br><span class="line"> </span><br><span class="line"></span><br><span class="line">Example 1:</span><br><span class="line"></span><br><span class="line">Input: word = &quot;aeiouu&quot;</span><br><span class="line">Output: 2</span><br><span class="line">Explanation: The vowel substrings of word are as follows (underlined):</span><br><span class="line">- &quot;aeiouu&quot;</span><br><span class="line">- &quot;aeiouu&quot;</span><br><span class="line">Example 2:</span><br><span class="line"></span><br><span class="line">Input: word = &quot;unicornarihan&quot;</span><br><span class="line">Output: 0</span><br><span class="line">Explanation: Not all 5 vowels are present, so there are no vowel substrings.</span><br><span class="line">Example 3:</span><br><span class="line"></span><br><span class="line">Input: word = &quot;cuaieuouac&quot;</span><br><span class="line">Output: 7</span><br><span class="line">Explanation: The vowel substrings of word are as follows (underlined):</span><br><span class="line">- &quot;cuaieuouac&quot;</span><br><span class="line">- &quot;cuaieuouac&quot;</span><br><span class="line">- &quot;cuaieuouac&quot;</span><br><span class="line">- &quot;cuaieuouac&quot;</span><br><span class="line">- &quot;cuaieuouac&quot;</span><br><span class="line">- &quot;cuaieuouac&quot;</span><br><span class="line">- &quot;cuaieuouac&quot;</span><br><span class="line">Example 4:</span><br><span class="line"></span><br><span class="line">Input: word = &quot;bbaeixoubb&quot;</span><br><span class="line">Output: 0</span><br><span class="line">Explanation: The only substrings that contain all five vowels also contain consonants, so there are no vowel substrings.</span><br><span class="line"> </span><br><span class="line"></span><br><span class="line">Constraints:</span><br><span class="line"></span><br><span class="line">1 &lt;= word.length &lt;= 100</span><br><span class="line">word consists of lowercase English letters only.</span><br></pre></td></tr></table></figure>
+<p>难度 : Easy<br>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2021/11/28/2062-Count-Vowel-Substrings-of-a-String/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
@@ -547,103 +644,6 @@
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/2021/11/27/2068-Check-Whether-Two-Strings-are-Almost-Equivalent/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://www.zyx.fun/2021/11/27/35-Search-Insert-Position/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Johnnie">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Coffee Time">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2021/11/27/35-Search-Insert-Position/" class="post-title-link" itemprop="url">35. Search Insert Position</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-      
-
-      <time title="Created: 2021-11-27 16:20:51 / Modified: 21:46:34" itemprop="dateCreated datePublished" datetime="2021-11-27T16:20:51-08:00">2021-11-27</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">In</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/Leetcode/" itemprop="url" rel="index"><span itemprop="name">Leetcode</span></a>
-        </span>
-    </span>
-
-  
-    <span class="post-meta-break"></span>
-    <span class="post-meta-item" title="Words count">
-      <span class="post-meta-item-icon">
-        <i class="far fa-file-word"></i>
-      </span>
-      <span class="post-meta-item-text">Words count: </span>
-      <span>999</span>
-    </span>
-    <span class="post-meta-item" title="Reading time">
-      <span class="post-meta-item-icon">
-        <i class="far fa-clock"></i>
-      </span>
-      <span class="post-meta-item-text">Reading time &asymp;</span>
-      <span>1 mins.</span>
-    </span>
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h2 id="35-Search-Insert-Position"><a href="#35-Search-Insert-Position" class="headerlink" title="35. Search Insert Position"></a>35. Search Insert Position</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line">Given a sorted array of distinct integers and a target value, return the index if the target is found. </span><br><span class="line">If not, return the index where it would be if it were inserted in order.</span><br><span class="line"></span><br><span class="line">You must write an algorithm with O(log n) runtime complexity.</span><br><span class="line"></span><br><span class="line"> </span><br><span class="line"></span><br><span class="line">Example 1:</span><br><span class="line"></span><br><span class="line">Input: nums = [1,3,5,6], target = 5</span><br><span class="line">Output: 2</span><br><span class="line">Example 2:</span><br><span class="line"></span><br><span class="line">Input: nums = [1,3,5,6], target = 2</span><br><span class="line">Output: 1</span><br><span class="line">Example 3:</span><br><span class="line"></span><br><span class="line">Input: nums = [1,3,5,6], target = 7</span><br><span class="line">Output: 4</span><br><span class="line">Example 4:</span><br><span class="line"></span><br><span class="line">Input: nums = [1,3,5,6], target = 0</span><br><span class="line">Output: 0</span><br><span class="line">Example 5:</span><br><span class="line"></span><br><span class="line">Input: nums = [1], target = 0</span><br><span class="line">Output: 0</span><br><span class="line"> </span><br><span class="line"></span><br><span class="line">Constraints:</span><br><span class="line"></span><br><span class="line">1 &lt;= nums.length &lt;= 104</span><br><span class="line">-104 &lt;= nums[i] &lt;= 104</span><br><span class="line">nums contains distinct values sorted in ascending order.</span><br><span class="line">-104 &lt;= target &lt;= 104</span><br></pre></td></tr></table></figure>
-<p>难度 : Easy<br>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2021/11/27/35-Search-Insert-Position/#more" rel="contents">
                 Read more &raquo;
               </a>
             </div>

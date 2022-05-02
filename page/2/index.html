@@ -121,7 +121,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">36</span>
+          <span class="site-state-item-count">37</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -162,6 +162,98 @@
 
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://www.zyx.fun/2022/04/14/hexo-deploy-TypeError-ERR-INVALID-ARG-TYPE/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Johnnie">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Coffee Time">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2022/04/14/hexo-deploy-TypeError-ERR-INVALID-ARG-TYPE/" class="post-title-link" itemprop="url">hexo deploy TypeError [ERR_INVALID_ARG_TYPE]</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+      
+
+      <time title="Created: 2022-04-14 00:02:19 / Modified: 00:17:02" itemprop="dateCreated datePublished" datetime="2022-04-14T00:02:19-07:00">2022-04-14</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/blog/" itemprop="url" rel="index"><span itemprop="name">blog</span></a>
+        </span>
+    </span>
+
+  
+    <span class="post-meta-break"></span>
+    <span class="post-meta-item" title="Words count">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">Words count: </span>
+      <span>1.9k</span>
+    </span>
+    <span class="post-meta-item" title="Reading time">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">Reading time &asymp;</span>
+      <span>2 mins.</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>When deploy to GitHub pages, got the follow error<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">INFO  ==================================</span><br><span class="line">  ███╗   ██╗███████╗██╗  ██╗████████╗</span><br><span class="line">  ████╗  ██║██╔════╝╚██╗██╔╝╚══██╔══╝</span><br><span class="line">  ██╔██╗ ██║█████╗   ╚███╔╝    ██║</span><br><span class="line">  ██║╚██╗██║██╔══╝   ██╔██╗    ██║</span><br><span class="line">  ██║ ╚████║███████╗██╔╝ ██╗   ██║</span><br><span class="line">  ╚═╝  ╚═══╝╚══════╝╚═╝  ╚═╝   ╚═╝</span><br><span class="line">========================================</span><br><span class="line">NexT version 8.8.1</span><br><span class="line">Documentation: https://theme-next.js.org</span><br><span class="line">========================================</span><br><span class="line">INFO  Deploying: git</span><br><span class="line">INFO  Clearing .deploy_git folder...</span><br><span class="line">INFO  Copying files from public folder...</span><br><span class="line">FATAL &#123;</span><br><span class="line">  err: TypeError [ERR_INVALID_ARG_TYPE]: The &quot;mode&quot; argument must be integer. Received an instance of Object</span><br><span class="line">      at copyFile (node:fs:2774:10)</span><br></pre></td></tr></table></figure></p>
+<p>Found the root cause is node version is too high. downgraded to node12 will solve the issue.</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line">hexo -v                                    2 ↵  2791  23:55:19</span><br><span class="line">INFO  Validating config</span><br><span class="line">WARN  Deprecated config detected: &quot;external_link&quot; with a Boolean value is deprecated. See https://hexo.io/docs/configuration for more details.</span><br><span class="line">INFO  ==================================</span><br><span class="line">  ███╗   ██╗███████╗██╗  ██╗████████╗</span><br><span class="line">  ████╗  ██║██╔════╝╚██╗██╔╝╚══██╔══╝</span><br><span class="line">  ██╔██╗ ██║█████╗   ╚███╔╝    ██║</span><br><span class="line">  ██║╚██╗██║██╔══╝   ██╔██╗    ██║</span><br><span class="line">  ██║ ╚████║███████╗██╔╝ ██╗   ██║</span><br><span class="line">  ╚═╝  ╚═══╝╚══════╝╚═╝  ╚═╝   ╚═╝</span><br><span class="line">========================================</span><br><span class="line">NexT version 8.8.1</span><br><span class="line">Documentation: https://theme-next.js.org</span><br><span class="line">========================================</span><br><span class="line">hexo: 5.4.0</span><br><span class="line">hexo-cli: 2.0.0</span><br><span class="line">os: Darwin 21.4.0 darwin x64</span><br><span class="line">node: 16.13.1</span><br><span class="line">v8: 9.4.146.24-node.14</span><br><span class="line">uv: 1.42.0</span><br><span class="line">zlib: 1.2.11</span><br><span class="line">brotli: 1.0.9</span><br><span class="line">ares: 1.18.1</span><br><span class="line">modules: 93</span><br><span class="line">nghttp2: 1.45.1</span><br><span class="line">napi: 8</span><br><span class="line">llhttp: 6.0.4</span><br><span class="line">openssl: 1.1.1l+quic</span><br><span class="line">cldr: 39.0</span><br><span class="line">icu: 69.1</span><br><span class="line">tz: 2021a</span><br><span class="line">unicode: 13.0</span><br><span class="line">ngtcp2: 0.1.0-DEV</span><br><span class="line">nghttp3: 0.1.0-DEV</span><br></pre></td></tr></table></figure>
+<p>Run the following commands to downgrade node for MacOS<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">brew search node                           </span><br><span class="line">==&gt; Formulae</span><br><span class="line">libbitcoin-node    llnode             node-build         node@10            node@14            node_exporter      nodeenv            ode</span><br><span class="line">linode-cli         node ✔             node-sass          node@12            node@16 ✔          nodebrew           nodenv</span><br><span class="line"></span><br><span class="line">brew unlink node</span><br><span class="line">brew install node@12</span><br><span class="line">sudo brew link --overwrite node@12</span><br><span class="line">or </span><br><span class="line">echo &#x27;export PATH=&quot;/usr/local/opt/node@12/bin:$PATH&quot;&#x27; &gt;&gt; ~/.zshrc</span><br><span class="line">source ~/.zshrc</span><br></pre></td></tr></table></figure></p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
@@ -537,103 +629,6 @@
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/2021/12/01/328-Odd-Even-Linked-List/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://www.zyx.fun/2021/11/28/2062-Count-Vowel-Substrings-of-a-String/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Johnnie">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Coffee Time">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2021/11/28/2062-Count-Vowel-Substrings-of-a-String/" class="post-title-link" itemprop="url">2062. Count Vowel Substrings of a String</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-      
-
-      <time title="Created: 2021-11-28 21:37:17 / Modified: 21:59:31" itemprop="dateCreated datePublished" datetime="2021-11-28T21:37:17-08:00">2021-11-28</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">In</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/Leetcode/" itemprop="url" rel="index"><span itemprop="name">Leetcode</span></a>
-        </span>
-    </span>
-
-  
-    <span class="post-meta-break"></span>
-    <span class="post-meta-item" title="Words count">
-      <span class="post-meta-item-icon">
-        <i class="far fa-file-word"></i>
-      </span>
-      <span class="post-meta-item-text">Words count: </span>
-      <span>2.2k</span>
-    </span>
-    <span class="post-meta-item" title="Reading time">
-      <span class="post-meta-item-icon">
-        <i class="far fa-clock"></i>
-      </span>
-      <span class="post-meta-item-text">Reading time &asymp;</span>
-      <span>2 mins.</span>
-    </span>
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h2 id="2062-Count-Vowel-Substrings-of-a-String"><a href="#2062-Count-Vowel-Substrings-of-a-String" class="headerlink" title="2062. Count Vowel Substrings of a String"></a>2062. Count Vowel Substrings of a String</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br></pre></td><td class="code"><pre><span class="line">A substring is a contiguous (non-empty) sequence of characters within a string.</span><br><span class="line"></span><br><span class="line">A vowel substring is a substring that only consists of vowels (&#x27;a&#x27;, &#x27;e&#x27;, &#x27;i&#x27;, &#x27;o&#x27;, and &#x27;u&#x27;) and has all five vowels present in it.</span><br><span class="line"></span><br><span class="line">Given a string word, return the number of vowel substrings in word.</span><br><span class="line"></span><br><span class="line"> </span><br><span class="line"></span><br><span class="line">Example 1:</span><br><span class="line"></span><br><span class="line">Input: word = &quot;aeiouu&quot;</span><br><span class="line">Output: 2</span><br><span class="line">Explanation: The vowel substrings of word are as follows (underlined):</span><br><span class="line">- &quot;aeiouu&quot;</span><br><span class="line">- &quot;aeiouu&quot;</span><br><span class="line">Example 2:</span><br><span class="line"></span><br><span class="line">Input: word = &quot;unicornarihan&quot;</span><br><span class="line">Output: 0</span><br><span class="line">Explanation: Not all 5 vowels are present, so there are no vowel substrings.</span><br><span class="line">Example 3:</span><br><span class="line"></span><br><span class="line">Input: word = &quot;cuaieuouac&quot;</span><br><span class="line">Output: 7</span><br><span class="line">Explanation: The vowel substrings of word are as follows (underlined):</span><br><span class="line">- &quot;cuaieuouac&quot;</span><br><span class="line">- &quot;cuaieuouac&quot;</span><br><span class="line">- &quot;cuaieuouac&quot;</span><br><span class="line">- &quot;cuaieuouac&quot;</span><br><span class="line">- &quot;cuaieuouac&quot;</span><br><span class="line">- &quot;cuaieuouac&quot;</span><br><span class="line">- &quot;cuaieuouac&quot;</span><br><span class="line">Example 4:</span><br><span class="line"></span><br><span class="line">Input: word = &quot;bbaeixoubb&quot;</span><br><span class="line">Output: 0</span><br><span class="line">Explanation: The only substrings that contain all five vowels also contain consonants, so there are no vowel substrings.</span><br><span class="line"> </span><br><span class="line"></span><br><span class="line">Constraints:</span><br><span class="line"></span><br><span class="line">1 &lt;= word.length &lt;= 100</span><br><span class="line">word consists of lowercase English letters only.</span><br></pre></td></tr></table></figure>
-<p>难度 : Easy<br>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2021/11/28/2062-Count-Vowel-Substrings-of-a-String/#more" rel="contents">
                 Read more &raquo;
               </a>
             </div>
