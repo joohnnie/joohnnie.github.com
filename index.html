@@ -196,7 +196,7 @@
       <span class="post-meta-item-text">Posted on</span>
       
 
-      <time title="Created: 2023-03-20 16:28:51 / Modified: 16:50:15" itemprop="dateCreated datePublished" datetime="2023-03-20T16:28:51-07:00">2023-03-20</time>
+      <time title="Created: 2023-03-20 16:28:51 / Modified: 16:53:48" itemprop="dateCreated datePublished" datetime="2023-03-20T16:28:51-07:00">2023-03-20</time>
     </span>
 
   
@@ -225,7 +225,7 @@
     
     <div class="post-body" itemprop="articleBody">
           <h1 id="A-Beginner’s-Guide-to-Scala-Parser-Combinators"><a href="#A-Beginner’s-Guide-to-Scala-Parser-Combinators" class="headerlink" title="A Beginner’s Guide to Scala Parser Combinators"></a>A Beginner’s Guide to Scala Parser Combinators</h1><h2 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h2><p>Scala parser combinators are a powerful library for writing text parsers. This library allows you to create<br>parsers by combining smaller, simpler parsers using higher-order functions called combinators.</p>
-<h2 id="What-are-Scala-Parser-Combinators-and-their-API"><a href="#What-are-Scala-Parser-Combinators-and-their-API" class="headerlink" title="What are Scala Parser Combinators and their API"></a>What are Scala Parser Combinators and their API</h2><p>Scala parser combinators are a parsing library built on the idea of combining simple parsers to create more complex<br>parsers. The main components of the library are:</p>
+<h2 id="What-are-Scala-Parser-Combinators-and-their-API"><a href="#What-are-Scala-Parser-Combinators-and-their-API" class="headerlink" title="What are Scala Parser Combinators and their API"></a>What are Scala Parser Combinators and their API</h2><p>Scala parser combinators are a parsing library built on the idea of combining simple parsers to create more complex parsers. The main components of the library are:</p>
 <ul>
 <li><code>Parser</code>: A basic building block that represents a parser for a specific input.</li>
 <li><code>RegexParsers</code>: A trait that provides the ability to create parsers from regular expressions.</li>
@@ -258,9 +258,9 @@
 <li><code>p1 ~&gt; p2</code>: This combinator works like ~, but only keeps the result of p2. The result of p1 is discarded.</li>
 <li><code>p1 &lt;~ p2</code>: This combinator also works like ~, but only keeps the result of p1. The result of p2 is discarded.</li>
 </ul>
-<p>For example, if you want to parse a number followed by a letter but only want to keep the result of the number,<br>you can use the &lt;~ combinator:</p>
+<p>For example, if you want to parse a number followed by a letter but only want to keep the result of the number, you can use the &lt;~ combinator:</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">def numberBeforeLetter: Parser[Int] = number &lt;~ letter</span><br></pre></td></tr></table></figure>
-<h2 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a>Conclusion</h2><p>In this beginner’s guide, we introduced Scala parser combinators and their API, explained how to use combinator.<br>With a solid understanding of the basic concepts and combinators, you can start building your own parsers<br>for various applications. Happy parsing!</p>
+<h2 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a>Conclusion</h2><p>In this beginner’s guide, we introduced Scala parser combinators and their API, explained how to use combinator. With a solid understanding of the basic concepts and combinators, you can start building your own parsers for various applications. Happy parsing!</p>
 
       
     </div>
