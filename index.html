@@ -197,7 +197,7 @@
       <span class="post-meta-item-text">Posted on</span>
       
 
-      <time title="Created: 2023-03-20 16:28:51 / Modified: 16:53:48" itemprop="dateCreated datePublished" datetime="2023-03-20T16:28:51-07:00">2023-03-20</time>
+      <time title="Created: 2023-03-20 16:28:51 / Modified: 17:50:46" itemprop="dateCreated datePublished" datetime="2023-03-20T16:28:51-07:00">2023-03-20</time>
     </span>
 
   
@@ -233,36 +233,14 @@
 <li><code>Parsers</code>: A trait that contains the basic combinators for constructing new parsers.</li>
 </ul>
 <p>To use the library, you need to extend the Parsers trait or one of its subclasses (like RegexParsers).<br>Then, you can define your parsers by combining the basic parsers and combinators provided by the library.</p>
-<h2 id="What-are-Scala-Combinators-and-their-API"><a href="#What-are-Scala-Combinators-and-their-API" class="headerlink" title="What are Scala Combinators and their API"></a>What are Scala Combinators and their API</h2><p>Combinators are higher-order functions that take parsers as arguments and return new parsers. Some common combinators include:</p>
-<ul>
-<li><code>~</code>: Sequences two parsers, returning a tuple with their results.</li>
-<li><code>~&gt;</code>: Sequences two parsers, discarding the result of the first parser.</li>
-<li><code>&lt;~</code>: Sequences two parsers, discarding the result of the second parser.</li>
-<li><code>|</code>: Tries two parsers in order, returning the result of the first successful parser.</li>
-<li><code>^^</code>: Transforms the result of a parser using a given function.</li>
-<li><code>rep</code>: Repeats a parser zero or more times, returning a list of results.</li>
-<li><code>repsep</code>: Repeats a parser zero or more times with a separator, returning a list of results.</li>
-<li><code>opt</code>: Makes a parser optional, returning Some(result) if successful or None if not.</li>
-</ul>
-<h2 id="How-to-Use-Scala-Parser-Combinators"><a href="#How-to-Use-Scala-Parser-Combinators" class="headerlink" title="How to Use Scala Parser Combinators"></a>How to Use Scala Parser Combinators</h2><ul>
-<li>Add the necessary dependency to your build.sbt file.</li>
-<li>Import the required modules in your Scala file.</li>
-<li>Create a new class extending the RegexParsers trait.</li>
-<li>Define your basic parsers and combinators.</li>
-<li>Implement the main parsing method.</li>
-</ul>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">libraryDependencies +=(&quot;org.scala-lang.modules&quot; %% &quot;scala-parser-combinators&quot; % &quot;2.2.0&quot;)</span><br></pre></td></tr></table></figure>
-<h2 id="Example"><a href="#Example" class="headerlink" title="Example"></a>Example</h2><p>You can define the following parsers<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">def number: Parser[Int] = &quot;\\d+&quot;.r ^^ (_.toInt)</span><br><span class="line">def letter: Parser[String] = &quot;[a-zA-Z]&quot;.r</span><br><span class="line"></span><br></pre></td></tr></table></figure><br>Now, you want to create a parser that can parse a number followed by a letter.<br>You can use the <code>~</code> combinator like this:</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">def numberAndLetter: Parser[(Int, String)] = number ~ letter</span><br></pre></td></tr></table></figure>
-<p>However, there are situations where you might want to ignore the result of one of the parsers.<br>In these cases, you can use the ~&gt; or &lt;~ combinators.</p>
-<ul>
-<li><code>p1 ~&gt; p2</code>: This combinator works like ~, but only keeps the result of p2. The result of p1 is discarded.</li>
-<li><code>p1 &lt;~ p2</code>: This combinator also works like ~, but only keeps the result of p1. The result of p2 is discarded.</li>
-</ul>
-<p>For example, if you want to parse a number followed by a letter but only want to keep the result of the number, you can use the &lt;~ combinator:</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">def numberBeforeLetter: Parser[Int] = number &lt;~ letter</span><br></pre></td></tr></table></figure>
-<h2 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a>Conclusion</h2><p>In this beginner’s guide, we introduced Scala parser combinators and their API, explained how to use combinator. With a solid understanding of the basic concepts and combinators, you can start building your own parsers for various applications. Happy parsing!</p>
-
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2023/03/20/A-Beginner-s-Guide-to-Scala-Parser-Combinators/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
