@@ -132,7 +132,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">42</span>
+          <span class="site-state-item-count">43</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -173,6 +173,103 @@
 
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://www.zyx.fun/2021/12/01/328-Odd-Even-Linked-List/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Johnnie">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Coffee Time">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2021/12/01/328-Odd-Even-Linked-List/" class="post-title-link" itemprop="url">328. Odd Even Linked List</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+      
+
+      <time title="Created: 2021-12-01 23:30:47 / Modified: 23:33:59" itemprop="dateCreated datePublished" datetime="2021-12-01T23:30:47-08:00">2021-12-01</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/Leetcode/" itemprop="url" rel="index"><span itemprop="name">Leetcode</span></a>
+        </span>
+    </span>
+
+  
+    <span class="post-meta-break"></span>
+    <span class="post-meta-item" title="Words count">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">Words count: </span>
+      <span>1.2k</span>
+    </span>
+    <span class="post-meta-item" title="Reading time">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">Reading time &asymp;</span>
+      <span>1 mins.</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h2 id="328-Odd-Even-Linked-List"><a href="#328-Odd-Even-Linked-List" class="headerlink" title="328. Odd Even Linked List"></a>328. Odd Even Linked List</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">Given the head of a singly linked list, group all the nodes with odd indices together followed by the nodes with even indices, and return the reordered list.</span><br><span class="line"></span><br><span class="line">The first node is considered odd, and the second node is even, and so on.</span><br><span class="line"></span><br><span class="line">Note that the relative order inside both the even and odd groups should remain as it was in the input.</span><br><span class="line"></span><br><span class="line">You must solve the problem in O(1) extra space complexity and O(n) time complexity.</span><br><span class="line"></span><br><span class="line"> </span><br><span class="line"></span><br><span class="line">Example 1:</span><br></pre></td></tr></table></figure>
+<p><img src="https://assets.leetcode.com/uploads/2021/03/10/oddeven-linked-list.jpg" alt=""><br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Input: head = [1,2,3,4,5]</span><br><span class="line">Output: [1,3,5,2,4]</span><br><span class="line">Example 2:</span><br></pre></td></tr></table></figure><br><img src="https://assets.leetcode.com/uploads/2021/03/10/oddeven2-linked-list.jpg" alt=""><br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">Input: head = [2,1,3,5,6,4,7]</span><br><span class="line">Output: [2,3,6,7,1,5,4]</span><br><span class="line"> </span><br><span class="line"></span><br><span class="line">Constraints:</span><br><span class="line"></span><br><span class="line">n == number of nodes in the linked list</span><br><span class="line">0 &lt;= n &lt;= 104</span><br><span class="line">-106 &lt;= Node.val &lt;= 106</span><br></pre></td></tr></table></figure><br>Difficulty : Medium<br>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2021/12/01/328-Odd-Even-Linked-List/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
@@ -552,109 +649,6 @@
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/2021/11/27/34-Find-First-and-Last-Position-of-Element-in-Sorted-Array/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://www.zyx.fun/2021/11/27/2068-Check-Whether-Two-Strings-are-Almost-Equivalent/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Johnnie">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Coffee Time">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2021/11/27/2068-Check-Whether-Two-Strings-are-Almost-Equivalent/" class="post-title-link" itemprop="url">2068. Check Whether Two Strings are Almost Equivalent</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2021-11-27 16:28:37" itemprop="dateCreated datePublished" datetime="2021-11-27T16:28:37-08:00">2021-11-27</time>
-    </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">Edited on</span>
-        <time title="Modified: 2021-11-28 11:19:21" itemprop="dateModified" datetime="2021-11-28T11:19:21-08:00">2021-11-28</time>
-      </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">In</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/Leetcode/" itemprop="url" rel="index"><span itemprop="name">Leetcode</span></a>
-        </span>
-    </span>
-
-  
-    <span class="post-meta-break"></span>
-    <span class="post-meta-item" title="Words count">
-      <span class="post-meta-item-icon">
-        <i class="far fa-file-word"></i>
-      </span>
-      <span class="post-meta-item-text">Words count: </span>
-      <span>2.2k</span>
-    </span>
-    <span class="post-meta-item" title="Reading time">
-      <span class="post-meta-item-icon">
-        <i class="far fa-clock"></i>
-      </span>
-      <span class="post-meta-item-text">Reading time &asymp;</span>
-      <span>2 mins.</span>
-    </span>
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h2 id="2068-Check-Whether-Two-Strings-are-Almost-Equivalent"><a href="#2068-Check-Whether-Two-Strings-are-Almost-Equivalent" class="headerlink" title="2068. Check Whether Two Strings are Almost Equivalent"></a>2068. Check Whether Two Strings are Almost Equivalent</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br></pre></td><td class="code"><pre><span class="line">Two strings word1 and word2 are considered almost equivalent if the differences between the frequencies of each letter</span><br><span class="line">from &#x27;a&#x27; to &#x27;z&#x27; between word1 and word2 is at most 3.</span><br><span class="line"></span><br><span class="line">Given two strings word1 and word2, each of length n, return true if word1 and word2 are almost equivalent, </span><br><span class="line">or false otherwise.</span><br><span class="line"></span><br><span class="line">The frequency of a letter x is the number of times it occurs in the string.</span><br><span class="line"></span><br><span class="line"> </span><br><span class="line"></span><br><span class="line">Example 1:</span><br><span class="line"></span><br><span class="line">Input: word1 = &quot;aaaa&quot;, word2 = &quot;bccb&quot;</span><br><span class="line">Output: false</span><br><span class="line">Explanation: There are 4 &#x27;a&#x27;s in &quot;aaaa&quot; but 0 &#x27;a&#x27;s in &quot;bccb&quot;.</span><br><span class="line">The difference is 4, which is more than the allowed 3.</span><br><span class="line">Example 2:</span><br><span class="line"></span><br><span class="line">Input: word1 = &quot;abcdeef&quot;, word2 = &quot;abaaacc&quot;</span><br><span class="line">Output: true</span><br><span class="line">Explanation: The differences between the frequencies of each letter in word1 and word2 are at most 3:</span><br><span class="line">- &#x27;a&#x27; appears 1 time in word1 and 4 times in word2. The difference is 3.</span><br><span class="line">- &#x27;b&#x27; appears 1 time in word1 and 1 time in word2. The difference is 0.</span><br><span class="line">- &#x27;c&#x27; appears 1 time in word1 and 2 times in word2. The difference is 1.</span><br><span class="line">- &#x27;d&#x27; appears 1 time in word1 and 0 times in word2. The difference is 1.</span><br><span class="line">- &#x27;e&#x27; appears 2 times in word1 and 0 times in word2. The difference is 2.</span><br><span class="line">- &#x27;f&#x27; appears 1 time in word1 and 0 times in word2. The difference is 1.</span><br><span class="line">Example 3:</span><br><span class="line"></span><br><span class="line">Input: word1 = &quot;cccddabba&quot;, word2 = &quot;babababab&quot;</span><br><span class="line">Output: true</span><br><span class="line">Explanation: The differences between the frequencies of each letter in word1 and word2 are at most 3:</span><br><span class="line">- &#x27;a&#x27; appears 2 times in word1 and 4 times in word2. The difference is 2.</span><br><span class="line">- &#x27;b&#x27; appears 2 times in word1 and 5 times in word2. The difference is 3.</span><br><span class="line">- &#x27;c&#x27; appears 3 times in word1 and 0 times in word2. The difference is 3.</span><br><span class="line">- &#x27;d&#x27; appears 2 times in word1 and 0 times in word2. The difference is 2.</span><br><span class="line"> </span><br><span class="line"></span><br><span class="line">Constraints:</span><br><span class="line"></span><br><span class="line">n == word1.length == word2.length</span><br><span class="line">1 &lt;= n &lt;= 100</span><br><span class="line">word1 and word2 consist only of lowercase English letters.</span><br></pre></td></tr></table></figure>
-<p>难度 : Easy<br>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2021/11/27/2068-Check-Whether-Two-Strings-are-Almost-Equivalent/#more" rel="contents">
                 Read more &raquo;
               </a>
             </div>
