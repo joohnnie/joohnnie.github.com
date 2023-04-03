@@ -132,7 +132,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">45</span>
+          <span class="site-state-item-count">46</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -173,6 +173,109 @@
 
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://www.zyx.fun/2022/04/13/2233-Maximum-Product-After-K-Increments/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Johnnie">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Coffee Time">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2022/04/13/2233-Maximum-Product-After-K-Increments/" class="post-title-link" itemprop="url">2233. Maximum Product After K Increments</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2022-04-13 23:45:07" itemprop="dateCreated datePublished" datetime="2022-04-13T23:45:07-07:00">2022-04-13</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">Edited on</span>
+        <time title="Modified: 2022-04-14 00:00:55" itemprop="dateModified" datetime="2022-04-14T00:00:55-07:00">2022-04-14</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/Leetcode/" itemprop="url" rel="index"><span itemprop="name">Leetcode</span></a>
+        </span>
+    </span>
+
+  
+    <span class="post-meta-break"></span>
+    <span class="post-meta-item" title="Words count">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">Words count: </span>
+      <span>1.7k</span>
+    </span>
+    <span class="post-meta-item" title="Reading time">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">Reading time &asymp;</span>
+      <span>2 mins.</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h2 id="2233-Maximum-Product-After-K-Increments"><a href="#2233-Maximum-Product-After-K-Increments" class="headerlink" title="2233. Maximum Product After K Increments"></a>2233. Maximum Product After K Increments</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line">You are given an array of non-negative integers nums and an integer k. In one operation, </span><br><span class="line">you may choose any element from nums and increment it by 1.</span><br><span class="line"></span><br><span class="line">Return the maximum product of nums after at most k operations. Since the answer may be very large, </span><br><span class="line">return it modulo 109 + 7. Note that you should maximize the product before taking the modulo. </span><br><span class="line"></span><br><span class="line"> </span><br><span class="line"></span><br><span class="line">Example 1:</span><br><span class="line"></span><br><span class="line">Input: nums = [0,4], k = 5</span><br><span class="line">Output: 20</span><br><span class="line">Explanation: Increment the first number 5 times.</span><br><span class="line">Now nums = [5, 4], with a product of 5 * 4 = 20.</span><br><span class="line">It can be shown that 20 is maximum product possible, so we return 20.</span><br><span class="line">Note that there may be other ways to increment nums to have the maximum product.</span><br><span class="line">Example 2:</span><br><span class="line"></span><br><span class="line">Input: nums = [6,3,3,2], k = 2</span><br><span class="line">Output: 216</span><br><span class="line">Explanation: Increment the second number 1 time and increment the fourth number 1 time.</span><br><span class="line">Now nums = [6, 4, 3, 3], with a product of 6 * 4 * 3 * 3 = 216.</span><br><span class="line">It can be shown that 216 is maximum product possible, so we return 216.</span><br><span class="line">Note that there may be other ways to increment nums to have the maximum product.</span><br><span class="line"> </span><br><span class="line"></span><br><span class="line">Constraints:</span><br><span class="line"></span><br><span class="line">1 &lt;= nums.length, k &lt;= 105</span><br><span class="line">0 &lt;= nums[i] &lt;= 106</span><br></pre></td></tr></table></figure>
+<p>难度 : Medium<br>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2022/04/13/2233-Maximum-Product-After-K-Increments/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
@@ -564,105 +667,8 @@
 
 
 
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://www.zyx.fun/2021/11/28/2089-Find-Target-Indices-After-Sorting-Array/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Johnnie">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Coffee Time">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2021/11/28/2089-Find-Target-Indices-After-Sorting-Array/" class="post-title-link" itemprop="url">2089. Find Target Indices After Sorting Array</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-      
-
-      <time title="Created: 2021-11-28 11:30:34 / Modified: 11:36:24" itemprop="dateCreated datePublished" datetime="2021-11-28T11:30:34-08:00">2021-11-28</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">In</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/Leetcode/" itemprop="url" rel="index"><span itemprop="name">Leetcode</span></a>
-        </span>
-    </span>
-
-  
-    <span class="post-meta-break"></span>
-    <span class="post-meta-item" title="Words count">
-      <span class="post-meta-item-icon">
-        <i class="far fa-file-word"></i>
-      </span>
-      <span class="post-meta-item-text">Words count: </span>
-      <span>1.6k</span>
-    </span>
-    <span class="post-meta-item" title="Reading time">
-      <span class="post-meta-item-icon">
-        <i class="far fa-clock"></i>
-      </span>
-      <span class="post-meta-item-text">Reading time &asymp;</span>
-      <span>1 mins.</span>
-    </span>
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h2 id="2089-Find-Target-Indices-After-Sorting-Array"><a href="#2089-Find-Target-Indices-After-Sorting-Array" class="headerlink" title="2089. Find Target Indices After Sorting Array"></a>2089. Find Target Indices After Sorting Array</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line">You are given a 0-indexed integer array nums and a target element target.</span><br><span class="line"></span><br><span class="line">A target index is an index i such that nums[i] == target.</span><br><span class="line"></span><br><span class="line">Return a list of the target indices of nums after sorting nums in non-decreasing order. </span><br><span class="line">If there are no target indices, return an empty list. The returned list must be sorted in increasing order.</span><br><span class="line"></span><br><span class="line"> </span><br><span class="line"></span><br><span class="line">Example 1:</span><br><span class="line"></span><br><span class="line">Input: nums = [1,2,5,2,3], target = 2</span><br><span class="line">Output: [1,2]</span><br><span class="line">Explanation: After sorting, nums is [1,2,2,3,5].</span><br><span class="line">The indices where nums[i] == 2 are 1 and 2.</span><br><span class="line">Example 2:</span><br><span class="line"></span><br><span class="line">Input: nums = [1,2,5,2,3], target = 3</span><br><span class="line">Output: [3]</span><br><span class="line">Explanation: After sorting, nums is [1,2,2,3,5].</span><br><span class="line">The index where nums[i] == 3 is 3.</span><br><span class="line">Example 3:</span><br><span class="line"></span><br><span class="line">Input: nums = [1,2,5,2,3], target = 5</span><br><span class="line">Output: [4]</span><br><span class="line">Explanation: After sorting, nums is [1,2,2,3,5].</span><br><span class="line">The index where nums[i] == 5 is 4.</span><br><span class="line">Example 4:</span><br><span class="line"></span><br><span class="line">Input: nums = [1,2,5,2,3], target = 4</span><br><span class="line">Output: []</span><br><span class="line">Explanation: There are no elements in nums with value 4.</span><br><span class="line"> </span><br><span class="line"></span><br><span class="line">Constraints:</span><br><span class="line"></span><br><span class="line">1 &lt;= nums.length &lt;= 100</span><br><span class="line">1 &lt;= nums[i], target &lt;= 100</span><br></pre></td></tr></table></figure>
-<p>难度 : Easy<br>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2021/11/28/2089-Find-Target-Indices-After-Sorting-Array/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/page/3/"><i class="fa fa-angle-left" aria-label="Previous page"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/3/">3</a><span class="page-number current">4</span><a class="page-number" href="/page/5/">5</a><span class="space">&hellip;</span><a class="page-number" href="/page/9/">9</a><a class="extend next" rel="next" href="/page/5/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
+    <a class="extend prev" rel="prev" href="/page/3/"><i class="fa fa-angle-left" aria-label="Previous page"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/3/">3</a><span class="page-number current">4</span><a class="page-number" href="/page/5/">5</a><span class="space">&hellip;</span><a class="page-number" href="/page/10/">10</a><a class="extend next" rel="next" href="/page/5/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
   </nav>
 
 </div>
