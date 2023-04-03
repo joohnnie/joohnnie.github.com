@@ -23,28 +23,30 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"www.zyx.fun","root":"/","images":"/images","scheme":"Muse","darkmode":false,"version":"8.8.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js"></script>
-<meta name="description" content="A Beginner’s Guide to Scala Parser CombinatorsIntroductionScala parser combinators are a powerful library for writing text parsers. This library allows you to createparsers by combining smaller, simpl">
+<meta name="description" content="2605. Form Smallest Number From Two Digit Arrays1234567891011121314151617181920Given two arrays of unique digits nums1 and nums2, return the smallest number that contains at least one digit from each">
 <meta property="og:type" content="article">
-<meta property="og:title" content="A Beginner&#39;s Guide to Scala Parser Combinators">
-<meta property="og:url" content="http://www.zyx.fun/2023/03/20/A-Beginner-s-Guide-to-Scala-Parser-Combinators/index.html">
+<meta property="og:title" content="2605. Form Smallest Number From Two Digit Arrays">
+<meta property="og:url" content="http://www.zyx.fun/2023/04/02/2605-Form-Smallest-Number-From-Two-Digit-Arrays/index.html">
 <meta property="og:site_name" content="Coffee Time">
-<meta property="og:description" content="A Beginner’s Guide to Scala Parser CombinatorsIntroductionScala parser combinators are a powerful library for writing text parsers. This library allows you to createparsers by combining smaller, simpl">
+<meta property="og:description" content="2605. Form Smallest Number From Two Digit Arrays1234567891011121314151617181920Given two arrays of unique digits nums1 and nums2, return the smallest number that contains at least one digit from each">
 <meta property="og:locale">
-<meta property="article:published_time" content="2023-03-20T23:28:51.000Z">
-<meta property="article:modified_time" content="2023-03-21T01:00:18.565Z">
+<meta property="article:published_time" content="2023-04-03T02:18:50.000Z">
+<meta property="article:modified_time" content="2023-04-03T02:21:23.132Z">
 <meta property="article:author" content="Johnnie">
-<meta property="article:tag" content="Scala">
+<meta property="article:tag" content="Leetcode">
+<meta property="article:tag" content="Algorithm">
+<meta property="article:tag" content="Easy">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="http://www.zyx.fun/2023/03/20/A-Beginner-s-Guide-to-Scala-Parser-Combinators/">
+<link rel="canonical" href="http://www.zyx.fun/2023/04/02/2605-Form-Smallest-Number-From-Two-Digit-Arrays/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"中文","comments":true,"permalink":"http://www.zyx.fun/2023/03/20/A-Beginner-s-Guide-to-Scala-Parser-Combinators/","path":"2023/03/20/A-Beginner-s-Guide-to-Scala-Parser-Combinators/","title":"A Beginner's Guide to Scala Parser Combinators"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"中文","comments":true,"permalink":"http://www.zyx.fun/2023/04/02/2605-Form-Smallest-Number-From-Two-Digit-Arrays/","path":"2023/04/02/2605-Form-Smallest-Number-From-Two-Digit-Arrays/","title":"2605. Form Smallest Number From Two Digit Arrays"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>A Beginner's Guide to Scala Parser Combinators | Coffee Time</title>
+<title>2605. Form Smallest Number From Two Digit Arrays | Coffee Time</title>
   
   <script class="next-config" data-name="google_analytics" type="application/json">{"tracking_id":"UA-138588479-1","only_pageview":true}</script>
   <script src="/js/third-party/analytics/google-analytics.js"></script>
@@ -124,7 +126,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#A-Beginner%E2%80%99s-Guide-to-Scala-Parser-Combinators"><span class="nav-number">1.</span> <span class="nav-text">A Beginner’s Guide to Scala Parser Combinators</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Introduction"><span class="nav-number">1.1.</span> <span class="nav-text">Introduction</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#What-are-Scala-Parser-Combinators-and-their-API"><span class="nav-number">1.2.</span> <span class="nav-text">What are Scala Parser Combinators and their API</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#What-are-Scala-Combinators-and-their-API"><span class="nav-number">1.3.</span> <span class="nav-text">What are Scala Combinators and their API</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#How-to-Use-Scala-Parser-Combinators"><span class="nav-number">1.4.</span> <span class="nav-text">How to Use Scala Parser Combinators</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Example"><span class="nav-number">1.5.</span> <span class="nav-text">Example</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Conclusion"><span class="nav-number">1.6.</span> <span class="nav-text">Conclusion</span></a></li></ol></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#2605-Form-Smallest-Number-From-Two-Digit-Arrays"><span class="nav-number">1.</span> <span class="nav-text">2605. Form Smallest Number From Two Digit Arrays</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Solution"><span class="nav-number">2.</span> <span class="nav-text">Solution</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -188,7 +190,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="中文">
-    <link itemprop="mainEntityOfPage" href="http://www.zyx.fun/2023/03/20/A-Beginner-s-Guide-to-Scala-Parser-Combinators/">
+    <link itemprop="mainEntityOfPage" href="http://www.zyx.fun/2023/04/02/2605-Form-Smallest-Number-From-Two-Digit-Arrays/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -201,7 +203,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          A Beginner's Guide to Scala Parser Combinators
+          2605. Form Smallest Number From Two Digit Arrays
         </h1>
 
         <div class="post-meta-container">
@@ -213,7 +215,7 @@
       <span class="post-meta-item-text">Posted on</span>
       
 
-      <time title="Created: 2023-03-20 16:28:51 / Modified: 18:00:18" itemprop="dateCreated datePublished" datetime="2023-03-20T16:28:51-07:00">2023-03-20</time>
+      <time title="Created: 2023-04-02 19:18:50 / Modified: 19:21:23" itemprop="dateCreated datePublished" datetime="2023-04-02T19:18:50-07:00">2023-04-02</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -221,7 +223,7 @@
       </span>
       <span class="post-meta-item-text">In</span>
         <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/Scala/" itemprop="url" rel="index"><span itemprop="name">Scala</span></a>
+          <a href="/categories/Leetcode/" itemprop="url" rel="index"><span itemprop="name">Leetcode</span></a>
         </span>
     </span>
 
@@ -239,14 +241,14 @@
         <i class="far fa-file-word"></i>
       </span>
       <span class="post-meta-item-text">Words count: </span>
-      <span>2.8k</span>
+      <span>1.1k</span>
     </span>
     <span class="post-meta-item" title="Reading time">
       <span class="post-meta-item-icon">
         <i class="far fa-clock"></i>
       </span>
       <span class="post-meta-item-text">Reading time &asymp;</span>
-      <span>3 mins.</span>
+      <span>1 mins.</span>
     </span>
 </div>
 
@@ -257,44 +259,9 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <h1 id="A-Beginner’s-Guide-to-Scala-Parser-Combinators"><a href="#A-Beginner’s-Guide-to-Scala-Parser-Combinators" class="headerlink" title="A Beginner’s Guide to Scala Parser Combinators"></a>A Beginner’s Guide to Scala Parser Combinators</h1><h2 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h2><p>Scala parser combinators are a powerful library for writing text parsers. This library allows you to create<br>parsers by combining smaller, simpler parsers using higher-order functions called combinators.</p>
-<h2 id="What-are-Scala-Parser-Combinators-and-their-API"><a href="#What-are-Scala-Parser-Combinators-and-their-API" class="headerlink" title="What are Scala Parser Combinators and their API"></a>What are Scala Parser Combinators and their API</h2><p>Scala parser combinators are a parsing library built on the idea of combining simple parsers to create more complex parsers. The main components of the library are:</p>
-<ul>
-<li><code>Parser</code>: A basic building block that represents a parser for a specific input.</li>
-<li><code>RegexParsers</code>: A trait that provides the ability to create parsers from regular expressions.</li>
-<li><code>Parsers</code>: A trait that contains the basic combinators for constructing new parsers.</li>
-</ul>
-<p>To use the library, you need to extend the Parsers trait or one of its subclasses (like RegexParsers).<br>Then, you can define your parsers by combining the basic parsers and combinators provided by the library.</p>
-<span id="more"></span>
-<h2 id="What-are-Scala-Combinators-and-their-API"><a href="#What-are-Scala-Combinators-and-their-API" class="headerlink" title="What are Scala Combinators and their API"></a>What are Scala Combinators and their API</h2><p>Combinators are higher-order functions that take parsers as arguments and return new parsers. Some common combinators include:</p>
-<ul>
-<li><code>~</code>: Sequences two parsers, returning a tuple with their results.</li>
-<li><code>~&gt;</code>: Sequences two parsers, discarding the result of the first parser.</li>
-<li><code>&lt;~</code>: Sequences two parsers, discarding the result of the second parser.</li>
-<li><code>|</code>: Tries two parsers in order, returning the result of the first successful parser.</li>
-<li><code>^^</code>: Transforms the result of a parser using a given function.</li>
-<li><code>rep</code>: Repeats a parser zero or more times, returning a list of results.</li>
-<li><code>repsep</code>: Repeats a parser zero or more times with a separator, returning a list of results.</li>
-<li><code>opt</code>: Makes a parser optional, returning Some(result) if successful or None if not.</li>
-</ul>
-<h2 id="How-to-Use-Scala-Parser-Combinators"><a href="#How-to-Use-Scala-Parser-Combinators" class="headerlink" title="How to Use Scala Parser Combinators"></a>How to Use Scala Parser Combinators</h2><ul>
-<li>Add the necessary dependency to your build.sbt file.</li>
-<li>Import the required modules in your Scala file.</li>
-<li>Create a new class extending the RegexParsers trait.</li>
-<li>Define your basic parsers and combinators.</li>
-<li>Implement the main parsing method.</li>
-</ul>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">libraryDependencies +=(&quot;org.scala-lang.modules&quot; %% &quot;scala-parser-combinators&quot; % &quot;2.2.0&quot;)</span><br></pre></td></tr></table></figure>
-<h2 id="Example"><a href="#Example" class="headerlink" title="Example"></a>Example</h2><p>You can define the following parsers<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">def number: Parser[Int] = &quot;\\d+&quot;.r ^^ (_.toInt)</span><br><span class="line">def letter: Parser[String] = &quot;[a-zA-Z]&quot;.r</span><br><span class="line"></span><br></pre></td></tr></table></figure><br>Now, you want to create a parser that can parse a number followed by a letter.<br>You can use the <code>~</code> combinator like this:</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">def numberAndLetter: Parser[(Int, String)] = number ~ letter</span><br></pre></td></tr></table></figure>
-<p>However, there are situations where you might want to ignore the result of one of the parsers.<br>In these cases, you can use the ~&gt; or &lt;~ combinators.</p>
-<ul>
-<li><code>p1 ~&gt; p2</code>: This combinator works like ~, but only keeps the result of p2. The result of p1 is discarded.</li>
-<li><code>p1 &lt;~ p2</code>: This combinator also works like ~, but only keeps the result of p1. The result of p2 is discarded.</li>
-</ul>
-<p>For example, if you want to parse a number followed by a letter but only want to keep the result of the number, you can use the &lt;~ combinator:</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">def numberBeforeLetter: Parser[Int] = number &lt;~ letter</span><br></pre></td></tr></table></figure>
-<h2 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a>Conclusion</h2><p>In this beginner’s guide, we introduced Scala parser combinators and their API, explained how to use combinator. With a solid understanding of the basic concepts and combinators, you can start building your own parsers for various applications. Happy parsing!</p>
+        <h2 id="2605-Form-Smallest-Number-From-Two-Digit-Arrays"><a href="#2605-Form-Smallest-Number-From-Two-Digit-Arrays" class="headerlink" title="2605. Form Smallest Number From Two Digit Arrays"></a>2605. Form Smallest Number From Two Digit Arrays</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">Given two arrays of unique digits nums1 and nums2, return the smallest number that contains at least one digit from each array.</span><br><span class="line"> </span><br><span class="line"></span><br><span class="line">Example 1:</span><br><span class="line"></span><br><span class="line">Input: nums1 = [4,1,3], nums2 = [5,7]</span><br><span class="line">Output: 15</span><br><span class="line">Explanation: The number 15 contains the digit 1 from nums1 and the digit 5 from nums2. It can be proven that 15 is the smallest number we can have.</span><br><span class="line">Example 2:</span><br><span class="line"></span><br><span class="line">Input: nums1 = [3,5,2,6], nums2 = [3,1,7]</span><br><span class="line">Output: 3</span><br><span class="line">Explanation: The number 3 contains the digit 3 which exists in both arrays.</span><br><span class="line"> </span><br><span class="line"></span><br><span class="line">Constraints:</span><br><span class="line"></span><br><span class="line">1 &lt;= nums1.length, nums2.length &lt;= 9</span><br><span class="line">1 &lt;= nums1[i], nums2[i] &lt;= 9</span><br><span class="line">All digits in each array are unique.</span><br></pre></td></tr></table></figure>
+<p>Difficulty : Easy<br><span id="more"></span></p>
+<h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">minNumber</span><span class="params">(<span class="keyword">int</span>[] nums1, <span class="keyword">int</span>[] nums2)</span> </span>&#123;</span><br><span class="line">        TreeSet&lt;Integer&gt; s1 = toSet(nums1);</span><br><span class="line">        TreeSet&lt;Integer&gt; s2 = toSet(nums2);</span><br><span class="line">        <span class="keyword">int</span> a = s1.first();</span><br><span class="line">        <span class="keyword">int</span> b = s2.first();</span><br><span class="line">        s1.retainAll(s2);</span><br><span class="line">        <span class="keyword">if</span> (!s1.isEmpty()) &#123;</span><br><span class="line">            <span class="comment">//have to create new TreeSet, otherwise will get exception</span></span><br><span class="line">            <span class="keyword">return</span> <span class="keyword">new</span> TreeSet&lt;&gt;(s1).first();</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> Math.min(a, b) * <span class="number">10</span> + Math.max(a, b);</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> TreeSet&lt;Integer&gt; <span class="title">toSet</span><span class="params">(<span class="keyword">int</span>[] nums)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> Arrays.stream(nums).boxed().collect(Collectors.toCollection(TreeSet::<span class="keyword">new</span>));</span><br><span class="line">    &#125;    </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
     </div>
 
@@ -304,21 +271,20 @@
 
     <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/Scala/" rel="tag"># Scala</a>
+              <a href="/tags/Leetcode/" rel="tag"># Leetcode</a>
+              <a href="/tags/Algorithm/" rel="tag"># Algorithm</a>
+              <a href="/tags/Easy/" rel="tag"># Easy</a>
           </div>
 
         
 
           <div class="post-nav">
             <div class="post-nav-item">
-                <a href="/2022/05/01/1941-Check-if-All-Characters-Have-Equal-Number-of-Occurrences/" rel="prev" title="1941. Check if All Characters Have Equal Number of Occurrences">
-                  <i class="fa fa-chevron-left"></i> 1941. Check if All Characters Have Equal Number of Occurrences
+                <a href="/2023/03/25/2360-Longest-Cycle-in-a-Graph/" rel="prev" title="2360. Longest Cycle in a Graph">
+                  <i class="fa fa-chevron-left"></i> 2360. Longest Cycle in a Graph
                 </a>
             </div>
             <div class="post-nav-item">
-                <a href="/2023/03/20/2348-Number-of-Zero-Filled-Subarrays/" rel="next" title="2348. Number of Zero-Filled Subarrays">
-                  2348. Number of Zero-Filled Subarrays <i class="fa fa-chevron-right"></i>
-                </a>
             </div>
           </div>
     </footer>

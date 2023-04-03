@@ -132,7 +132,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">43</span>
+          <span class="site-state-item-count">44</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -173,6 +173,103 @@
 
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://www.zyx.fun/2022/04/16/2231-Largest-Number-After-Digit-Swaps-by-Parity/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Johnnie">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Coffee Time">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2022/04/16/2231-Largest-Number-After-Digit-Swaps-by-Parity/" class="post-title-link" itemprop="url">2231. Largest Number After Digit Swaps by Parity</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+      
+
+      <time title="Created: 2022-04-16 15:33:08 / Modified: 15:35:33" itemprop="dateCreated datePublished" datetime="2022-04-16T15:33:08-07:00">2022-04-16</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/Leetcode/" itemprop="url" rel="index"><span itemprop="name">Leetcode</span></a>
+        </span>
+    </span>
+
+  
+    <span class="post-meta-break"></span>
+    <span class="post-meta-item" title="Words count">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">Words count: </span>
+      <span>1.5k</span>
+    </span>
+    <span class="post-meta-item" title="Reading time">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">Reading time &asymp;</span>
+      <span>1 mins.</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h2 id="2231-Largest-Number-After-Digit-Swaps-by-Parity"><a href="#2231-Largest-Number-After-Digit-Swaps-by-Parity" class="headerlink" title="2231. Largest Number After Digit Swaps by Parity"></a>2231. Largest Number After Digit Swaps by Parity</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">You are given a positive integer num. You may swap any two digits of num that have the same parity (i.e. both odd digits or both even digits).</span><br><span class="line"></span><br><span class="line">Return the largest possible value of num after any number of swaps.</span><br><span class="line"></span><br><span class="line"> </span><br><span class="line"></span><br><span class="line">Example 1:</span><br><span class="line"></span><br><span class="line">Input: num = 1234</span><br><span class="line">Output: 3412</span><br><span class="line">Explanation: Swap the digit 3 with the digit 1, this results in the number 3214.</span><br><span class="line">Swap the digit 2 with the digit 4, this results in the number 3412.</span><br><span class="line">Note that there may be other sequences of swaps but it can be shown that 3412 is the largest possible number.</span><br><span class="line">Also note that we may not swap the digit 4 with the digit 1 since they are of different parities.</span><br><span class="line">Example 2:</span><br><span class="line"></span><br><span class="line">Input: num = 65875</span><br><span class="line">Output: 87655</span><br><span class="line">Explanation: Swap the digit 8 with the digit 6, this results in the number 85675.</span><br><span class="line">Swap the first digit 5 with the digit 7, this results in the number 87655.</span><br><span class="line">Note that there may be other sequences of swaps but it can be shown that 87655 is the largest possible number.</span><br><span class="line"> </span><br><span class="line"></span><br><span class="line">Constraints:</span><br><span class="line"></span><br><span class="line">1 &lt;= num &lt;= 10^9</span><br></pre></td></tr></table></figure>
+<p>Difficulty : Easy<br>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2022/04/16/2231-Largest-Number-After-Digit-Swaps-by-Parity/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
@@ -543,103 +640,6 @@
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/2021/12/01/100-Same-Tree/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://www.zyx.fun/2021/12/01/2079-Watering-Plants/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Johnnie">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Coffee Time">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2021/12/01/2079-Watering-Plants/" class="post-title-link" itemprop="url">2079. Watering Plants</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-      
-
-      <time title="Created: 2021-12-01 23:36:54 / Modified: 23:52:48" itemprop="dateCreated datePublished" datetime="2021-12-01T23:36:54-08:00">2021-12-01</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">In</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/Leetcode/" itemprop="url" rel="index"><span itemprop="name">Leetcode</span></a>
-        </span>
-    </span>
-
-  
-    <span class="post-meta-break"></span>
-    <span class="post-meta-item" title="Words count">
-      <span class="post-meta-item-icon">
-        <i class="far fa-file-word"></i>
-      </span>
-      <span class="post-meta-item-text">Words count: </span>
-      <span>2.2k</span>
-    </span>
-    <span class="post-meta-item" title="Reading time">
-      <span class="post-meta-item-icon">
-        <i class="far fa-clock"></i>
-      </span>
-      <span class="post-meta-item-text">Reading time &asymp;</span>
-      <span>2 mins.</span>
-    </span>
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h2 id="2079-Watering-Plants"><a href="#2079-Watering-Plants" class="headerlink" title="2079. Watering Plants"></a>2079. Watering Plants</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br></pre></td><td class="code"><pre><span class="line">ou want to water n plants in your garden with a watering can. The plants are arranged in a row and are labeled from 0 to n - 1 from left to right where the ith plant is located at x = i. There is a river at x = -1 that you can refill your watering can at.</span><br><span class="line"></span><br><span class="line">Each plant needs a specific amount of water. You will water the plants in the following way:</span><br><span class="line"></span><br><span class="line">Water the plants in order from left to right.</span><br><span class="line">After watering the current plant, if you do not have enough water to completely water the next plant, return to the river to fully refill the watering can.</span><br><span class="line">You cannot refill the watering can early.</span><br><span class="line">You are initially at the river (i.e., x = -1). It takes one step to move one unit on the x-axis.</span><br><span class="line"></span><br><span class="line">Given a 0-indexed integer array plants of n integers, where plants[i] is the amount of water the ith plant needs, and an integer capacity representing the watering can capacity, return the number of steps needed to water all the plants.</span><br><span class="line"></span><br><span class="line"> </span><br><span class="line"></span><br><span class="line">Example 1:</span><br><span class="line"></span><br><span class="line">Input: plants = [2,2,3,3], capacity = 5</span><br><span class="line">Output: 14</span><br><span class="line">Explanation: Start at the river with a full watering can:</span><br><span class="line">- Walk to plant 0 (1 step) and water it. Watering can has 3 units of water.</span><br><span class="line">- Walk to plant 1 (1 step) and water it. Watering can has 1 unit of water.</span><br><span class="line">- Since you cannot completely water plant 2, walk back to the river to refill (2 steps).</span><br><span class="line">- Walk to plant 2 (3 steps) and water it. Watering can has 2 units of water.</span><br><span class="line">- Since you cannot completely water plant 3, walk back to the river to refill (3 steps).</span><br><span class="line">- Walk to plant 3 (4 steps) and water it.</span><br><span class="line">Steps needed = 1 + 1 + 2 + 3 + 3 + 4 = 14.</span><br><span class="line">Example 2:</span><br><span class="line"></span><br><span class="line">Input: plants = [1,1,1,4,2,3], capacity = 4</span><br><span class="line">Output: 30</span><br><span class="line">Explanation: Start at the river with a full watering can:</span><br><span class="line">- Water plants 0, 1, and 2 (3 steps). Return to river (3 steps).</span><br><span class="line">- Water plant 3 (4 steps). Return to river (4 steps).</span><br><span class="line">- Water plant 4 (5 steps). Return to river (5 steps).</span><br><span class="line">- Water plant 5 (6 steps).</span><br><span class="line">Steps needed = 3 + 3 + 4 + 4 + 5 + 5 + 6 = 30.</span><br><span class="line">Example 3:</span><br><span class="line"></span><br><span class="line">Input: plants = [7,7,7,7,7,7,7], capacity = 8</span><br><span class="line">Output: 49</span><br><span class="line">Explanation: You have to refill before watering each plant.</span><br><span class="line">Steps needed = 1 + 1 + 2 + 2 + 3 + 3 + 4 + 4 + 5 + 5 + 6 + 6 + 7 = 49.</span><br><span class="line"> </span><br><span class="line"></span><br><span class="line">Constraints:</span><br><span class="line"></span><br><span class="line">n == plants.length</span><br><span class="line">1 &lt;= n &lt;= 1000</span><br><span class="line">1 &lt;= plants[i] &lt;= 106</span><br><span class="line">max(plants[i]) &lt;= capacity &lt;= 109</span><br></pre></td></tr></table></figure>
-<p>Difficulty : Medium<br>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2021/12/01/2079-Watering-Plants/#more" rel="contents">
                 Read more &raquo;
               </a>
             </div>
