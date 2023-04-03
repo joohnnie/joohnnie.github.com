@@ -23,30 +23,28 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"www.zyx.fun","root":"/","images":"/images","scheme":"Muse","darkmode":false,"version":"8.8.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js"></script>
-<meta name="description" content="2605. Form Smallest Number From Two Digit Arrays1234567891011121314151617181920Given two arrays of unique digits nums1 and nums2, return the smallest number that contains at least one digit from each">
+<meta name="description" content="How to convert int[] to Set&lt; Integer&gt; in JavaTo Set&lt; Integer&gt; before JDK81234567public static Set&lt;Integer&gt; toSet(int[] nums) &amp;#123;    Set&lt;Integer&gt; set &#x3D; new HashSet&lt;&gt;();">
 <meta property="og:type" content="article">
-<meta property="og:title" content="2605. Form Smallest Number From Two Digit Arrays">
-<meta property="og:url" content="http://www.zyx.fun/2023/04/02/2605-Form-Smallest-Number-From-Two-Digit-Arrays/index.html">
+<meta property="og:title" content="How to convert int[] to Set&lt;Integer&gt; in Java">
+<meta property="og:url" content="http://www.zyx.fun/2023/04/02/How-to-convert-int-to-Set-Integer-in-Java/index.html">
 <meta property="og:site_name" content="Coffee Time">
-<meta property="og:description" content="2605. Form Smallest Number From Two Digit Arrays1234567891011121314151617181920Given two arrays of unique digits nums1 and nums2, return the smallest number that contains at least one digit from each">
+<meta property="og:description" content="How to convert int[] to Set&lt; Integer&gt; in JavaTo Set&lt; Integer&gt; before JDK81234567public static Set&lt;Integer&gt; toSet(int[] nums) &amp;#123;    Set&lt;Integer&gt; set &#x3D; new HashSet&lt;&gt;();">
 <meta property="og:locale">
-<meta property="article:published_time" content="2023-04-03T02:18:50.000Z">
-<meta property="article:modified_time" content="2023-04-03T02:21:23.132Z">
+<meta property="article:published_time" content="2023-04-03T02:22:40.000Z">
+<meta property="article:modified_time" content="2023-04-03T02:29:35.614Z">
 <meta property="article:author" content="Johnnie">
-<meta property="article:tag" content="Leetcode">
-<meta property="article:tag" content="Algorithm">
-<meta property="article:tag" content="Easy">
+<meta property="article:tag" content="Java">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="http://www.zyx.fun/2023/04/02/2605-Form-Smallest-Number-From-Two-Digit-Arrays/">
+<link rel="canonical" href="http://www.zyx.fun/2023/04/02/How-to-convert-int-to-Set-Integer-in-Java/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"中文","comments":true,"permalink":"http://www.zyx.fun/2023/04/02/2605-Form-Smallest-Number-From-Two-Digit-Arrays/","path":"2023/04/02/2605-Form-Smallest-Number-From-Two-Digit-Arrays/","title":"2605. Form Smallest Number From Two Digit Arrays"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"中文","comments":true,"permalink":"http://www.zyx.fun/2023/04/02/How-to-convert-int-to-Set-Integer-in-Java/","path":"2023/04/02/How-to-convert-int-to-Set-Integer-in-Java/","title":"How to convert int[] to Set\u003cInteger> in Java"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>2605. Form Smallest Number From Two Digit Arrays | Coffee Time</title>
+<title>How to convert int[] to Set<Integer> in Java | Coffee Time</title>
   
   <script class="next-config" data-name="google_analytics" type="application/json">{"tracking_id":"UA-138588479-1","only_pageview":true}</script>
   <script src="/js/third-party/analytics/google-analytics.js"></script>
@@ -126,7 +124,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#2605-Form-Smallest-Number-From-Two-Digit-Arrays"><span class="nav-number">1.</span> <span class="nav-text">2605. Form Smallest Number From Two Digit Arrays</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Solution"><span class="nav-number">2.</span> <span class="nav-text">Solution</span></a></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#How-to-convert-int-to-Set-lt-Integer-gt-in-Java"><span class="nav-number">1.</span> <span class="nav-text">How to convert int[] to Set&lt; Integer&gt; in Java</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#To-Set-lt-Integer-gt-before-JDK8"><span class="nav-number">1.1.</span> <span class="nav-text">To Set&lt; Integer&gt; before JDK8</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#To-Set-lt-Integer-gt-After-JDK8"><span class="nav-number">1.2.</span> <span class="nav-text">To Set&lt; Integer&gt; After JDK8</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#To-TreeSet-lt-Integer-gt"><span class="nav-number">1.3.</span> <span class="nav-text">To TreeSet&lt; Integer&gt;</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#To-ArrayList-lt-Integer-gt"><span class="nav-number">1.4.</span> <span class="nav-text">To ArrayList&lt; Integer&gt;</span></a></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -190,7 +188,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="中文">
-    <link itemprop="mainEntityOfPage" href="http://www.zyx.fun/2023/04/02/2605-Form-Smallest-Number-From-Two-Digit-Arrays/">
+    <link itemprop="mainEntityOfPage" href="http://www.zyx.fun/2023/04/02/How-to-convert-int-to-Set-Integer-in-Java/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -203,7 +201,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          2605. Form Smallest Number From Two Digit Arrays
+          How to convert int[] to Set<Integer> in Java
         </h1>
 
         <div class="post-meta-container">
@@ -215,7 +213,7 @@
       <span class="post-meta-item-text">Posted on</span>
       
 
-      <time title="Created: 2023-04-02 19:18:50 / Modified: 19:21:23" itemprop="dateCreated datePublished" datetime="2023-04-02T19:18:50-07:00">2023-04-02</time>
+      <time title="Created: 2023-04-02 19:22:40 / Modified: 19:29:35" itemprop="dateCreated datePublished" datetime="2023-04-02T19:22:40-07:00">2023-04-02</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -223,7 +221,7 @@
       </span>
       <span class="post-meta-item-text">In</span>
         <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/Leetcode/" itemprop="url" rel="index"><span itemprop="name">Leetcode</span></a>
+          <a href="/categories/Java/" itemprop="url" rel="index"><span itemprop="name">Java</span></a>
         </span>
     </span>
 
@@ -241,7 +239,7 @@
         <i class="far fa-file-word"></i>
       </span>
       <span class="post-meta-item-text">Words count: </span>
-      <span>1.1k</span>
+      <span>706</span>
     </span>
     <span class="post-meta-item" title="Reading time">
       <span class="post-meta-item-icon">
@@ -259,10 +257,10 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <h2 id="2605-Form-Smallest-Number-From-Two-Digit-Arrays"><a href="#2605-Form-Smallest-Number-From-Two-Digit-Arrays" class="headerlink" title="2605. Form Smallest Number From Two Digit Arrays"></a>2605. Form Smallest Number From Two Digit Arrays</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">Given two arrays of unique digits nums1 and nums2, return the smallest number that contains at least one digit from each array.</span><br><span class="line"> </span><br><span class="line"></span><br><span class="line">Example 1:</span><br><span class="line"></span><br><span class="line">Input: nums1 = [4,1,3], nums2 = [5,7]</span><br><span class="line">Output: 15</span><br><span class="line">Explanation: The number 15 contains the digit 1 from nums1 and the digit 5 from nums2. It can be proven that 15 is the smallest number we can have.</span><br><span class="line">Example 2:</span><br><span class="line"></span><br><span class="line">Input: nums1 = [3,5,2,6], nums2 = [3,1,7]</span><br><span class="line">Output: 3</span><br><span class="line">Explanation: The number 3 contains the digit 3 which exists in both arrays.</span><br><span class="line"> </span><br><span class="line"></span><br><span class="line">Constraints:</span><br><span class="line"></span><br><span class="line">1 &lt;= nums1.length, nums2.length &lt;= 9</span><br><span class="line">1 &lt;= nums1[i], nums2[i] &lt;= 9</span><br><span class="line">All digits in each array are unique.</span><br></pre></td></tr></table></figure>
-<p>Difficulty : Easy<br><span id="more"></span></p>
-<h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">minNumber</span><span class="params">(<span class="keyword">int</span>[] nums1, <span class="keyword">int</span>[] nums2)</span> </span>&#123;</span><br><span class="line">        TreeSet&lt;Integer&gt; s1 = toSet(nums1);</span><br><span class="line">        TreeSet&lt;Integer&gt; s2 = toSet(nums2);</span><br><span class="line">        <span class="keyword">int</span> a = s1.first();</span><br><span class="line">        <span class="keyword">int</span> b = s2.first();</span><br><span class="line">        s1.retainAll(s2);</span><br><span class="line">        <span class="keyword">if</span> (!s1.isEmpty()) &#123;</span><br><span class="line">            <span class="comment">//have to create new TreeSet, otherwise will get exception</span></span><br><span class="line">            <span class="keyword">return</span> <span class="keyword">new</span> TreeSet&lt;&gt;(s1).first();</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> Math.min(a, b) * <span class="number">10</span> + Math.max(a, b);</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> TreeSet&lt;Integer&gt; <span class="title">toSet</span><span class="params">(<span class="keyword">int</span>[] nums)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> Arrays.stream(nums).boxed().collect(Collectors.toCollection(TreeSet::<span class="keyword">new</span>));</span><br><span class="line">    &#125;    </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
+        <h1 id="How-to-convert-int-to-Set-lt-Integer-gt-in-Java"><a href="#How-to-convert-int-to-Set-lt-Integer-gt-in-Java" class="headerlink" title="How to convert int[] to Set&lt; Integer&gt; in Java"></a>How to convert int[] to Set&lt; Integer&gt; in Java</h1><h2 id="To-Set-lt-Integer-gt-before-JDK8"><a href="#To-Set-lt-Integer-gt-before-JDK8" class="headerlink" title="To Set&lt; Integer&gt; before JDK8"></a>To Set&lt; Integer&gt; before JDK8</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> Set&lt;Integer&gt; <span class="title">toSet</span><span class="params">(<span class="keyword">int</span>[] nums)</span> </span>&#123;</span><br><span class="line">    Set&lt;Integer&gt; set = <span class="keyword">new</span> HashSet&lt;&gt;();</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> num : nums) &#123;</span><br><span class="line">        set.add(num);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> set;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="To-Set-lt-Integer-gt-After-JDK8"><a href="#To-Set-lt-Integer-gt-After-JDK8" class="headerlink" title="To Set&lt; Integer&gt; After JDK8"></a>To Set&lt; Integer&gt; After JDK8</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">public static Set&lt;Integer&gt; toSet(int[] nums) &#123;</span><br><span class="line">    return Arrays.stream(nums).boxed().collect(Collectors.toSet());</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="To-TreeSet-lt-Integer-gt"><a href="#To-TreeSet-lt-Integer-gt" class="headerlink" title="To TreeSet&lt; Integer&gt;"></a>To TreeSet&lt; Integer&gt;</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">public static TreeSet&lt;Integer&gt; toSet(int[] nums) &#123;</span><br><span class="line">    return Arrays.stream(nums).boxed().collect(Collectors.toCollection(TreeSet::new));</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="To-ArrayList-lt-Integer-gt"><a href="#To-ArrayList-lt-Integer-gt" class="headerlink" title="To ArrayList&lt; Integer&gt;"></a>To ArrayList&lt; Integer&gt;</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">public static List&lt;Integer&gt; toList(int[] nums) &#123;</span><br><span class="line">    return Arrays.stream(nums).boxed().collect(Collectors.toList());</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
     </div>
 
     
@@ -271,23 +269,18 @@
 
     <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/Leetcode/" rel="tag"># Leetcode</a>
-              <a href="/tags/Algorithm/" rel="tag"># Algorithm</a>
-              <a href="/tags/Easy/" rel="tag"># Easy</a>
+              <a href="/tags/Java/" rel="tag"># Java</a>
           </div>
 
         
 
           <div class="post-nav">
             <div class="post-nav-item">
-                <a href="/2023/03/25/2360-Longest-Cycle-in-a-Graph/" rel="prev" title="2360. Longest Cycle in a Graph">
-                  <i class="fa fa-chevron-left"></i> 2360. Longest Cycle in a Graph
+                <a href="/2023/04/02/2605-Form-Smallest-Number-From-Two-Digit-Arrays/" rel="prev" title="2605. Form Smallest Number From Two Digit Arrays">
+                  <i class="fa fa-chevron-left"></i> 2605. Form Smallest Number From Two Digit Arrays
                 </a>
             </div>
             <div class="post-nav-item">
-                <a href="/2023/04/02/How-to-convert-int-to-Set-Integer-in-Java/" rel="next" title="How to convert int[] to Set<Integer> in Java">
-                  How to convert int[] to Set<Integer> in Java <i class="fa fa-chevron-right"></i>
-                </a>
             </div>
           </div>
     </footer>
