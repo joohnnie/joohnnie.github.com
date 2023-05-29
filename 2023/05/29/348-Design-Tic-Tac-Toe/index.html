@@ -23,31 +23,30 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"www.zyx.fun","root":"/","images":"/images","scheme":"Muse","darkmode":false,"version":"8.8.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js"></script>
-<meta name="description" content="35. Search Insert Position1234567891011121314151617181920212223242526272829303132333435Given a sorted array of distinct integers and a target value, return the index if the target is found. If not, re">
+<meta name="description" content="348.Design Tic-Tac-Toe1234567891011121314Assume the following rules are for the tic-tac-toe game on an n x n board between two players:A move is guaranteed to be valid and is placed on an empty block.">
 <meta property="og:type" content="article">
-<meta property="og:title" content="35. Search Insert Position">
-<meta property="og:url" content="http://www.zyx.fun/2021/11/27/35-Search-Insert-Position/index.html">
+<meta property="og:title" content="348.Design Tic-Tac-Toe">
+<meta property="og:url" content="http://www.zyx.fun/2023/05/29/348-Design-Tic-Tac-Toe/index.html">
 <meta property="og:site_name" content="Coffee Time">
-<meta property="og:description" content="35. Search Insert Position1234567891011121314151617181920212223242526272829303132333435Given a sorted array of distinct integers and a target value, return the index if the target is found. If not, re">
+<meta property="og:description" content="348.Design Tic-Tac-Toe1234567891011121314Assume the following rules are for the tic-tac-toe game on an n x n board between two players:A move is guaranteed to be valid and is placed on an empty block.">
 <meta property="og:locale">
-<meta property="article:published_time" content="2021-11-28T00:20:51.000Z">
-<meta property="article:modified_time" content="2021-11-28T05:46:34.717Z">
+<meta property="article:published_time" content="2023-05-29T17:59:15.000Z">
+<meta property="article:modified_time" content="2023-05-29T18:04:51.906Z">
 <meta property="article:author" content="Johnnie">
 <meta property="article:tag" content="Leetcode">
 <meta property="article:tag" content="Algorithm">
-<meta property="article:tag" content="Easy">
-<meta property="article:tag" content="BinarySearch">
+<meta property="article:tag" content="Medium">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="http://www.zyx.fun/2021/11/27/35-Search-Insert-Position/">
+<link rel="canonical" href="http://www.zyx.fun/2023/05/29/348-Design-Tic-Tac-Toe/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"中文","comments":true,"permalink":"http://www.zyx.fun/2021/11/27/35-Search-Insert-Position/","path":"2021/11/27/35-Search-Insert-Position/","title":"35. Search Insert Position"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"中文","comments":true,"permalink":"http://www.zyx.fun/2023/05/29/348-Design-Tic-Tac-Toe/","path":"2023/05/29/348-Design-Tic-Tac-Toe/","title":"348.Design Tic-Tac-Toe"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>35. Search Insert Position | Coffee Time</title>
+<title>348.Design Tic-Tac-Toe | Coffee Time</title>
   
   <script class="next-config" data-name="google_analytics" type="application/json">{"tracking_id":"UA-138588479-1","only_pageview":true}</script>
   <script src="/js/third-party/analytics/google-analytics.js"></script>
@@ -117,7 +116,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#35-Search-Insert-Position"><span class="nav-number">1.</span> <span class="nav-text">35. Search Insert Position</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%80%9D%E8%B7%AF"><span class="nav-number">2.</span> <span class="nav-text">思路</span></a></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#348-Design-Tic-Tac-Toe"><span class="nav-number">1.</span> <span class="nav-text">348.Design Tic-Tac-Toe</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Solution"><span class="nav-number">2.</span> <span class="nav-text">Solution</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -181,7 +180,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="中文">
-    <link itemprop="mainEntityOfPage" href="http://www.zyx.fun/2021/11/27/35-Search-Insert-Position/">
+    <link itemprop="mainEntityOfPage" href="http://www.zyx.fun/2023/05/29/348-Design-Tic-Tac-Toe/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -194,7 +193,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          35. Search Insert Position
+          348.Design Tic-Tac-Toe
         </h1>
 
         <div class="post-meta-container">
@@ -206,7 +205,7 @@
       <span class="post-meta-item-text">Posted on</span>
       
 
-      <time title="Created: 2021-11-27 16:20:51 / Modified: 21:46:34" itemprop="dateCreated datePublished" datetime="2021-11-27T16:20:51-08:00">2021-11-27</time>
+      <time title="Created: 2023-05-29 10:59:15 / Modified: 11:04:51" itemprop="dateCreated datePublished" datetime="2023-05-29T10:59:15-07:00">2023-05-29</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -232,14 +231,14 @@
         <i class="far fa-file-word"></i>
       </span>
       <span class="post-meta-item-text">Words count: </span>
-      <span>999</span>
+      <span>2k</span>
     </span>
     <span class="post-meta-item" title="Reading time">
       <span class="post-meta-item-icon">
         <i class="far fa-clock"></i>
       </span>
       <span class="post-meta-item-text">Reading time &asymp;</span>
-      <span>1 mins.</span>
+      <span>2 mins.</span>
     </span>
 </div>
 
@@ -250,11 +249,11 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <h2 id="35-Search-Insert-Position"><a href="#35-Search-Insert-Position" class="headerlink" title="35. Search Insert Position"></a>35. Search Insert Position</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line">Given a sorted array of distinct integers and a target value, return the index if the target is found. </span><br><span class="line">If not, return the index where it would be if it were inserted in order.</span><br><span class="line"></span><br><span class="line">You must write an algorithm with O(log n) runtime complexity.</span><br><span class="line"></span><br><span class="line"> </span><br><span class="line"></span><br><span class="line">Example 1:</span><br><span class="line"></span><br><span class="line">Input: nums = [1,3,5,6], target = 5</span><br><span class="line">Output: 2</span><br><span class="line">Example 2:</span><br><span class="line"></span><br><span class="line">Input: nums = [1,3,5,6], target = 2</span><br><span class="line">Output: 1</span><br><span class="line">Example 3:</span><br><span class="line"></span><br><span class="line">Input: nums = [1,3,5,6], target = 7</span><br><span class="line">Output: 4</span><br><span class="line">Example 4:</span><br><span class="line"></span><br><span class="line">Input: nums = [1,3,5,6], target = 0</span><br><span class="line">Output: 0</span><br><span class="line">Example 5:</span><br><span class="line"></span><br><span class="line">Input: nums = [1], target = 0</span><br><span class="line">Output: 0</span><br><span class="line"> </span><br><span class="line"></span><br><span class="line">Constraints:</span><br><span class="line"></span><br><span class="line">1 &lt;= nums.length &lt;= 104</span><br><span class="line">-104 &lt;= nums[i] &lt;= 104</span><br><span class="line">nums contains distinct values sorted in ascending order.</span><br><span class="line">-104 &lt;= target &lt;= 104</span><br></pre></td></tr></table></figure>
-<p>难度 : Easy<br><span id="more"></span></p>
-<h2 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h2><p>这是用BinarySearch查找lowerbound的问题。<br>注意这里 <code>r = n</code>, 而且判断的条件是 <code>nums[m] &gt;= target</code>.<br>因为搜索的范围是<code>[l,r)</code> 不包括<code>r</code>。这里每次缩小搜索范围的时候需要保证满足这个条件<br>结果就是<code>l</code></p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">searchInsert</span><span class="params">(<span class="keyword">int</span>[] nums, <span class="keyword">int</span> target)</span> </span>&#123;</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">int</span> n = nums.length;</span><br><span class="line">        <span class="keyword">int</span> l = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">int</span> r = n;</span><br><span class="line">        <span class="keyword">while</span>(l &lt; r) &#123;</span><br><span class="line">            <span class="keyword">int</span> m = l + (r - l) / <span class="number">2</span>;</span><br><span class="line">            <span class="keyword">if</span> (nums[m] &gt;= target) &#123;</span><br><span class="line">                r = m;</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                l = m + <span class="number">1</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> l;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
+        <h2 id="348-Design-Tic-Tac-Toe"><a href="#348-Design-Tic-Tac-Toe" class="headerlink" title="348.Design Tic-Tac-Toe"></a>348.Design Tic-Tac-Toe</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">Assume the following rules are for the tic-tac-toe game on an n x n board between two players:</span><br><span class="line"></span><br><span class="line">A move is guaranteed to be valid and is placed on an empty block.</span><br><span class="line">Once a winning condition is reached, no more moves are allowed.</span><br><span class="line">A player who succeeds in placing n of their marks in a horizontal, vertical, or diagonal row wins the game.</span><br><span class="line">Implement the TicTacToe class:</span><br><span class="line"></span><br><span class="line">- TicTacToe(int n) Initializes the object the size of the board n.</span><br><span class="line">- int move(int row, int col, int player) Indicates that the player with id player plays at the cell (row, col) </span><br><span class="line">of the board. The move is guaranteed to be a valid move, and the two players alternate in making moves. Return</span><br><span class="line">    - 0 if there is no winner after the move,</span><br><span class="line">    - 1 if player 1 is the winner after the move, or</span><br><span class="line">    - 2 if player 2 is the winner after the move.</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>Difficulty : Medium<br><span id="more"></span></p>
+<h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><p>This is a problem where we can use the concept of rows, columns, and diagonals to keep track of the current<br>player’s marks. In an nxn TicTacToe board, a player wins if they have n marks on any row, column or diagonal.</p>
+<p>We can create four integer arrays: rows, columns, and two diagonals.<br>Player1 will +1 to the position, and player2 will -1.<br>When any position reaches n or -n, that means player1 or player2 wins.</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br></pre></td><td class="code"><pre><span class="line">public class TicTacToe &#123;</span><br><span class="line">    private int[] rows;</span><br><span class="line">    private int[] cols;</span><br><span class="line">    private int diagonal;</span><br><span class="line">    private int antiDiagonal;</span><br><span class="line"></span><br><span class="line">    /** Initialize your data structure here. */</span><br><span class="line">    public TicTacToe(int n) &#123;</span><br><span class="line">        rows = new int[n];</span><br><span class="line">        cols = new int[n];</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    /**</span><br><span class="line">     * Player &#123;player&#125; makes a move at (&#123;row&#125;, &#123;col&#125;).</span><br><span class="line">     *</span><br><span class="line">     * @param row    The row of the board.</span><br><span class="line">     * @param col    The column of the board.</span><br><span class="line">     * @param player The player, can be either 1 or 2.</span><br><span class="line">     * @return The current winning condition, can be either:</span><br><span class="line">     * 0: No one wins.</span><br><span class="line">     * 1: Player 1 wins.</span><br><span class="line">     * 2: Player 2 wins.</span><br><span class="line">     */</span><br><span class="line">    public int move(int row, int col, int player) &#123;</span><br><span class="line">        int toAdd = player == 1 ? 1 : -1;</span><br><span class="line"></span><br><span class="line">        rows[row] += toAdd;</span><br><span class="line">        cols[col] += toAdd;</span><br><span class="line">        if (row == col)</span><br><span class="line">        &#123;</span><br><span class="line">            diagonal += toAdd;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        if (col == (cols.length - row - 1))</span><br><span class="line">        &#123;</span><br><span class="line">            antiDiagonal += toAdd;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        int size = rows.length;</span><br><span class="line">        if (Math.abs(rows[row]) == size ||</span><br><span class="line">            Math.abs(cols[col]) == size ||</span><br><span class="line">            Math.abs(diagonal) == size  ||</span><br><span class="line">            Math.abs(antiDiagonal) == size)</span><br><span class="line">        &#123;</span><br><span class="line">            return player;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        return 0;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
     </div>
 
     
@@ -265,22 +264,18 @@
           <div class="post-tags">
               <a href="/tags/Leetcode/" rel="tag"># Leetcode</a>
               <a href="/tags/Algorithm/" rel="tag"># Algorithm</a>
-              <a href="/tags/Easy/" rel="tag"># Easy</a>
-              <a href="/tags/BinarySearch/" rel="tag"># BinarySearch</a>
+              <a href="/tags/Medium/" rel="tag"># Medium</a>
           </div>
 
         
 
           <div class="post-nav">
             <div class="post-nav-item">
-                <a href="/2021/11/27/797-All-Paths-From-Source-to-Target/" rel="prev" title="797. All Paths From Source to Target">
-                  <i class="fa fa-chevron-left"></i> 797. All Paths From Source to Target
+                <a href="/2023/04/02/881-Boats-to-Save-People/" rel="prev" title="881. Boats to Save People">
+                  <i class="fa fa-chevron-left"></i> 881. Boats to Save People
                 </a>
             </div>
             <div class="post-nav-item">
-                <a href="/2021/11/27/2068-Check-Whether-Two-Strings-are-Almost-Equivalent/" rel="next" title="2068. Check Whether Two Strings are Almost Equivalent">
-                  2068. Check Whether Two Strings are Almost Equivalent <i class="fa fa-chevron-right"></i>
-                </a>
             </div>
           </div>
     </footer>
