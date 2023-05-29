@@ -122,7 +122,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">47</span>
+          <span class="site-state-item-count">48</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -133,7 +133,7 @@
       </div>
       <div class="site-state-item site-state-tags">
           <a href="/tags/">
-        <span class="site-state-item-count">20</span>
+        <span class="site-state-item-count">21</span>
         <span class="site-state-item-name">tags</span></a>
       </div>
   </nav>
@@ -163,6 +163,100 @@
 
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://www.zyx.fun/2023/05/29/Bloom-filter/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Johnnie">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Coffee Time">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2023/05/29/Bloom-filter/" class="post-title-link" itemprop="url">Bloom Filter</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+      
+
+      <time title="Created: 2023-05-29 11:08:05 / Modified: 11:14:44" itemprop="dateCreated datePublished" datetime="2023-05-29T11:08:05-07:00">2023-05-29</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/BigData/" itemprop="url" rel="index"><span itemprop="name">BigData</span></a>
+        </span>
+    </span>
+
+  
+    <span class="post-meta-break"></span>
+    <span class="post-meta-item" title="Words count">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">Words count: </span>
+      <span>2.6k</span>
+    </span>
+    <span class="post-meta-item" title="Reading time">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">Reading time &asymp;</span>
+      <span>2 mins.</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h1 id="Bloom-Filter"><a href="#Bloom-Filter" class="headerlink" title="Bloom Filter"></a>Bloom Filter</h1><h2 id="What’s-Bloom-Filter"><a href="#What’s-Bloom-Filter" class="headerlink" title="What’s Bloom Filter"></a>What’s Bloom Filter</h2><p>A Bloom filter is a data structure that’s used to test whether an element is a member of a set.<br>The primary advantage of a Bloom filter over other data structures is that it’s incredibly space-efficient<br>when dealing with large data sets. </p>
+<p>However, this comes with a trade-off: while Bloom filters can definitively state if an element is not in the set,<br>it can only probabilistically determine if an element is in the set.<br>This means it has a certain rate of false positives.</p>
+<p>In a Bloom filter, data is passed through several hash functions, with each function mapping the input to a<br>position within a bit array. </p>
+<p>When an element is added to the Bloom filter, bits at the hashed positions are set to 1.<br>When testing for the presence of an element, the filter checks whether the bits at the hashed positions are set.<br>If they are, the filter returns “possibly in set”. If not, it returns “definitely not in set”.</p>
+<h2 id="Simple-Java-Implementation"><a href="#Simple-Java-Implementation" class="headerlink" title="Simple Java Implementation"></a>Simple Java Implementation</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br></pre></td><td class="code"><pre><span class="line">import java.util.BitSet;</span><br><span class="line"></span><br><span class="line">public class BloomFilter &#123;</span><br><span class="line">    private static final int DEFAULT_SIZE = 2 &lt;&lt; 24;</span><br><span class="line">    private final BitSet bitSet = new BitSet(DEFAULT_SIZE);</span><br><span class="line">    private static final int[] seeds = new int[]&#123;7, 11, 13, 31, 37, 61&#125;;</span><br><span class="line">    private SimpleHash[] func = new SimpleHash[seeds.length];</span><br><span class="line"></span><br><span class="line">    public BloomFilter() &#123;</span><br><span class="line">        for (int i = 0; i &lt; seeds.length; i++) &#123;</span><br><span class="line">            func[i] = new SimpleHash(DEFAULT_SIZE, seeds[i]);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public void add(String value) &#123;</span><br><span class="line">        for (SimpleHash f : func) &#123;</span><br><span class="line">            bitSet.set(f.hash(value), true);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public boolean contains(String value) &#123;</span><br><span class="line">        if (value == null) &#123;</span><br><span class="line">            return false;</span><br><span class="line">        &#125;</span><br><span class="line">        boolean ret = true;</span><br><span class="line">        for (SimpleHash f : func) &#123;</span><br><span class="line">            ret = ret &amp;&amp; bitSet.get(f.hash(value));</span><br><span class="line">        &#125;</span><br><span class="line">        return ret;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public static class SimpleHash &#123;</span><br><span class="line">        private int cap;</span><br><span class="line">        private int seed;</span><br><span class="line"></span><br><span class="line">        public SimpleHash(int cap, int seed) &#123;</span><br><span class="line">            this.cap = cap;</span><br><span class="line">            this.seed = seed;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        public int hash(String value) &#123;</span><br><span class="line">            int result = 0;</span><br><span class="line">            int len = value.length();</span><br><span class="line">            for (int i = 0; i &lt; len; i++) &#123;</span><br><span class="line">                result = seed * result + value.charAt(i);</span><br><span class="line">            &#125;</span><br><span class="line">            return (cap - 1) &amp; result;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>Unit tests<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line">import org.junit.Assert;</span><br><span class="line">import org.junit.Before;</span><br><span class="line">import org.junit.Test;</span><br><span class="line"></span><br><span class="line">public class BloomFilterTest &#123;</span><br><span class="line">    private BloomFilter bloomFilter;</span><br><span class="line"></span><br><span class="line">    @Before</span><br><span class="line">    public void setup() &#123;</span><br><span class="line">        bloomFilter = new BloomFilter();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    @Test</span><br><span class="line">    public void testAddAndContains() &#123;</span><br><span class="line">        String testValue = &quot;test&quot;;</span><br><span class="line">        bloomFilter.add(testValue);</span><br><span class="line"></span><br><span class="line">        Assert.assertTrue(bloomFilter.contains(testValue));</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    @Test</span><br><span class="line">    public void testDoesntContain() &#123;</span><br><span class="line">        String testValue = &quot;test&quot;;</span><br><span class="line">        String otherValue = &quot;other&quot;;</span><br><span class="line"></span><br><span class="line">        bloomFilter.add(testValue);</span><br><span class="line"></span><br><span class="line">        Assert.assertFalse(bloomFilter.contains(otherValue));</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    @Test</span><br><span class="line">    public void testEmpty() &#123;</span><br><span class="line">        String testValue = &quot;test&quot;;</span><br><span class="line"></span><br><span class="line">        Assert.assertFalse(bloomFilter.contains(testValue));</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure></p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
@@ -524,106 +618,6 @@
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/2023/04/02/2605-Form-Smallest-Number-From-Two-Digit-Arrays/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://www.zyx.fun/2023/03/25/2360-Longest-Cycle-in-a-Graph/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Johnnie">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Coffee Time">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2023/03/25/2360-Longest-Cycle-in-a-Graph/" class="post-title-link" itemprop="url">2360. Longest Cycle in a Graph</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-      
-
-      <time title="Created: 2023-03-25 23:24:51 / Modified: 23:35:36" itemprop="dateCreated datePublished" datetime="2023-03-25T23:24:51-07:00">2023-03-25</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">In</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/Leetcode/" itemprop="url" rel="index"><span itemprop="name">Leetcode</span></a>
-        </span>
-    </span>
-
-  
-    <span class="post-meta-break"></span>
-    <span class="post-meta-item" title="Words count">
-      <span class="post-meta-item-icon">
-        <i class="far fa-file-word"></i>
-      </span>
-      <span class="post-meta-item-text">Words count: </span>
-      <span>2.7k</span>
-    </span>
-    <span class="post-meta-item" title="Reading time">
-      <span class="post-meta-item-icon">
-        <i class="far fa-clock"></i>
-      </span>
-      <span class="post-meta-item-text">Reading time &asymp;</span>
-      <span>2 mins.</span>
-    </span>
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h2 id="2360-Longest-Cycle-in-a-Graph"><a href="#2360-Longest-Cycle-in-a-Graph" class="headerlink" title="2360. Longest Cycle in a Graph"></a>2360. Longest Cycle in a Graph</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">You are given a directed graph of n nodes numbered from 0 to n - 1, where each node has at most one outgoing edge.</span><br><span class="line"></span><br><span class="line">The graph is represented with a given 0-indexed array edges of size n, indicating that there is a directed edge from node i to node edges[i]. If there is no outgoing edge from node i, then edges[i] == -1.</span><br><span class="line"></span><br><span class="line">Return the length of the longest cycle in the graph. If no cycle exists, return -1.</span><br><span class="line"></span><br><span class="line">A cycle is a path that starts and ends at the same node.</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<h3 id="Example-1"><a href="#Example-1" class="headerlink" title="Example 1:"></a>Example 1:</h3><p><img src="https://assets.leetcode.com/uploads/2022/06/08/graph4drawio-5.png" alt=""><br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Input: edges = [3,3,4,2,3]</span><br><span class="line">Output: 3</span><br><span class="line">Explanation: The longest cycle in the graph is the cycle: 2 -&gt; 4 -&gt; 3 -&gt; 2.</span><br><span class="line">The length of this cycle is 3, so 3 is returned.</span><br></pre></td></tr></table></figure></p>
-<h3 id="Example-2"><a href="#Example-2" class="headerlink" title="Example 2:"></a>Example 2:</h3><p><img src="https://assets.leetcode.com/uploads/2022/06/07/graph4drawio-1.png" alt=""><br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Input: edges = [2,-1,3,1]</span><br><span class="line">Output: -1</span><br><span class="line">Explanation: There are no cycles in this graph.</span><br></pre></td></tr></table></figure></p>
-<h3 id="Constraints"><a href="#Constraints" class="headerlink" title="Constraints:"></a>Constraints:</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">- n == edges.length</span><br><span class="line">- 2 &lt;= n &lt;= 105</span><br><span class="line">- -1 &lt;= edges[i] &lt; n</span><br><span class="line">- edges[i] != i</span><br></pre></td></tr></table></figure>
-<p>Difficulty : Hard<br>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2023/03/25/2360-Longest-Cycle-in-a-Graph/#more" rel="contents">
                 Read more &raquo;
               </a>
             </div>

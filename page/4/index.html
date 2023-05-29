@@ -122,7 +122,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">47</span>
+          <span class="site-state-item-count">48</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -133,7 +133,7 @@
       </div>
       <div class="site-state-item site-state-tags">
           <a href="/tags/">
-        <span class="site-state-item-count">20</span>
+        <span class="site-state-item-count">21</span>
         <span class="site-state-item-name">tags</span></a>
       </div>
   </nav>
@@ -163,6 +163,103 @@
 
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://www.zyx.fun/2022/04/14/2232-Minimize-Result-by-Adding-Parentheses-to-Expression/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Johnnie">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Coffee Time">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2022/04/14/2232-Minimize-Result-by-Adding-Parentheses-to-Expression/" class="post-title-link" itemprop="url">2232. Minimize Result by Adding Parentheses to Expression</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+      
+
+      <time title="Created: 2022-04-14 00:32:39 / Modified: 00:38:16" itemprop="dateCreated datePublished" datetime="2022-04-14T00:32:39-07:00">2022-04-14</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/Leetcode/" itemprop="url" rel="index"><span itemprop="name">Leetcode</span></a>
+        </span>
+    </span>
+
+  
+    <span class="post-meta-break"></span>
+    <span class="post-meta-item" title="Words count">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">Words count: </span>
+      <span>2.5k</span>
+    </span>
+    <span class="post-meta-item" title="Reading time">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">Reading time &asymp;</span>
+      <span>2 mins.</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h2 id="2232-Minimize-Result-by-Adding-Parentheses-to-Expression"><a href="#2232-Minimize-Result-by-Adding-Parentheses-to-Expression" class="headerlink" title="2232. Minimize Result by Adding Parentheses to Expression"></a>2232. Minimize Result by Adding Parentheses to Expression</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><span class="line">You are given a 0-indexed string expression of the form &quot;&lt;num1&gt;+&lt;num2&gt;&quot; where &lt;num1&gt; and &lt;num2&gt; represent positive integers.</span><br><span class="line"></span><br><span class="line">Add a pair of parentheses to expression such that after the addition of parentheses, expression is a valid mathematical </span><br><span class="line">expression and evaluates to the smallest possible value. The left parenthesis must be added to the left of &#x27;+&#x27; and the </span><br><span class="line">right parenthesis must be added to the right of &#x27;+&#x27;.</span><br><span class="line"></span><br><span class="line">Return expression after adding a pair of parentheses such that expression evaluates to the smallest possible value. </span><br><span class="line">If there are multiple answers that yield the same result, return any of them.</span><br><span class="line"></span><br><span class="line">The input has been generated such that the original value of expression, and the value of expression after </span><br><span class="line">adding any pair of parentheses that meets the requirements fits within a signed 32-bit integer.</span><br><span class="line"></span><br><span class="line"> </span><br><span class="line"></span><br><span class="line">Example 1:</span><br><span class="line"></span><br><span class="line">Input: expression = &quot;247+38&quot;</span><br><span class="line">Output: &quot;2(47+38)&quot;</span><br><span class="line">Explanation: The expression evaluates to 2 * (47 + 38) = 2 * 85 = 170.</span><br><span class="line">Note that &quot;2(4)7+38&quot; is invalid because the right parenthesis must be to the right of the &#x27;+&#x27;.</span><br><span class="line">It can be shown that 170 is the smallest possible value.</span><br><span class="line">Example 2:</span><br><span class="line"></span><br><span class="line">Input: expression = &quot;12+34&quot;</span><br><span class="line">Output: &quot;1(2+3)4&quot;</span><br><span class="line">Explanation: The expression evaluates to 1 * (2 + 3) * 4 = 1 * 5 * 4 = 20.</span><br><span class="line">Example 3:</span><br><span class="line"></span><br><span class="line">Input: expression = &quot;999+999&quot;</span><br><span class="line">Output: &quot;(999+999)&quot;</span><br><span class="line">Explanation: The expression evaluates to 999 + 999 = 1998.</span><br><span class="line"> </span><br><span class="line"></span><br><span class="line">Constraints:</span><br><span class="line"></span><br><span class="line">3 &lt;= expression.length &lt;= 10</span><br><span class="line">expression consists of digits from &#x27;1&#x27; to &#x27;9&#x27; and &#x27;+&#x27;.</span><br><span class="line">expression starts and ends with digits.</span><br><span class="line">expression contains exactly one &#x27;+&#x27;.</span><br><span class="line">The original value of expression, and the value of expression after adding any pair of parentheses that meets the </span><br><span class="line">requirements fits within a signed 32-bit integer.</span><br></pre></td></tr></table></figure>
+<p>Difficulty : Medium<br>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2022/04/14/2232-Minimize-Result-by-Adding-Parentheses-to-Expression/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
@@ -533,103 +630,6 @@
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/2021/12/01/2079-Watering-Plants/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://www.zyx.fun/2021/12/01/328-Odd-Even-Linked-List/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Johnnie">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Coffee Time">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2021/12/01/328-Odd-Even-Linked-List/" class="post-title-link" itemprop="url">328. Odd Even Linked List</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-      
-
-      <time title="Created: 2021-12-01 23:30:47 / Modified: 23:33:59" itemprop="dateCreated datePublished" datetime="2021-12-01T23:30:47-08:00">2021-12-01</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">In</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/Leetcode/" itemprop="url" rel="index"><span itemprop="name">Leetcode</span></a>
-        </span>
-    </span>
-
-  
-    <span class="post-meta-break"></span>
-    <span class="post-meta-item" title="Words count">
-      <span class="post-meta-item-icon">
-        <i class="far fa-file-word"></i>
-      </span>
-      <span class="post-meta-item-text">Words count: </span>
-      <span>1.2k</span>
-    </span>
-    <span class="post-meta-item" title="Reading time">
-      <span class="post-meta-item-icon">
-        <i class="far fa-clock"></i>
-      </span>
-      <span class="post-meta-item-text">Reading time &asymp;</span>
-      <span>1 mins.</span>
-    </span>
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h2 id="328-Odd-Even-Linked-List"><a href="#328-Odd-Even-Linked-List" class="headerlink" title="328. Odd Even Linked List"></a>328. Odd Even Linked List</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">Given the head of a singly linked list, group all the nodes with odd indices together followed by the nodes with even indices, and return the reordered list.</span><br><span class="line"></span><br><span class="line">The first node is considered odd, and the second node is even, and so on.</span><br><span class="line"></span><br><span class="line">Note that the relative order inside both the even and odd groups should remain as it was in the input.</span><br><span class="line"></span><br><span class="line">You must solve the problem in O(1) extra space complexity and O(n) time complexity.</span><br><span class="line"></span><br><span class="line"> </span><br><span class="line"></span><br><span class="line">Example 1:</span><br></pre></td></tr></table></figure>
-<p><img src="https://assets.leetcode.com/uploads/2021/03/10/oddeven-linked-list.jpg" alt=""><br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Input: head = [1,2,3,4,5]</span><br><span class="line">Output: [1,3,5,2,4]</span><br><span class="line">Example 2:</span><br></pre></td></tr></table></figure><br><img src="https://assets.leetcode.com/uploads/2021/03/10/oddeven2-linked-list.jpg" alt=""><br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">Input: head = [2,1,3,5,6,4,7]</span><br><span class="line">Output: [2,3,6,7,1,5,4]</span><br><span class="line"> </span><br><span class="line"></span><br><span class="line">Constraints:</span><br><span class="line"></span><br><span class="line">n == number of nodes in the linked list</span><br><span class="line">0 &lt;= n &lt;= 104</span><br><span class="line">-106 &lt;= Node.val &lt;= 106</span><br></pre></td></tr></table></figure><br>Difficulty : Medium<br>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2021/12/01/328-Odd-Even-Linked-List/#more" rel="contents">
                 Read more &raquo;
               </a>
             </div>

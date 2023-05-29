@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="中文">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="google-site-verification" content="9LXdSXXZMPrBjCfTtv4acI-eS-sqhNbKG40t084hBYs" />
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6027626988074828"
+        crossorigin="anonymous"></script>
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.4.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css" integrity="sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"www.zyx.fun","root":"/","images":"/images","scheme":"Muse","darkmode":false,"version":"8.8.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js"></script>
+<meta name="description" content="Bloom FilterWhat’s Bloom FilterA Bloom filter is a data structure that’s used to test whether an element is a member of a set.The primary advantage of a Bloom filter over other data structures is that">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Bloom Filter">
+<meta property="og:url" content="http://www.zyx.fun/2023/05/29/Bloom-filter/index.html">
+<meta property="og:site_name" content="Coffee Time">
+<meta property="og:description" content="Bloom FilterWhat’s Bloom FilterA Bloom filter is a data structure that’s used to test whether an element is a member of a set.The primary advantage of a Bloom filter over other data structures is that">
+<meta property="og:locale">
+<meta property="article:published_time" content="2023-05-29T18:08:05.000Z">
+<meta property="article:modified_time" content="2023-05-29T18:14:44.679Z">
+<meta property="article:author" content="Johnnie">
+<meta property="article:tag" content="Bloom Filter">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="http://www.zyx.fun/2023/05/29/Bloom-filter/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"中文","comments":true,"permalink":"http://www.zyx.fun/2023/05/29/Bloom-filter/","path":"2023/05/29/Bloom-filter/","title":"Bloom Filter"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>Bloom Filter | Coffee Time</title>
+  
+  <script class="next-config" data-name="google_analytics" type="application/json">{"tracking_id":"UA-138588479-1","only_pageview":true}</script>
+  <script src="/js/third-party/analytics/google-analytics.js"></script>
+
+
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6027626988074828"
+     crossorigin="anonymous"></script>
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar" role="button">
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <h1 class="site-title">Coffee Time</h1>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Bloom-Filter"><span class="nav-number">1.</span> <span class="nav-text">Bloom Filter</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#What%E2%80%99s-Bloom-Filter"><span class="nav-number">1.1.</span> <span class="nav-text">What’s Bloom Filter</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Simple-Java-Implementation"><span class="nav-number">1.2.</span> <span class="nav-text">Simple Java Implementation</span></a></li></ol></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Johnnie</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">48</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">7</span>
+        <span class="site-state-item-name">categories</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">21</span>
+        <span class="site-state-item-name">tags</span></a>
+      </div>
+  </nav>
+</div>
+
+
+
+        </div>
+      </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+  <div class="back-to-top" role="button" aria-label="Back to top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="中文">
+    <link itemprop="mainEntityOfPage" href="http://www.zyx.fun/2023/05/29/Bloom-filter/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Johnnie">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Coffee Time">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Bloom Filter
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+      
+
+      <time title="Created: 2023-05-29 11:08:05 / Modified: 11:14:44" itemprop="dateCreated datePublished" datetime="2023-05-29T11:08:05-07:00">2023-05-29</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/BigData/" itemprop="url" rel="index"><span itemprop="name">BigData</span></a>
+        </span>
+    </span>
+
+  
+    <span class="post-meta-item" title="Views" id="busuanzi_container_page_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="far fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">Views: </span>
+      <span id="busuanzi_value_page_pv"></span>
+    </span>
+    <span class="post-meta-break"></span>
+    <span class="post-meta-item" title="Words count">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">Words count: </span>
+      <span>2.6k</span>
+    </span>
+    <span class="post-meta-item" title="Reading time">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">Reading time &asymp;</span>
+      <span>2 mins.</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <h1 id="Bloom-Filter"><a href="#Bloom-Filter" class="headerlink" title="Bloom Filter"></a>Bloom Filter</h1><h2 id="What’s-Bloom-Filter"><a href="#What’s-Bloom-Filter" class="headerlink" title="What’s Bloom Filter"></a>What’s Bloom Filter</h2><p>A Bloom filter is a data structure that’s used to test whether an element is a member of a set.<br>The primary advantage of a Bloom filter over other data structures is that it’s incredibly space-efficient<br>when dealing with large data sets. </p>
+<p>However, this comes with a trade-off: while Bloom filters can definitively state if an element is not in the set,<br>it can only probabilistically determine if an element is in the set.<br>This means it has a certain rate of false positives.</p>
+<p>In a Bloom filter, data is passed through several hash functions, with each function mapping the input to a<br>position within a bit array. </p>
+<p>When an element is added to the Bloom filter, bits at the hashed positions are set to 1.<br>When testing for the presence of an element, the filter checks whether the bits at the hashed positions are set.<br>If they are, the filter returns “possibly in set”. If not, it returns “definitely not in set”.</p>
+<h2 id="Simple-Java-Implementation"><a href="#Simple-Java-Implementation" class="headerlink" title="Simple Java Implementation"></a>Simple Java Implementation</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br></pre></td><td class="code"><pre><span class="line">import java.util.BitSet;</span><br><span class="line"></span><br><span class="line">public class BloomFilter &#123;</span><br><span class="line">    private static final int DEFAULT_SIZE = 2 &lt;&lt; 24;</span><br><span class="line">    private final BitSet bitSet = new BitSet(DEFAULT_SIZE);</span><br><span class="line">    private static final int[] seeds = new int[]&#123;7, 11, 13, 31, 37, 61&#125;;</span><br><span class="line">    private SimpleHash[] func = new SimpleHash[seeds.length];</span><br><span class="line"></span><br><span class="line">    public BloomFilter() &#123;</span><br><span class="line">        for (int i = 0; i &lt; seeds.length; i++) &#123;</span><br><span class="line">            func[i] = new SimpleHash(DEFAULT_SIZE, seeds[i]);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public void add(String value) &#123;</span><br><span class="line">        for (SimpleHash f : func) &#123;</span><br><span class="line">            bitSet.set(f.hash(value), true);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public boolean contains(String value) &#123;</span><br><span class="line">        if (value == null) &#123;</span><br><span class="line">            return false;</span><br><span class="line">        &#125;</span><br><span class="line">        boolean ret = true;</span><br><span class="line">        for (SimpleHash f : func) &#123;</span><br><span class="line">            ret = ret &amp;&amp; bitSet.get(f.hash(value));</span><br><span class="line">        &#125;</span><br><span class="line">        return ret;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public static class SimpleHash &#123;</span><br><span class="line">        private int cap;</span><br><span class="line">        private int seed;</span><br><span class="line"></span><br><span class="line">        public SimpleHash(int cap, int seed) &#123;</span><br><span class="line">            this.cap = cap;</span><br><span class="line">            this.seed = seed;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        public int hash(String value) &#123;</span><br><span class="line">            int result = 0;</span><br><span class="line">            int len = value.length();</span><br><span class="line">            for (int i = 0; i &lt; len; i++) &#123;</span><br><span class="line">                result = seed * result + value.charAt(i);</span><br><span class="line">            &#125;</span><br><span class="line">            return (cap - 1) &amp; result;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>Unit tests<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line">import org.junit.Assert;</span><br><span class="line">import org.junit.Before;</span><br><span class="line">import org.junit.Test;</span><br><span class="line"></span><br><span class="line">public class BloomFilterTest &#123;</span><br><span class="line">    private BloomFilter bloomFilter;</span><br><span class="line"></span><br><span class="line">    @Before</span><br><span class="line">    public void setup() &#123;</span><br><span class="line">        bloomFilter = new BloomFilter();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    @Test</span><br><span class="line">    public void testAddAndContains() &#123;</span><br><span class="line">        String testValue = &quot;test&quot;;</span><br><span class="line">        bloomFilter.add(testValue);</span><br><span class="line"></span><br><span class="line">        Assert.assertTrue(bloomFilter.contains(testValue));</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    @Test</span><br><span class="line">    public void testDoesntContain() &#123;</span><br><span class="line">        String testValue = &quot;test&quot;;</span><br><span class="line">        String otherValue = &quot;other&quot;;</span><br><span class="line"></span><br><span class="line">        bloomFilter.add(testValue);</span><br><span class="line"></span><br><span class="line">        Assert.assertFalse(bloomFilter.contains(otherValue));</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    @Test</span><br><span class="line">    public void testEmpty() &#123;</span><br><span class="line">        String testValue = &quot;test&quot;;</span><br><span class="line"></span><br><span class="line">        Assert.assertFalse(bloomFilter.contains(testValue));</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure></p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/Bloom-Filter/" rel="tag"># Bloom Filter</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2023/05/29/348-Design-Tic-Tac-Toe/" rel="prev" title="348.Design Tic-Tac-Toe">
+                  <i class="fa fa-chevron-left"></i> 348.Design Tic-Tac-Toe
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 
+  <span itemprop="copyrightYear">2023</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Johnnie</span>
+</div>
+<div class="busuanzi-count">
+    <span class="post-meta-item" id="busuanzi_container_site_uv">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="Total Visitors">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="Total Views">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+
+    </div>
+  </footer>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/schemes/muse.js"></script><script src="/js/next-boot.js"></script>
+
+  
+
+
+
+
+
+  
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+
+</body>
+</html>
